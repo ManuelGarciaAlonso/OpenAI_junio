@@ -1,0 +1,924 @@
+# Resultados del Preprocesamiento de PDFs (2025-04-10 00:02:21)
+Directorios escaneados: ['/mnt/c/Users/34644/Desktop/TFM/FS/Teoria', '/mnt/c/Users/34644/Desktop/TFM/FS/BoletinesEjercicios', '/mnt/c/Users/34644/Desktop/TFM/FS/Prácticas']
+
+
+
+## 📄 Archivo: [Teoría] Tema1.pdf
+
+_(Procesamiento saltado: Enfoque actual en 'Ejercicios')_
+
+
+
+## 📄 Archivo: [Teoría] Tema4-BD-EntidadRelacion.pdf
+
+_(Procesamiento saltado: Enfoque actual en 'Ejercicios')_
+
+
+
+## 📄 Archivo: [Teoría] Transp.Tema2.Introd.Sistemas.Operativos-PEv2.pdf
+
+_(Procesamiento saltado: Enfoque actual en 'Ejercicios')_
+
+
+
+## 📄 Archivo: [Teoría] Transp.Tema3.Compilacion.y.Enlazado.pdf
+
+_(Procesamiento saltado: Enfoque actual en 'Ejercicios')_
+
+
+
+## 📄 Archivo: [Teoría] Transp.Tema4.SistemasDeArchivos.Intr.BasesDatos-2020.pdf
+
+_(Procesamiento saltado: Enfoque actual en 'Ejercicios')_
+
+
+
+## 📄 Archivo: [Teoría] Transp.Tema5.GeneracionDepuracionAplicaciones_2000.pdf
+
+_(Procesamiento saltado: Enfoque actual en 'Ejercicios')_
+
+
+
+## 📄 Archivo: [Ejercicios] ProblemasTema1.pdf
+
+**Método usado:** Análisis de Layout (PyMuPDF/fitz)
+
+**Ejercicios Detectados:** 5
+
+### 🔖 Ejercicio 5
+
+```text
+Relación de problemas nº1 
+                                              Fundamentos del Software 
+Fundamentos del Software 
+Relación de Problemas 1. Sistema de Cómputo                           
+ 
+ 
+1. 
+El método de comunicación de E/S en el que la CPU está esperando hasta que la operación de E/S ha 
+finalizado se conoce como: 
+(a) E/S Programada. 
+(b) E/S Dirigida por Interrupciones. 
+(c) DMA. 
+(d) E/S a Distancia. 
+ 
+2. 
+El método de comunicación de E/S en el que el dispositivo de E/S informa a la CPU en qué momento está 
+preparado el dispositivo para la transferencia de datos se conoce como: 
+(a) E/S Programada. 
+(b) E/S Dirigida por Interrupciones. 
+(c) DMA. 
+(d) E/S a Distancia. 
+ 
+3. 
+Cuál de las siguientes afirmaciones es correcta: 
+(a)  En algunas computadoras un programa puede ejecutarse sin necesidad de cargarlo en la memoria 
+principal. 
+(b) Un programa, para que se ejecute, debe estar cargado en la memoria principal. 
+(c) Un programa, para que se ejecute, basta con que esté en el disco duro. 
+(d) Un programa, para que se ejecute, si está en lenguaje máquina, puede estar en cualquier unidad. 
+ 
+4. 
+Dado el esquema de un computador elemental según se ha descrito en el tema, el puntero de pila (SP) 
+indica: 
+(a) La dirección de memoria donde debe saltar el programa después de ejecutarse la instrucción de retorno 
+correspondiente. 
+(b) La dirección de memoria donde se encuentra la dirección donde debe saltar el programa después de 
+ejecutarse la instrucción de retorno correspondiente. 
+(c) La dirección de memoria a donde se ha producido el último salto. 
+(d) La dirección de memoria donde se encuentra la dirección a donde se ha producido la última llamada a 
+una subrutina. 
+5. 
+Sea un ordenador elemental con una arquitectura tal y como se muestra en la figura, es decir, tres registros de 
+propósito general, registro contador de programa (PC) y registro de instrucción (IR). El registro SP (Puntero de 
+pila) contiene la dirección 35 y la pila crece hacia posiciones menores de memoria. La memoria principal 
+dispone de 256 palabras donde cada palabra tiene la longitud necesaria para albergar la instrucción de mayor 
+tamaño. Describa el estado final de ejecución del procesador a partir del estado actual de la CPU mostrado en 
+la figura. Ponga todos los valores de los registros de cada ciclo de instrucción realizado por el procesador hasta 
+llegar a dicho estado final. 
+ 
+ 
+Instrucción 
+Descripción 
+MOVER Orig,Dest 
+Copia el valor del origen 
+(Orig) al destino (Dest). 
+SUMAR Ri,Rj,Rk 
+Suma el valor de Ri y Rj, 
+depositando el resultado en 
+Rk. 
+IN Pi, Dest 
+Lee del Puerto (Pi) y lo 
+deposita en el destino (Dest). 
+OUT Pi, Orig 
+Escribe el contenido del 
+origen (Orig) en el puerto Pi. 
+HALT 
+Detiene al procesador.
+```
+
+### 🔖 Ejercicio 6
+
+```text
+6. 
+Suponiendo que el lenguaje máquina de la arquitectura anterior dispone de 14 instrucciones distintas, muestre 
+cuántos bits serían necesarios para codificar las instrucciones SUMAR R0,R1,R2 y MOVER 20,R0 respectivamente. 
+1º Grado en Ingeniería Informática 
+ 
+1 
+Relación de problemas nº1 
+                                              Fundamentos del Software
+```
+
+### 🔖 Ejercicio 7
+
+```text
+Relación de problemas nº1 
+                                              Fundamentos del Software 
+7. 
+Imagina que el procesador está ejecutando el programa de usuario del ejercicio 5 y en este momento al 
+terminar de ejecutar la instrucción actual, el procesador se da cuenta de que hay una interrupción pendiente. 
+Escribe los pasos que se dan en el sistema y por quién (software o hardware) hasta que se resuelve el 
+tratamiento de la interrupción y el programa finaliza, sabiendo que la rutina de tratamiento de la interrupción 
+comienza en la dirección de memoria principal 56 y termina en la dirección de memoria principal 70.
+```
+
+### 🔖 Ejercicio 8
+
+```text
+Relación de problemas nº1 
+                                              Fundamentos del Software 
+7. 
+Imagina que el procesador está ejecutando el programa de usuario del ejercicio 5 y en este momento al 
+terminar de ejecutar la instrucción actual, el procesador se da cuenta de que hay una interrupción pendiente. 
+Escribe los pasos que se dan en el sistema y por quién (software o hardware) hasta que se resuelve el 
+tratamiento de la interrupción y el programa finaliza, sabiendo que la rutina de tratamiento de la interrupción 
+comienza en la dirección de memoria principal 56 y termina en la dirección de memoria principal 70. 
+8. 
+Basándonos en el ejercicio 7, ¿hay diferencias si en vez de producirse una interrupción se ha producido una 
+excepción? Indique cuales.
+```
+
+### 🔖 Ejercicio 9
+
+```text
+9. 
+Sea un ordenador elemental con una arquitectura tal y como se muestra en la figura, es decir, tres registros de 
+propósito general, registro contador de programa (PC), registro de instrucción (IR) y registro de pila (SP). La 
+memoria principal dispone de 512 palabras donde cada palabra tiene la longitud necesaria para albergar la 
+instrucción de mayor  tamaño. Describa el estado final de ejecución del procesador a partir del estado actual 
+de la CPU mostrado en la figura y tras la ejecución del programa (nótese que la instrucción de la dirección 10 
+ya se ha ejecutado). 
+ 
+1º Grado en Ingeniería Informática 
+ 
+2
+```
+
+
+
+## 📄 Archivo: [Ejercicios] ProblemasTema2-2.pdf
+
+**Método usado:** Análisis de Layout (PyMuPDF/fitz)
+
+**Ejercicios Detectados:** 3
+
+### 🔖 Ejercicio 12
+
+```text
+Relación de problemas nº2 
+                                              Fundamentos del Software 
+ 
+12. Para cada una de las llamadas al sistema siguientes, especificar y explicar si su procesamiento por el sistema 
+operativo implica un cambio de contexto: 
+a) Crear un proceso. 
+b) Abortar un proceso, es decir, terminarlo forzosamente. 
+c) Suspender o bloquear un proceso. 
+d) Reanudar un proceso (inverso al caso anterior). 
+e) Modificar la prioridad de un proceso. 
+ 
+13. ¿Tiene sentido mantener ordenada por prioridades la cola de procesos bloqueados? Si lo tuviera, ¿en qué 
+casos sería útil hacerlo? 
+ 
+14. ¿Por qué se utilizan potencias de dos para los tamaños de página, número de páginas en el espacio lógico de 
+un proceso, y números de marcos de página?
+```
+
+### 🔖 Ejercicio 15
+
+```text
+15. Sitúese en un sistema paginado, en donde la memoria real tiene un tamaño de 16 Mbytes, una dirección lógica 
+ocupa 32 bits, de los cuales los 22 de la izquierda constituyen el número de página, y los 10 de la derecha el 
+desplazamiento dentro de la página. Según lo anterior, 
+a) ¿Qué tamaño tiene cada página? 
+b) ¿En cuántos marcos de página se divide la memoria física? 
+c) ¿Qué tamaño deberá tener el campo Número de Marco de la Tabla de Páginas? 
+d) Además de dicho campo, suponga que la Tabla de Páginas tiene los siguientes campos con los siguientes 
+valores: Protección: 1 bit     (1= Sólo se permite leer; 0= Cualquier tipo de acceso). 
+ 
+¿Cuál es el tamaño de la Tabla de Páginas para un proceso cuyo espacio de memoria lógico es de 103K 
+bytes? 
+ 
+16. Suponga que la tabla de páginas para el proceso actual se parece a la de la figura. Todos los números son 
+decimales, la numeración comienza en todos los casos desde cero, y todas las direcciones de memoria son 
+direcciones en bytes. El tamaño de página es de 1024 bytes. 
+ 
+Número de marco 
+Número de 
+página virtual 
+4 
+7 
+1 
+2 
+10 
+de página 
+0 
+1 
+2 
+3 
+4 
+5 
+0 
+ 
+ 
+¿Qué direcciones físicas corresponderán con cada una de las siguientes direcciones lógicas del proceso? 
+a) 999 
+b) 2121 
+c) 5400 
+ 
+17. ¿Qué tipo de fragmentación se produce en un sistema de gestión de memoria paginado? ¿Qué decisiones de 
+diseño se pueden tomar para minimizar dicho problema, y cómo afectan estas decisiones al comportamiento 
+del sistema? 
+ 
+18. Suponga que un proceso emite una dirección lógica igual a 2453 y que se utiliza la técnica de paginación, 
+con páginas de 1024 palabras 
+a) Indique el par de valores (número de página, desplazamiento) que corresponde a dicha dirección. 
+b) ¿Es posible que dicha dirección lógica se traduzca en la dirección física 9322? Razónelo. 
+ 
+ 
+ 
+ 
+ 
+1º Grado en Ingeniería Informática 
+ 
+2 
+Relación de problemas nº2 
+                                              Fundamentos del Software
+```
+
+### 🔖 Ejercicio 19
+
+```text
+19. Suponga que tenemos 3 procesos ejecutándose concurrentemente en un 
+Proceso 
+código 
+pila 
+datos 
+A 
+20480 
+14288 10240 
+B 
+16384 
+8200 
+8192 
+determinado instante. El sistema operativo utiliza un sistema de memoria 
+con paginación. Se dispone de una memoria física de 131072 bytes 
+(128K). Sabemos que nuestros procesos al ser ejecutados tienen los 
+parámeros que se muestran en la tabla. 
+ 
+C 
+18432 
+13288 
+9216 
+ 
+Los datos indican el tamaño en bytes de cada uno de los segmentos que 
+forman parte de la imagen del proceso. Sabiendo que una página no puede contener partes de dos segmentos 
+diferentes (pila, código o datos), hemos de determinar el tamaño de página que debería utilizar nuestro 
+sistema y se barajan dos opciones: páginas de 4096 bytes (4K) o páginas de 512 bytes (1/2K). Se pide: 
+ 
+a) ¿Cuál sería la opción más apropiada, 4096 bytes o 512 bytes?. Justifica totalmente la respuesta mostrando 
+todos los cálculos que has necesitado para llegar a dicha conclusión. 
+b) ¿Cuál es el formato de cada entrada de la Tabla de Páginas con el tamaño de página elegido? Justifica el 
+tamaño de los campos con direcciones. Puedes añadir los bits que consideres necesarios para el buen 
+funcionamiento del sistema indicando para que van a ser utilizados. 
+c) ¿Cuántas Tablas de Páginas habrá en este sistema?¿Cuántas entradas hay en cada tabla de páginas (filas)? 
+ 
+20. En la gestión de memoria en un sistema paginado, ¿qué estructura/s de datos necesitará mantener el Sistema 
+Operativo para administrar el espacio libre? 
+ 
+21. Estamos trabajando con un sistema operativo que emplea una gestión de memoria paginada. Cada página 
+tiene un tamaño de 2.048 bytes. La memoria física disponible para los procesos es de 8 MBytes. Suponga 
+que primero llega un proceso que necesita 31.566 posiciones de memoria (o bytes) y, después, llega otro 
+proceso que consume 18.432 posiciones cuando se carga en memoria. Se pide calcular la  fragmentación 
+interna provocada en cada proceso. 
+ 
+22. Considere la siguiente tabla de segmentos: 
+Segmento dirección base longitud 
+0 
+219 
+600 
+1 
+2300 
+14 
+2 
+90 
+100 
+3 
+1327 
+580 
+4 
+1952 
+96 
+ 
+¿Qué direcciones físicas corresponden a las direcciones lógicas (nº_segmento, desplazamiento) siguientes? Si 
+no puede traducir alguna dirección lógica a física, explique el por qué. 
+ 
+a) 0, 430 
+b) 1, 10 
+c) 3, 400 
+d) 4, 112 
+ 
+23. ¿Qué cambio de contexto tardará menos y por qué? 
+a) El producido entre dos hebras del mismo proceso. 
+b) El producido entre dos hebras de distintos procesos. 
+ 
+1º Grado en Ingeniería Informática 
+ 
+3
+```
+
+
+
+## 📄 Archivo: [Ejercicios] ProblemasTema3-2.pdf
+
+**Método usado:** Análisis de Layout (PyMuPDF/fitz)
+
+**Ejercicios Detectados:** 15
+
+### 🔖 Ejercicio 2
+
+```text
+Relación de problemas nº3 
+                                              Fundamentos del Software 
+Fundamentos del Software 
+Relación de Problemas 3. Compilación y Enlazado de Programas 
+ 
+ 
+1. Un procesador (CPU) puede interpretar y ejecutar directamente las instrucciones de un programa en: 
+(a) Lenguaje de alto nivel de tipo intérprete. 
+(b) Lenguaje ensamblador o en lenguaje máquina, cualquiera de los dos. 
+(c) Sólo lenguaje máquina. 
+(d) En pseudocódigo o en lenguaje ensamblador. 
+2. ¿Es lo mismo un token que un lexema? Muestre algún ejemplo.
+```
+
+### 🔖 Ejercicio 3
+
+```text
+Relación de problemas nº3 
+                                              Fundamentos del Software 
+Fundamentos del Software 
+Relación de Problemas 3. Compilación y Enlazado de Programas 
+ 
+ 
+1. Un procesador (CPU) puede interpretar y ejecutar directamente las instrucciones de un programa en: 
+(a) Lenguaje de alto nivel de tipo intérprete. 
+(b) Lenguaje ensamblador o en lenguaje máquina, cualquiera de los dos. 
+(c) Sólo lenguaje máquina. 
+(d) En pseudocódigo o en lenguaje ensamblador. 
+2. ¿Es lo mismo un token que un lexema? Muestre algún ejemplo. 
+3. ¿El compilador es la única utilidad necesaria para generar un programa ejecutable en una computadora?
+```
+
+### 🔖 Ejercicio 4
+
+```text
+Relación de problemas nº3 
+                                              Fundamentos del Software 
+Fundamentos del Software 
+Relación de Problemas 3. Compilación y Enlazado de Programas 
+ 
+ 
+1. Un procesador (CPU) puede interpretar y ejecutar directamente las instrucciones de un programa en: 
+(a) Lenguaje de alto nivel de tipo intérprete. 
+(b) Lenguaje ensamblador o en lenguaje máquina, cualquiera de los dos. 
+(c) Sólo lenguaje máquina. 
+(d) En pseudocódigo o en lenguaje ensamblador. 
+2. ¿Es lo mismo un token que un lexema? Muestre algún ejemplo. 
+3. ¿El compilador es la única utilidad necesaria para generar un programa ejecutable en una computadora? 
+4. El análisis léxico es una etapa de la compilación cuyo objetivo es: 
+(a) Extraer la estructura de cada sentencia, reconociendo los componentes léxicos (tokens) del lenguaje. 
+(b) Descomponer el programa fuente en sus componentes léxicos (tokens). 
+(c) Extraer el significado de las distintas construcciones sintácticas y elementos terminales. 
+(d) Sintetizar el programa objeto.
+```
+
+### 🔖 Ejercicio 5
+
+```text
+Relación de problemas nº3 
+                                              Fundamentos del Software 
+Fundamentos del Software 
+Relación de Problemas 3. Compilación y Enlazado de Programas 
+ 
+ 
+1. Un procesador (CPU) puede interpretar y ejecutar directamente las instrucciones de un programa en: 
+(a) Lenguaje de alto nivel de tipo intérprete. 
+(b) Lenguaje ensamblador o en lenguaje máquina, cualquiera de los dos. 
+(c) Sólo lenguaje máquina. 
+(d) En pseudocódigo o en lenguaje ensamblador. 
+2. ¿Es lo mismo un token que un lexema? Muestre algún ejemplo. 
+3. ¿El compilador es la única utilidad necesaria para generar un programa ejecutable en una computadora? 
+4. El análisis léxico es una etapa de la compilación cuyo objetivo es: 
+(a) Extraer la estructura de cada sentencia, reconociendo los componentes léxicos (tokens) del lenguaje. 
+(b) Descomponer el programa fuente en sus componentes léxicos (tokens). 
+(c) Extraer el significado de las distintas construcciones sintácticas y elementos terminales. 
+(d) Sintetizar el programa objeto. 
+5. El análisis sintáctico es una etapa de la compilación cuyo objetivo es: 
+(a) Extraer la estructura de cada sentencia, reconociendo los componentes léxicos (tokens) del lenguaje. 
+(b) Descomponer el programa fuente en sus componentes léxicos (tokens). 
+(c) Extraer el significado de las distintas construcciones sintácticas y elementos terminales. 
+(d) Sintetizar el programa objeto.
+```
+
+### 🔖 Ejercicio 6
+
+```text
+Relación de problemas nº3 
+                                              Fundamentos del Software 
+Fundamentos del Software 
+Relación de Problemas 3. Compilación y Enlazado de Programas 
+ 
+ 
+1. Un procesador (CPU) puede interpretar y ejecutar directamente las instrucciones de un programa en: 
+(a) Lenguaje de alto nivel de tipo intérprete. 
+(b) Lenguaje ensamblador o en lenguaje máquina, cualquiera de los dos. 
+(c) Sólo lenguaje máquina. 
+(d) En pseudocódigo o en lenguaje ensamblador. 
+2. ¿Es lo mismo un token que un lexema? Muestre algún ejemplo. 
+3. ¿El compilador es la única utilidad necesaria para generar un programa ejecutable en una computadora? 
+4. El análisis léxico es una etapa de la compilación cuyo objetivo es: 
+(a) Extraer la estructura de cada sentencia, reconociendo los componentes léxicos (tokens) del lenguaje. 
+(b) Descomponer el programa fuente en sus componentes léxicos (tokens). 
+(c) Extraer el significado de las distintas construcciones sintácticas y elementos terminales. 
+(d) Sintetizar el programa objeto. 
+5. El análisis sintáctico es una etapa de la compilación cuyo objetivo es: 
+(a) Extraer la estructura de cada sentencia, reconociendo los componentes léxicos (tokens) del lenguaje. 
+(b) Descomponer el programa fuente en sus componentes léxicos (tokens). 
+(c) Extraer el significado de las distintas construcciones sintácticas y elementos terminales. 
+(d) Sintetizar el programa objeto. 
+6. Para el siguiente código que aparece a la izquierda en lenguaje C++ (fichero test.cpp), indique el nombre 
+de la fase en la que el compilador produce el mensaje de error que aparece a la derecha y explique la 
+naturaleza del mismo: 
+a) test.cpp:9: error: expected primary-expression be-
+fore ‘;’ token  
+b) test.cpp:6: error: invalid conversion from ‘int’ to 
+‘char*’  
+c) test.cpp:11: error: stray ‘\302’ in program 
+01 int main (void)  
+02 {  
+03     int i;  
+04     char* j;  
+05  
+06     j = i;  
+07  
+08     if (i == 0)  
+09         i += ;  
+10  
+11     ¬;  
+12  
+13     return 0;  
+14 }
+```
+
+### 🔖 Ejercicio 7
+
+```text
+Relación de problemas nº3 
+                                              Fundamentos del Software 
+Fundamentos del Software 
+Relación de Problemas 3. Compilación y Enlazado de Programas 
+ 
+ 
+1. Un procesador (CPU) puede interpretar y ejecutar directamente las instrucciones de un programa en: 
+(a) Lenguaje de alto nivel de tipo intérprete. 
+(b) Lenguaje ensamblador o en lenguaje máquina, cualquiera de los dos. 
+(c) Sólo lenguaje máquina. 
+(d) En pseudocódigo o en lenguaje ensamblador. 
+2. ¿Es lo mismo un token que un lexema? Muestre algún ejemplo. 
+3. ¿El compilador es la única utilidad necesaria para generar un programa ejecutable en una computadora? 
+4. El análisis léxico es una etapa de la compilación cuyo objetivo es: 
+(a) Extraer la estructura de cada sentencia, reconociendo los componentes léxicos (tokens) del lenguaje. 
+(b) Descomponer el programa fuente en sus componentes léxicos (tokens). 
+(c) Extraer el significado de las distintas construcciones sintácticas y elementos terminales. 
+(d) Sintetizar el programa objeto. 
+5. El análisis sintáctico es una etapa de la compilación cuyo objetivo es: 
+(a) Extraer la estructura de cada sentencia, reconociendo los componentes léxicos (tokens) del lenguaje. 
+(b) Descomponer el programa fuente en sus componentes léxicos (tokens). 
+(c) Extraer el significado de las distintas construcciones sintácticas y elementos terminales. 
+(d) Sintetizar el programa objeto. 
+6. Para el siguiente código que aparece a la izquierda en lenguaje C++ (fichero test.cpp), indique el nombre 
+de la fase en la que el compilador produce el mensaje de error que aparece a la derecha y explique la 
+naturaleza del mismo: 
+a) test.cpp:9: error: expected primary-expression be-
+fore ‘;’ token  
+b) test.cpp:6: error: invalid conversion from ‘int’ to 
+‘char*’  
+c) test.cpp:11: error: stray ‘\302’ in program 
+01 int main (void)  
+02 {  
+03     int i;  
+04     char* j;  
+05  
+06     j = i;  
+07  
+08     if (i == 0)  
+09         i += ;  
+10  
+11     ¬;  
+12  
+13     return 0;  
+14 } 
+7. Muestre un ejemplo a partir de una sentencia en lenguaje C++ en la que un error léxico origine un error 
+sintáctico derivado y otro error léxico que no derive en error sintáctico.
+```
+
+### 🔖 Ejercicio 8
+
+```text
+Relación de problemas nº3 
+                                              Fundamentos del Software 
+Fundamentos del Software 
+Relación de Problemas 3. Compilación y Enlazado de Programas 
+ 
+ 
+1. Un procesador (CPU) puede interpretar y ejecutar directamente las instrucciones de un programa en: 
+(a) Lenguaje de alto nivel de tipo intérprete. 
+(b) Lenguaje ensamblador o en lenguaje máquina, cualquiera de los dos. 
+(c) Sólo lenguaje máquina. 
+(d) En pseudocódigo o en lenguaje ensamblador. 
+2. ¿Es lo mismo un token que un lexema? Muestre algún ejemplo. 
+3. ¿El compilador es la única utilidad necesaria para generar un programa ejecutable en una computadora? 
+4. El análisis léxico es una etapa de la compilación cuyo objetivo es: 
+(a) Extraer la estructura de cada sentencia, reconociendo los componentes léxicos (tokens) del lenguaje. 
+(b) Descomponer el programa fuente en sus componentes léxicos (tokens). 
+(c) Extraer el significado de las distintas construcciones sintácticas y elementos terminales. 
+(d) Sintetizar el programa objeto. 
+5. El análisis sintáctico es una etapa de la compilación cuyo objetivo es: 
+(a) Extraer la estructura de cada sentencia, reconociendo los componentes léxicos (tokens) del lenguaje. 
+(b) Descomponer el programa fuente en sus componentes léxicos (tokens). 
+(c) Extraer el significado de las distintas construcciones sintácticas y elementos terminales. 
+(d) Sintetizar el programa objeto. 
+6. Para el siguiente código que aparece a la izquierda en lenguaje C++ (fichero test.cpp), indique el nombre 
+de la fase en la que el compilador produce el mensaje de error que aparece a la derecha y explique la 
+naturaleza del mismo: 
+a) test.cpp:9: error: expected primary-expression be-
+fore ‘;’ token  
+b) test.cpp:6: error: invalid conversion from ‘int’ to 
+‘char*’  
+c) test.cpp:11: error: stray ‘\302’ in program 
+01 int main (void)  
+02 {  
+03     int i;  
+04     char* j;  
+05  
+06     j = i;  
+07  
+08     if (i == 0)  
+09         i += ;  
+10  
+11     ¬;  
+12  
+13     return 0;  
+14 } 
+7. Muestre un ejemplo a partir de una sentencia en lenguaje C++ en la que un error léxico origine un error 
+sintáctico derivado y otro error léxico que no derive en error sintáctico. 
+8. Muestre un ejemplo a partir una sentencia de en lenguaje C++ en la que un error léxico origine un error 
+sintáctico y semántico derivados y otro error léxico que no los derive.
+```
+
+### 🔖 Ejercicio 9
+
+```text
+Relación de problemas nº3 
+                                              Fundamentos del Software 
+Fundamentos del Software 
+Relación de Problemas 3. Compilación y Enlazado de Programas 
+ 
+ 
+1. Un procesador (CPU) puede interpretar y ejecutar directamente las instrucciones de un programa en: 
+(a) Lenguaje de alto nivel de tipo intérprete. 
+(b) Lenguaje ensamblador o en lenguaje máquina, cualquiera de los dos. 
+(c) Sólo lenguaje máquina. 
+(d) En pseudocódigo o en lenguaje ensamblador. 
+2. ¿Es lo mismo un token que un lexema? Muestre algún ejemplo. 
+3. ¿El compilador es la única utilidad necesaria para generar un programa ejecutable en una computadora? 
+4. El análisis léxico es una etapa de la compilación cuyo objetivo es: 
+(a) Extraer la estructura de cada sentencia, reconociendo los componentes léxicos (tokens) del lenguaje. 
+(b) Descomponer el programa fuente en sus componentes léxicos (tokens). 
+(c) Extraer el significado de las distintas construcciones sintácticas y elementos terminales. 
+(d) Sintetizar el programa objeto. 
+5. El análisis sintáctico es una etapa de la compilación cuyo objetivo es: 
+(a) Extraer la estructura de cada sentencia, reconociendo los componentes léxicos (tokens) del lenguaje. 
+(b) Descomponer el programa fuente en sus componentes léxicos (tokens). 
+(c) Extraer el significado de las distintas construcciones sintácticas y elementos terminales. 
+(d) Sintetizar el programa objeto. 
+6. Para el siguiente código que aparece a la izquierda en lenguaje C++ (fichero test.cpp), indique el nombre 
+de la fase en la que el compilador produce el mensaje de error que aparece a la derecha y explique la 
+naturaleza del mismo: 
+a) test.cpp:9: error: expected primary-expression be-
+fore ‘;’ token  
+b) test.cpp:6: error: invalid conversion from ‘int’ to 
+‘char*’  
+c) test.cpp:11: error: stray ‘\302’ in program 
+01 int main (void)  
+02 {  
+03     int i;  
+04     char* j;  
+05  
+06     j = i;  
+07  
+08     if (i == 0)  
+09         i += ;  
+10  
+11     ¬;  
+12  
+13     return 0;  
+14 } 
+7. Muestre un ejemplo a partir de una sentencia en lenguaje C++ en la que un error léxico origine un error 
+sintáctico derivado y otro error léxico que no derive en error sintáctico. 
+8. Muestre un ejemplo a partir una sentencia de en lenguaje C++ en la que un error léxico origine un error 
+sintáctico y semántico derivados y otro error léxico que no los derive. 
+9. ¿Sería siempre posible realizar la depuración de un archivo objeto? Razone la respuesta.
+```
+
+### 🔖 Ejercicio 10
+
+```text
+Relación de problemas nº3 
+                                              Fundamentos del Software 
+Fundamentos del Software 
+Relación de Problemas 3. Compilación y Enlazado de Programas 
+ 
+ 
+1. Un procesador (CPU) puede interpretar y ejecutar directamente las instrucciones de un programa en: 
+(a) Lenguaje de alto nivel de tipo intérprete. 
+(b) Lenguaje ensamblador o en lenguaje máquina, cualquiera de los dos. 
+(c) Sólo lenguaje máquina. 
+(d) En pseudocódigo o en lenguaje ensamblador. 
+2. ¿Es lo mismo un token que un lexema? Muestre algún ejemplo. 
+3. ¿El compilador es la única utilidad necesaria para generar un programa ejecutable en una computadora? 
+4. El análisis léxico es una etapa de la compilación cuyo objetivo es: 
+(a) Extraer la estructura de cada sentencia, reconociendo los componentes léxicos (tokens) del lenguaje. 
+(b) Descomponer el programa fuente en sus componentes léxicos (tokens). 
+(c) Extraer el significado de las distintas construcciones sintácticas y elementos terminales. 
+(d) Sintetizar el programa objeto. 
+5. El análisis sintáctico es una etapa de la compilación cuyo objetivo es: 
+(a) Extraer la estructura de cada sentencia, reconociendo los componentes léxicos (tokens) del lenguaje. 
+(b) Descomponer el programa fuente en sus componentes léxicos (tokens). 
+(c) Extraer el significado de las distintas construcciones sintácticas y elementos terminales. 
+(d) Sintetizar el programa objeto. 
+6. Para el siguiente código que aparece a la izquierda en lenguaje C++ (fichero test.cpp), indique el nombre 
+de la fase en la que el compilador produce el mensaje de error que aparece a la derecha y explique la 
+naturaleza del mismo: 
+a) test.cpp:9: error: expected primary-expression be-
+fore ‘;’ token  
+b) test.cpp:6: error: invalid conversion from ‘int’ to 
+‘char*’  
+c) test.cpp:11: error: stray ‘\302’ in program 
+01 int main (void)  
+02 {  
+03     int i;  
+04     char* j;  
+05  
+06     j = i;  
+07  
+08     if (i == 0)  
+09         i += ;  
+10  
+11     ¬;  
+12  
+13     return 0;  
+14 } 
+7. Muestre un ejemplo a partir de una sentencia en lenguaje C++ en la que un error léxico origine un error 
+sintáctico derivado y otro error léxico que no derive en error sintáctico. 
+8. Muestre un ejemplo a partir una sentencia de en lenguaje C++ en la que un error léxico origine un error 
+sintáctico y semántico derivados y otro error léxico que no los derive. 
+9. ¿Sería siempre posible realizar la depuración de un archivo objeto? Razone la respuesta. 
+10. Dado un programa escrito en lenguaje ensamblador de una arquitectura concreta, ¿sería directamente 
+interpretable ese código por esa computadora? En caso contrario ¿qué habría que hacer?
+```
+
+### 🔖 Ejercicio 11
+
+```text
+Relación de problemas nº3 
+                                              Fundamentos del Software 
+Fundamentos del Software 
+Relación de Problemas 3. Compilación y Enlazado de Programas 
+ 
+ 
+1. Un procesador (CPU) puede interpretar y ejecutar directamente las instrucciones de un programa en: 
+(a) Lenguaje de alto nivel de tipo intérprete. 
+(b) Lenguaje ensamblador o en lenguaje máquina, cualquiera de los dos. 
+(c) Sólo lenguaje máquina. 
+(d) En pseudocódigo o en lenguaje ensamblador. 
+2. ¿Es lo mismo un token que un lexema? Muestre algún ejemplo. 
+3. ¿El compilador es la única utilidad necesaria para generar un programa ejecutable en una computadora? 
+4. El análisis léxico es una etapa de la compilación cuyo objetivo es: 
+(a) Extraer la estructura de cada sentencia, reconociendo los componentes léxicos (tokens) del lenguaje. 
+(b) Descomponer el programa fuente en sus componentes léxicos (tokens). 
+(c) Extraer el significado de las distintas construcciones sintácticas y elementos terminales. 
+(d) Sintetizar el programa objeto. 
+5. El análisis sintáctico es una etapa de la compilación cuyo objetivo es: 
+(a) Extraer la estructura de cada sentencia, reconociendo los componentes léxicos (tokens) del lenguaje. 
+(b) Descomponer el programa fuente en sus componentes léxicos (tokens). 
+(c) Extraer el significado de las distintas construcciones sintácticas y elementos terminales. 
+(d) Sintetizar el programa objeto. 
+6. Para el siguiente código que aparece a la izquierda en lenguaje C++ (fichero test.cpp), indique el nombre 
+de la fase en la que el compilador produce el mensaje de error que aparece a la derecha y explique la 
+naturaleza del mismo: 
+a) test.cpp:9: error: expected primary-expression be-
+fore ‘;’ token  
+b) test.cpp:6: error: invalid conversion from ‘int’ to 
+‘char*’  
+c) test.cpp:11: error: stray ‘\302’ in program 
+01 int main (void)  
+02 {  
+03     int i;  
+04     char* j;  
+05  
+06     j = i;  
+07  
+08     if (i == 0)  
+09         i += ;  
+10  
+11     ¬;  
+12  
+13     return 0;  
+14 } 
+7. Muestre un ejemplo a partir de una sentencia en lenguaje C++ en la que un error léxico origine un error 
+sintáctico derivado y otro error léxico que no derive en error sintáctico. 
+8. Muestre un ejemplo a partir una sentencia de en lenguaje C++ en la que un error léxico origine un error 
+sintáctico y semántico derivados y otro error léxico que no los derive. 
+9. ¿Sería siempre posible realizar la depuración de un archivo objeto? Razone la respuesta. 
+10. Dado un programa escrito en lenguaje ensamblador de una arquitectura concreta, ¿sería directamente 
+interpretable ese código por esa computadora? En caso contrario ¿qué habría que hacer? 
+11. ¿Sería necesario usar siempre el enlazador para obtener un programa ejecutable?
+```
+
+### 🔖 Ejercicio 12
+
+```text
+12. Dado un único archivo objeto, ¿podría ser siempre un programa ejecutable y correcto simplemente añadiendo 
+la información de cabecera necesaria? 
+1º Grado en Ingeniería Informática 
+ 
+1 
+Relación de problemas nº3 
+                                              Fundamentos del Software
+```
+
+### 🔖 Ejercicio 13
+
+```text
+Relación de problemas nº3 
+                                              Fundamentos del Software 
+13. Dado un programa ejecutable que requiere de una biblioteca dinámica, ¿por qué no es necesario recompilar 
+el código fuente de dicho programa si se modifica la biblioteca?
+```
+
+### 🔖 Ejercicio 14
+
+```text
+Relación de problemas nº3 
+                                              Fundamentos del Software 
+13. Dado un programa ejecutable que requiere de una biblioteca dinámica, ¿por qué no es necesario recompilar 
+el código fuente de dicho programa si se modifica la biblioteca? 
+14. Indique en qué fase del proceso de traducción y ejecución de un programa se realizará cada una de las 
+siguientes tareas: 
+(a) Enlazar una biblioteca estática. 
+(b) Eliminar los comentarios del código fuente. 
+(c) Mensaje de error de que una variable no ha sido declarada. 
+(d) Enlazar una biblioteca dinámica.
+```
+
+### 🔖 Ejercicio 15
+
+```text
+Relación de problemas nº3 
+                                              Fundamentos del Software 
+13. Dado un programa ejecutable que requiere de una biblioteca dinámica, ¿por qué no es necesario recompilar 
+el código fuente de dicho programa si se modifica la biblioteca? 
+14. Indique en qué fase del proceso de traducción y ejecución de un programa se realizará cada una de las 
+siguientes tareas: 
+(a) Enlazar una biblioteca estática. 
+(b) Eliminar los comentarios del código fuente. 
+(c) Mensaje de error de que una variable no ha sido declarada. 
+(d) Enlazar una biblioteca dinámica. 
+15. Indique en qué fase o fases del proceso de compilación de un lenguaje de programación de alto nivel se 
+detectarían los siguientes errores: 
+(a) Una variable no está definida. 
+(b) Aparece un carácter o símbolo no esperado. 
+(c) Aparecen dos identificadores consecutivos. 
+(d) Aparecen dos funciones denominadas bajo el mismo nombre. 
+(e) Aparece el final de un bloque de sentencias pero no el inicio del mismo. 
+(f) Aparece un paréntesis cerrado y no se ha podido emparejar con su correspondiente paréntesis 
+abierto. 
+(g) Una llamada a una función que no ha sido definida. 
+(h) En la palabra reservada main aparece un carácter extraño no esperado, por ejemplo mai¿n.
+```
+
+### 🔖 Ejercicio 16
+
+```text
+16. ¿Todo error sintáctico origina un error semántico? En caso contrario, demuéstrelo usando algún 
+contraejemplo. 
+1º Grado en Ingeniería Informática 
+ 
+2
+```
+
+
+
+## 📄 Archivo: [Ejercicios] ProblemasTema4-1.pdf
+
+**Método usado:** Análisis de Layout (PyMuPDF/fitz)
+
+**Ejercicios Detectados:** 4
+
+### 🔖 Ejercicio 1
+
+```text
+EJERCICIOS DE BASES DE DATOS
+(1) Se desea diseñar un esquema relacional de una base de datos para un centro de
+enseñanza que contenga información sobre los alumnos (dni, nombre, dirección...), las
+asignaturas (código de asignatura y nombre de esta se considera la información mínima) y
+las calificaciones que se obtienen en cada una de las mismas. Desarrollar un modelo ER del 
+mismo y posteriormente reducirlo a tablas.
+```
+
+### 🔖 Ejercicio 2
+
+```text
+EJERCICIOS DE BASES DE DATOS
+(1) Se desea diseñar un esquema relacional de una base de datos para un centro de
+enseñanza que contenga información sobre los alumnos (dni, nombre, dirección...), las
+asignaturas (código de asignatura y nombre de esta se considera la información mínima) y
+las calificaciones que se obtienen en cada una de las mismas. Desarrollar un modelo ER del 
+mismo y posteriormente reducirlo a tablas.
+(2) Se desea diseñar la base de datos de una biblioteca particular, de modo que para cada
+libro se deberá almacenar: su título, número de páginas, ISBN, materia, año de edición,
+editorial y autor o autores del mismo, para los que, además de su nombre, se recogerán los
+siguientes datos: dirección de correo electrónico, nacionalidad y fecha de nacimiento. 
+Además, para cada editorial se deberá guardar su dirección, localidad y país. Teniendo en
+cuenta que se pueden añadir los campos que se consideren oportunos para poder relacionar
+convenientemente las distintas entidades del problema, realizar lo que se pide en cada uno
+de los siguientes apartados: 
+• Dibujar el esquema conceptual, utilizando el modelo entidad-relación. 
+• Obtener, a partir de lo realizado en el apartado anterior, las tablas que se tendrían que crear
+en un SGBD relacional, indicando qué campos compondrían cada tabla y cuál sería la clave
+primaria de cada una de ellas.
+```
+
+### 🔖 Ejercicio 3
+
+```text
+(3) Suponga que la base de datos para una Universidad del ejercicio (1) considera además de
+la información sobre los alumnos y las asignaturas, las carreras que se pueden estudiar. 
+Construir un modelo ER y pasarlo posteriormente a un esquema relacional teniendo en
+cuenta las siguientes restricciones: 
+• Un alumno puede estar matriculado en muchas asignaturas. 
+• Una asignatura sólo puede pertenecer a una carrera. 
+• Una carrera puede tener muchas asignaturas.
+```
+
+### 🔖 Ejercicio 4
+
+```text
+(4) Se desea diseñar una base de datos para un centro comercial organizado por secciones
+que contenga información sobre los clientes que han comprado algo, los trabajadores, el
+género  que  se  oferta  y  las  ventas  realizadas.  Construir  un  modelo  ER  y  pasarlo
+posteriormente a un esquema relacional teniendo en cuenta las siguientes restricciones: 
+• Existen tres tipos de trabajadores: gerentes, jefes y vendedores. 
+• Cada sección está gestionado por un gerente. 
+• Un determinado producto sólo se encuentra en una sección. 
+• Los jefes y vendedores sólo pueden pertenecer a una única sección. 
+• Un gerente tiene a su cargo a un cierto número de jefes y éstos a su vez a un cierto número
+de vendedores. 
+• Una venta la realiza un vendedor a un cliente y debe quedar constancia del artículo
+vendido. Sólo un artículo por apunte de venta.
+```
+
+
+
+## 📄 Archivo: [Prácticas] Módulo.I.Órdenes.Unix.y.Shell.Bash-1.pdf
+
+_(Procesamiento saltado: Enfoque actual en 'Ejercicios')_
+
+
+
+## 📄 Archivo: [Prácticas] Módulo.II.Compilación.y.depuración.de.programas.v1.pdf
+
+_(Procesamiento saltado: Enfoque actual en 'Ejercicios')_
+

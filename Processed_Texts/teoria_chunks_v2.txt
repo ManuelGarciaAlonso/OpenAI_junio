@@ -1,0 +1,3955 @@
+# Resultados del Preprocesamiento y Chunking de PDFs de Teoría (2025-04-10 17:30:46)
+# Usando Docling (Extractor) y MarkdownHeaderTextSplitter (Chunking)
+Directorios escaneados: ['/mnt/c/Users/34644/Desktop/TFM/FS/Teoria', '/mnt/c/Users/34644/Desktop/TFM/FS/BoletinesEjercicios', '/mnt/c/Users/34644/Desktop/TFM/FS/Prácticas']
+
+
+
+========================================
+## 📄 Archivo: [Teoría] Tema1.pdf
+========================================
+
+**Método de extracción usado:** Docling
+
+**Chunks Detectados:** 59
+
+### CHUNK 1 ###
+```markdown
+## Tema 1. Sistema de Cómputo  
+- 1.1 Componentes de un Sistema de Cómputo.
+- 1.1.1 Definiciones Básicas.
+- 1.1.2 Registros del Procesador.
+- 1.1.3 Ejecución de Instrucciones. Tipos de Instrucciones.
+- 1.2 Capa Hardware.
+- 1.2.1 Estructura de un Ordenador.
+- 1.2.2 Técnicas de Comunicación de E/S.
+- 1.3 El Sistema Operativo.
+- 1.4 Utilidades del Sistema.
+```
+
+### CHUNK 2 ###
+```markdown
+## Bibliografía básica  
+[Prie06]  
+A. Prieto, A. Lloris, J.C. Torres, Introducción a la Informática , McGraw-Hill, 2006  
+[Stal05]  
+W. Stallings, Sistemas Operativos, Aspectos Internos y Principios de Diseño (5ª Edición) . Pearson Education, 2005  
+[Carr07]  
+J. Carretero, F. García, P. de Miguel, F. Pérez, Sistemas Operativos (2ª Edición) , McGraw-Hill, 2007  
+Curso 2019-20  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+1er Curso de Grado en Ingeniería Informática  
+- · Conocer los elementos principales de un Sistema de Cómputo.
+- · Disponer los elementos de la parte hardware.
+- · Conocer el software más próximo a la capa hardware: el Sistema Operativo.
+- · Conocer las principales utilidades software que se utilizan en un sistema de cómputo.
+```
+
+### CHUNK 3 ###
+```markdown
+## 1.1 Componentes de un Sistema de Cómputo
+```
+
+### CHUNK 4 ###
+```markdown
+## Definiciones Básicas [Prie06] (pp.1-7)  
+- • Informática, Computador, Bit, …
+- • Instrucción u Orden, Programa, Lenguaje de Programación.
+- • Lenguaje Máquina.
+- • Hardware (soporte físico) y Firmware.
+- • Software (soporte lógico).
+- • Sistema Informático.  
+• …  
+Tema 1. Sistema de Cómputo
+```
+
+### CHUNK 5 ###
+```markdown
+## 1.1 Componentes de un Sistema de Cómputo
+```
+
+### CHUNK 6 ###
+```markdown
+## Definición de Bit  
+- · Bit ( Bi nari Digi ): unidad mínima de información t
+- • Codifica información:
+- • 1 bit: 0 ó 1
+- • 2 bits: 00, 01, 10 ó 11
+- • …
+- • 2 nº de bits  
+= elementos  
+- · Log 2 elementos = nº de bits  
+False 1 0 True  
+Tema 1. Sistema de Cómputo
+```
+
+### CHUNK 7 ###
+```markdown
+## Múltiplos del bit y Unidades de medida  
+- · 1 Byte (B) = 8 bits (b)   (Byte: Unidad mínima para direccionar)  
+| Bytes                       | bits                       |
+|-----------------------------|----------------------------|
+| 1 Kilobyte (KB) = 2 10 B    | 1 Kilobit (Kb) = 2 10 bits |
+| 1 Megabyte (MB) = 2 10 KB   | 1 Megabit (Mb) = 2 20 bits |
+| 1 Gigabyte (GB) =  2 10 MB  | 1 Gigabit (Gb) = 2 30 bits |
+| 1 Terabyte (TB) =   2 10 GB | 1 Terabit (Tb) = 2 40 bits |
+| 1 Petabyte (PB) =   2 10 TB | 1 Petabit (Pb) = 2 50 bits |
+```
+
+### CHUNK 8 ###
+```markdown
+## Cambio de base: binario, octal, hexadecimal [Prie06] (Apéndice A. pp.767)  
+|                                                                                        |   0 |   1 |   2 |   3 |   4 | 5                                                                         |   6 |   7 | 8   | 9   | 10   | 11   | 12                                                                         | 13   | 14   | 15   | 16   |
+|----------------------------------------------------------------------------------------|-----|-----|-----|-----|-----|---------------------------------------------------------------------------|-----|-----|-----|-----|------|------|----------------------------------------------------------------------------|------|------|------|------|
+| • Binario Binario (N ) 2                                                               | 000 | 001 | 010 | 011 | 100 | : 000, 001, 010, 011, 100, 101, 110, 111 101                              | 110 | 111 |     |     |      |      |                                                                            |      |      |      |      |
+| • Octal : 00, 01, 02, 03, 04, 05, 06, 07, 10, 11, 12, 13, 14, ... Decimal Octal (N ) 8 |  00 |  01 |  02 |  03 |  04 | 05                                                                        |  06 |  07 | 10  | 11  | 12   | 13   | 14                                                                         | 15   | 16   | 17   | 20   |
+| • • Hexadecimal Decimal (N 10 )                                                        |  00 |  01 |  02 |  03 |  04 | : 00, 01, 02, 03, 04, 05, 06, 07, 08, 09, 0A, 0B, 0C, 0D, 0E, 0F, 10,  05 |  06 |  07 | 08  | 09  | 10   | 11   | : 00, 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12, 13, 14, 15, 16, … 12 | 13   | 14   | 15   | 16   |
+| 11, … Hexadecimal (N 16 )                                                              |  00 |  01 |  02 |  03 |  04 | 05                                                                        |  06 |  07 | 08  | 09  | 0A   | 0B   | 0C                                                                         | 0D   | 0E   | 0F   | 10   |  
+N'base 10 = dígito0 × base 0 + dígito1 × base 1 + … + dígiton × base n  
+Para obtener el número en otra base: dividir hasta llegar a un cociente menor que la base y tomar los restos y el último cociente de la división.  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+### CHUNK 9 ###
+```markdown
+## 1.1 Componentes de un Sistema de Cómputo
+```
+
+### CHUNK 10 ###
+```markdown
+## Instrucciones vs. Datos  
+- ⚫ Instrucción : conjunto de símbolos insertados en una secuencia estructurada o específica que el procesador interpreta y ejecuta.
+- ⚫ Datos : Símbolos que representan hechos, condiciones, situaciones o valores. Elementos de información.
+```
+
+### CHUNK 11 ###
+```markdown
+## Instrucciones vs. Datos (cont.)  
+- ⚫ Lenguaje natural:  
+Suma lo que hay en A con lo que tiene la posición 17 de una secuencia de valores.  
+- ⚫ Lenguaje de programación de alto nivel:  
+A= A + M[17]  
+- ⚫ Ensamblador y lenguaje máquina:  
+ADD A, M(17)     →     11000   001  0001  001111  
+Código de  
+operación  
+Campos de  
+direcciones  
+A  
+Acumula  
+M  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+1er Curso de Grado en Ingeniería Informática  
+1er Curso de Grado en Ingeniería Informática  
+## Instrucciones vs. Datos (cont.)
+```
+
+### CHUNK 12 ###
+```markdown
+## ⚫ Lenguaje natural:
+```
+
+### CHUNK 13 ###
+```markdown
+## Action:  
+INFORY  
+Transport:  
+taxi  
+Time:  
+18 : 25  
+Cost:  
+20€  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+### CHUNK 14 ###
+```markdown
+## Instrucciones vs. Datos (cont.)  
+- ⚫ Lenguaje de programación de alto nivel:  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+1er Curso de Grado en Ingeniería Informática  
+## Instrucciones vs. Datos (cont.)  
+- ⚫ Lenguaje de programación de alto nivel:  
+1er Curso de Grado en Ingeniería Informática  
+## Instrucciones vs. Datos (cont.)
+```
+
+### CHUNK 15 ###
+```markdown
+## Hardware (Soporte Físico)  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+### CHUNK 16 ###
+```markdown
+## Firmware  
+Bloque de instrucciones de máquina para propósitos específicos grabado en una memoria, normalmente de lectura/escritura que establece la lógica de más bajo nivel que controla los circuitos electrónicos de un dispositivo de cualquier tipo.  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+### CHUNK 17 ###
+```markdown
+## Software (Soporte Lógico)  
+Conjunto de programas, instrucciones y reglas informáticas que permiten ejecutar distintas tareas en una computadora (RAE).  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+Tema 1. Sistema de Cómputo
+```
+
+### CHUNK 18 ###
+```markdown
+## Definiciones Básicas [Stal05] (pp.55)  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+### CHUNK 19 ###
+```markdown
+## Arquitectura de un Sistema  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+### CHUNK 20 ###
+```markdown
+## 1.2 Capa Hardware
+```
+
+### CHUNK 21 ###
+```markdown
+## Registros del Procesador [Stal05] (pp.11-13)  
+- •Registros visibles para el programador.
+- •Registros de control y estado:
+- o Contador de programa (PC).
+- o Puntero de pila (SP).
+- o Registro de instrucción (IR).
+- o Registro de estado (bits informativos).
+```
+
+### CHUNK 22 ###
+```markdown
+## Esquema del microporces ador 8088
+```
+
+### CHUNK 23 ###
+```markdown
+## Ejecución de Instrucciones [Stal05] (pp.14-17)  
+Procesar una instrucción consta de dos pasos:  
+- 1. El Procesador lee (busca) instrucciones de la memoria, una cada vez.
+- 2. El Procesador ejecuta cada instrucción.  
+Se denomina ciclo de instrucción al procesamiento requerido por una única instrucción.  
+La ejecución de un programa consiste en repetir el proceso de búsqueda y ejecución de instrucciones.
+```
+
+### CHUNK 24 ###
+```markdown
+## Proceso a seguir:  
+- 1. Se lee la instrucción cuya dirección está en el PC.
+- 2. Se incrementa el PC en una unidad.
+- 3. Se ejecuta la instrucción.  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+### CHUNK 25 ###
+```markdown
+## Repertorio elemental de instrucciones [Stal05] (pp.14-17)  
+Podemos clasificarlas en:  
+- · Transferencia de datos:  
+MOV origen, destino  
+- · Aritmético-lógicas:  
+ADD op1, op2, resultado COMP Ri, Rj MULT op1, op2, resultado  
+…  
+- · Entradas/salidas:  
+IN puerto, destino OUT origen, puerto  
+- · Control:  
+JUMP/JNE/JE etiqueta CALL función RETURN e IRETURN HALT  
+…  
+Tema 1. Sistema de Cómputo  
+## Repertorio elemental de instrucciones [Stal05] (pp.14-17)  
+Ejemplo : Sumar dos números cargados en memoria en las direcciones direc1 y direc2 y poner el resultado en direc3.  
+MOV direc1, R0 MOV direc2, R1 ADD R0, R1, R2 MOV R2, direc3 HALT  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+### CHUNK 26 ###
+```markdown
+## Ejecución del ejemplo (paso 0)
+```
+
+### CHUNK 27 ###
+```markdown
+## Ejecución del ejemplo (paso 1)
+```
+
+### CHUNK 28 ###
+```markdown
+## Ejecución del ejemplo (paso 2)
+```
+
+### CHUNK 29 ###
+```markdown
+## Ejecución del ejemplo (paso 3)
+```
+
+### CHUNK 30 ###
+```markdown
+## Ejecución del ejemplo (paso 4)
+```
+
+### CHUNK 31 ###
+```markdown
+## Ejecución del ejemplo (paso 5)
+```
+
+### CHUNK 32 ###
+```markdown
+## Ejecución de Instrucciones [Stal05] (pp.14-17)  
+- · Ejemplo: Sumar los números de la posición 940 y 941 y dejar el resultado en la posición 941.
+- 1. El contador del programa (PC) tiene el valor 300 (la dirección de la primera instrucción). Se lleva a IR la instrucción y se incrementa PC en una unidad.
+- 2. Se ejecuta la instrucción. (Los primeros 4 bits -dígitos en hexadecimal- en el IR indican que el AC será cargado desde memoria; los siguientes 12 bits -tres dígitos en hexadecimal- indican la dirección, 940).
+- 3. La siguiente instrucción (5941) será captada desde la dirección 301. El PC se incrementa.
+- 4. El anterior contenido del AC y el contenido de la dirección 941 se suman y el resultado se almacena en el AC.
+- 5. La siguiente instrucción (2941) será captada desde la dirección 302. El PC se incrementa.
+- 6. El contenido del AC se aloja en la dirección 941.  
+Imagen obtenida de [Stal05] pp.16
+```
+
+### CHUNK 33 ###
+```markdown
+## 1.2 Capa Hardware  
+Tema 1. Sistema de Cómputo
+```
+
+### CHUNK 34 ###
+```markdown
+## Ejecución de Instrucciones [Stal05] (pp.34-37)  
+¿Qué sucede cuando un programa desea comunicarse con algún dispositivo de E/S?
+```
+
+### CHUNK 35 ###
+```markdown
+## → Comunicaciones de E/S  
+Hay tres técnicas para llevar a cabo las operaciones de E/S:  
+- • E/S Programada.
+- • E/S Dirigida por Interrupciones.
+- • Acceso Directo a Memoria (Direct Memory Access, DMA).  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+### CHUNK 36 ###
+```markdown
+## Técnicas de Comunicación de E/S  
+- · E/S Programada. El procesador encuentra una instrucción con la E/S. Se genera un mandato al módulo de E/S apropiado.  
+El procesador adopta un papel activo mientras se atiende la instrucción de E/S y comprueba periódicamente el estado de la ejecución del módulo de E/S hasta que ha finalizado la operación.  
+Problema : El procesador pasa mucho tiempo esperando la finalización del módulo de E/S y el sistema se degrada gravemente.  
+Solución : Mientras se atiende al módulo de E/S, se intenta que el procesador pueda continuar con trabajo útil.
+```
+
+### CHUNK 37 ###
+```markdown
+## 1.2 Capa Hardware
+```
+
+### CHUNK 38 ###
+```markdown
+## Técnicas de Comunicación de E/S
+```
+
+### CHUNK 39 ###
+```markdown
+## · E/S Dirigida por Interrupciones.  
+Evento que interrumpe el flujo normal de ejecución y que está producido por un elemento externo al procesador.  
+de EIS  
+No listo  
+Comprueba  
+1er Curso de Grado en Ingeniería Informática  
+CPU  
+del módulo de ElS  
+EIS  
+CPU  
+Condición  
+Es un evento asíncrono.  
+el estado de error  
+Listo  
+Problema : En transferencias considerables de memoria a dispositivo o viceversa conlleva un uso excesivo del procesador. Escribe la  
+CPU  
+palabra en memolia  
+Solución : Acceso Directo a Memoria. En un solo mandato se genera todo lo necesario para realizar la transferencia de información de memoria al dispositivo o viceversa.  
+Comprueba elestado  
+Listo  
+Lee una palabra del  
+módulo de ES  
+Escribe la memoria  
+palabra en  
+No  
+Sí  
+Siguiente instrucción  
+(Completado?  
+Sí  
+Siguiente instrucción  
+Imagen obtenida de [Stal05] pp.35  
+Condición de error  
+S:  
+(c) Ac  
+CPU  
+CPU  
+memoria  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+### CHUNK 40 ###
+```markdown
+## Técnicas de Comunicación de E/S
+```
+
+### CHUNK 41 ###
+```markdown
+## · Ciclo de instrucción con interrupciones.  
+Tema 1. Sistema de Cómputo  
+Tema 1. Sistema de Cómputo
+```
+
+### CHUNK 42 ###
+```markdown
+## Tratamiento de Interrupciones Vectorizadas
+```
+
+### CHUNK 43 ###
+```markdown
+## 1.2 Capa Hardware  
+Tratamiento de Interrupciones  
+Vectorizadas [Stal05] (pp. 23. Fig. 1.10)  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+Hardware  
+El controlador de disp. u otro sistema hardware  
+genera una interrupción  
+El procesador termina la ejecución de la  
+instrucción actual  
+El procesador indica el reconocimiento de la  
+interrupción  
+El procesador apila  
+PSW y el PC en la pila de control  
+El procesador carga un nuevo valor en el PC  
+basado en la interrupción  
+1er Curso de Grado en Ingeniería Informática  
+Sontware  
+Salva el resto de la información de estado  
+del proceso  
+Procesa la interrupción  
+Restaura la información de estado  
+del proceso  
+Restaura los valores  
+PSW y PC
+```
+
+### CHUNK 44 ###
+```markdown
+## Técnicas de Comunicación de E/S [Stal05] (pp.34-37)  
+- · Acceso Directo a Memoria (DMA, Direct Access Memory). Realizada por un módulo separado conectado en el bus del sistema o incluida en un módulo de E/S. Útil cuando el procesador desea leer o escribir un bloque de datos.  
+Imagen obtenida de [Stal05] pp.35  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+### CHUNK 45 ###
+```markdown
+## Excepciones [Stal05] (pp.34-37)  
+- · Definición de excepción: Evento inesperado generado por alguna condición que ocurre durante la ejecución de una instrucción (ejemplo, desbordamiento aritmético, dirección inválida, instrucción privilegiada, etc.). Es un evento síncrono.
+```
+
+### CHUNK 46 ###
+```markdown
+## Protección del procesador [Carr07] (pp.26)  
+Funcionamiento en Modo Dual. ¿Qué ocurre si un programa accede a la memoria donde se alojan los vectores de interrupciones? ¿Qué pasa si las modifica?  
+Solución: El procesador dispone de diferentes modos de ejecución de instrucciones:  
+- · Instrucciones privilegiadas (modo supervisor/kernel): Aquellas cuya ejecución puede interferir en la ejecución de un programa cualquiera o programa del SO (ejemplo, escribir en el puerto de un dispositivo).
+- · Instrucciones no privilegiadas (modo usuario): Aquellas cuya ejecución no presenta ningún problema de seguridad para el resto de programas (ejemplo, incrementar un contador).
+```
+
+### CHUNK 47 ###
+```markdown
+## 1.2 Capa Hardware
+```
+
+### CHUNK 48 ###
+```markdown
+## Protección de los Dispositivos de E/S [Carr07] (pp.27-28)  
+- · Los dispositivos de E/S son recursos que han de estar protegidos (ejemplo, los archivos, las impresoras, …)
+- · ¿Cómo se consigue? → Las instrucciones máquina  para acceso a los dispositivos de E/S no pueden ejecutarse en modo usuario: son privilegiadas.
+- · Cualquier acceso a los dispositivos desde un programa de usuario se hará mediante peticiones al SO.
+```
+
+### CHUNK 49 ###
+```markdown
+## Protección de Memoria [Carr07] (pp.26-27)  
+- · Cada programa en ejecución requiere de un espacio de memoria.
+- · Objetivo: Hay que proteger la zona de memoria asignada y la memoria en la que está el código del sistema operativo (tabla de vectores de interrupción, rutinas de tratamiento de cada interrupción).
+```
+
+### CHUNK 50 ###
+```markdown
+## 1.3 El Sistema Operativo  
+Tema 1. Sistema de Cómputo
+```
+
+### CHUNK 51 ###
+```markdown
+## El Sistema Operativo [Stal05] (cap.2, pp.53-120)  
+Un SO es un programa o conjunto de programas que controla la ejecución de los programas de aplicación y que actúa como interfaz entre el usuario de una computadora y el hardware de la misma.  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+### CHUNK 52 ###
+```markdown
+## El SO como interfaz Usuario/Computadora  
+Presenta al usuario una máquina abstracta más fácil de programar que el hardware subyacente:  
+- · Oculta la complejidad del hardware.
+- · Da tratamiento homogéneo a diferentes objetos de bajo nivel (archivos, procesos, dispositivos, etc.).  
+Una aplicación se puede expresar en un lenguaje de programación y la desarrolla un programador de aplicaciones.  
+Es más fácil programar las aplicaciones en lenguajes de alto nivel que en el lenguaje máquina que entiende el hardware.  
+## El SO como interfaz Usuario/Computadora  
+Un SO proporciona normalmente utilidades en las siguientes áreas:  
+- · Desarrollo de programas (editores de texto, compiladores, depuradores de programas).
+- · Ejecución de programas (cargador de programas y ejecución de éstos).
+- · Acceso a dispositivos de E/S (cada dispositivo requiere su propio conjunto de instrucciones).  
+## El SO como interfaz Usuario/Computadora  
+(cont.)  
+- · Acceso al sistema (En sistemas compartidos o públicos, el SO controla el acceso y uso de los recursos del sistema: Shell, Interfaz gráfico).
+- · Detección y respuesta a errores (tratamiento de errores a nivel software y hardware).
+- · Contabilidad (estadísticas de uso de los recursos y medida del rendimiento del sistema).
+```
+
+### CHUNK 53 ###
+```markdown
+## El SO como Administrador de Recursos  
+Un computador es un conjunto de recursos y el SO debe gestionarlos y para ello posee un mecanismo de control que cubre dos aspectos:  
+- ·Las funciones del SO actúan de la misma forma que el resto del software, es decir, son programas ejecutados por el procesador.
+- ·El SO frecuentemente cede el control y depende del procesador para volver a retomarlo.  
+## El SO como Administrador de Recursos
+```
+
+### CHUNK 54 ###
+```markdown
+## Por lo tanto:  
+- ·El SO dirige al procesador en el uso de los recursos del sistema y en la temporización de la ejecución de otros programas.
+- ·Una parte del código del SO se encuentra cargado en la memoria principal (kernel y, en ciertos momentos, otras partes del SO que se estén usando). El resto de la memoria está ocupada por programas y datos de usuario.
+- ·La asignación de la memoria principal la realizan conjuntamente el SO y el hardware de gestión de memoria del procesador.
+- ·El SO decide cuándo un programa en ejecución puede usar un dispositivo de E/S y también el acceso y uso de los ficheros. El procesador es también un recurso.
+```
+
+### CHUNK 55 ###
+```markdown
+## Características deseables en un Sistema Operativo  
+- · Comodidad en el uso.
+- · Eficiencia : Existen más programas que recursos. Hay que repartir los recursos entre los programas.
+- · Facilidad de Evolución : Un SO importante debe evolucionar en el tiempo por las siguientes razones:
+- · Actualizaciones del hardware y nuevos tipos de hardware.
+- · Mejorar y/o aportar nuevos servicios.
+- · Resolución de fallos.
+```
+
+### CHUNK 56 ###
+```markdown
+## 1.4 Utilidades del Sistema
+```
+
+### CHUNK 57 ###
+```markdown
+## Programas de Servicio del SO [Prie06] (Cap.13, sección 13.1, pp.518-520)  
+Se trata de un conjunto de programas de servicio que, en cierta medida, pueden considerarse como una ampliación del SO:  
+- • Compactación de discos.
+- • Compresión de datos.
+- • Gestión de comunicaciones.
+- • Navegadores de internet.
+- • Respaldo de seguridad.
+- • Recuperación de archivos eliminados.
+- • Antivirus.
+- • Salvapantallas.
+- • Interfaz gráfica.
+```
+
+### CHUNK 58 ###
+```markdown
+## 1.4 Utilidades del Sistema
+```
+
+### CHUNK 59 ###
+```markdown
+## Herramientas Generales  
+Su misión es facilitar la construcción de las aplicaciones de los usuarios, sea cual sea la naturaleza de éstas, tales como:  
+- • Editores de texto.
+- • Compiladores.
+- • Intérpretes.
+- • Enlazadores.
+- • Cargadores/Montadores.  
+• …
+```
+
+
+
+========================================
+## 📄 Archivo: [Teoría] Tema4-BD-EntidadRelacion.pdf
+========================================
+
+**Método de extracción usado:** Docling
+
+**Chunks Detectados:** 27
+
+### CHUNK 1 ###
+```markdown
+## 1. Modelo entidad-relación  
+Hasta 1970 las bases de datos utilizaban para almacenar la información, registros unidos a través de lo que se denominó ligas o apuntadores, que no era más que una dirección física que servía para identificar   dónde   podría   encontrarse   el   registro   en   el   disco.   Por   aquellas   fechas   E.F.   Cood (argumentaba   que   los   datos   deberían   relacionarse   mediante   interrelaciones   naturales,   lógicas, inherentes a los datos, más que mediante punteros físicos.  
+A continuación   se   pasa   a   explicar   ciertos   conceptos   relacionados   con   esta   nueva   forma   de representar la información en una base de datos.
+```
+
+### CHUNK 2 ###
+```markdown
+## Entidad:  
+Una entidad es un objeto concreto que existe, que puede distinguirse de otros y del cual se desea almacenar información en la base de datos. Se denomina 'tipo de entidad' a la estructura genérica, mientras que por 'entidad'se entiende cada una de las ocurrencias del tipo 'tipo de entidad' que existen en la base de datos.  
+Una entidad debe:  
+-  Tener existencia propia.
+-  Cada ocurrencia de un tipo entidad debe poder distinguirse de las demás ocurrencias.
+-  Todas las ocurrencias de un tipo de entidad deben de tener las mismas características.  
+Ejemplo: Alumno
+```
+
+### CHUNK 3 ###
+```markdown
+## Conjunto de Entidades:  
+Es un conjunto de entidades del mismo tipo. Los conjuntos de entidades no tienen porque ser siempre disjuntos.  
+Ejemplo: Supongamos que tenemos los empleados de un banco y los clientes. Puede darse el caso en el que un empleado sea a la vez, cliente del banco en el que trabaja.
+```
+
+### CHUNK 4 ###
+```markdown
+## Atributos  
+Un atributo es la unidad básica de información acerca de un tipo de entidad o de un tipo de relación.  
+Ejemplo: Atributos de la entidad alumno podrían ser los siguientes:  
+Nombre, Apellido1, Apellido2, D.N.I., Dirección, Teléfono.  
+La información de cada entidad se almacena físicamente en un registro y cada uno de los campos del registro se corresponde con un atributo de la entidad.
+```
+
+### CHUNK 5 ###
+```markdown
+## Dominio de un atributo  
+Conjunto de valores permitidos para un atributo, por ejemplo datos de tipo entero, real, lógico, fecha, rangos definidos por el usuario, etc.  
+Ejemplo: Supóngase que queremos definir el dominio de los días de la semana. Serían valores posibles los siguientes: Lunes, Martes, Miércoles, Jueves, Viernes, Sábado y Domingo.
+```
+
+### CHUNK 6 ###
+```markdown
+## Llave Primaria  
+De entre todos los atributos que definen a una entidad, se han de elegir uno o varios para  identificar de forma unívoca a la entidad. Este atributo recibe el nombre de superllave o superclave.   La superllave mínima elegida por el admimistrador de la base de datos se llama Llave primaria.
+```
+
+### CHUNK 7 ###
+```markdown
+## Relación  
+Las entidades por sí solas no describen la realidad de un sistema de información. No basta con identificar   objetos,  es   necesario   establecer   las   asociaciones   existentes   entre   ellos.   Para   ello   se introduce el concepto de relación. Se define la relación como una asociación o correspondencia que se establece entre entidades del mismo tipo.  
+Ejemplo: Libro relacionado con autor. La posible relación establecida entre las dos entidades sería 'escrito'.  
+El diseñador de la base de datos podrá utilizar verbos, preposiciones, o bien el nombre de las dos entidades separadas por un guión para representar la relación existente entre dos entidades.  
+La relación a la que nos hemos referido anteriormente podría expresarse a través de:  
+-  Escrito por
+-  De
+-  Libro-Autor
+```
+
+### CHUNK 8 ###
+```markdown
+## Grado de una relación  
+Es el número de tipos de entidad que participan en un tipo de relación concreta.
+```
+
+### CHUNK 9 ###
+```markdown
+## Tipo de correspondencia  
+El tipo de correspondencia expresa el número máximo de ocurrencias que le pueden corresponder a un tipo de entidad del otro tipo de entidad en la interrelación concreta que entre ellos se establezca. La correspondencia se etiqueta según los casos:  
+-  1:1 ( correspondencia de 1 a 1)
+-  1:N ( correspondencia de 1 a N o de 1 a muchos)
+-  N: M ( correspondencia de N a M o de muchos a muchos)
+```
+
+### CHUNK 10 ###
+```markdown
+## Correspondencia 1:1  
+Cuando a cada ocurrencia de una entidad le puede corresponder no más de una del otro tipo de entidad y a la inversa.  
+Ejemplo: Supóngase que se quiere representar en una sociedad en la que no que esté permitida la poligamia, la relación de matrimonio. Necesitaríamos dos entidades: mujer y hombre asociadas a través de la relación casada con. En este caso la relación establecida entre las entidades tiene una correspondencia 1:1, significando que una mujer puede estar casada con uno y sólo un hombre y un hombre a su vez, tan sólo puede estar casado con una y sólo una mujer.
+```
+
+### CHUNK 11 ###
+```markdown
+## Correspondencia 1: N  
+La correspondencia 1: N significa que a cada ocurrencia del primer tipo de entidad le pueden corresponder varias ocurrencias del segundo tipo de entidad y a ésta, a su vez, no más de una del primero.  
+Ejemplo: Se desea representar la información sobre las asignaturas que hay en un determinado curso, para ello se dispone de dos entidades: curso y asignatura. En este caso la relación establecida entre las dos entidades tendrá cardinalidad 1: N ya que dado un curso existirán distintas asignaturas para dicho curso.
+```
+
+### CHUNK 12 ###
+```markdown
+## Correspondencia N: M  
+El último tipo de correspondencia posible es N: M, significando lo siguiente: a cada ocurrencia del primer tipo de entidad le pueden corresponder varias ocurrencias del segundo tipo de entidad y viceversa.  
+Ejemplo: Se desea representar la información sobre las películas realizadas por los actores. En este caso la relación establecida entre las dos entidades (películas y actores) serán del grado N: M, ya que se supone que un determinado actor puede hacer varias películas y en una película intervienen varios actores.  
+Con el fin de afianzar el concepto de cardinalidad estudiemos una serie de ejemplos sencillos.
+```
+
+### CHUNK 13 ###
+```markdown
+## Ejemplos:  
+-  Un médico cura a un paciente 1:1
+-  Un médico cura a muchos pacientes 1: N  
+-  Una fabrica hace coches 1: N
+-  Los profesores enseñan a los alumnos N: M
+-  Juan está casado con María 1:1
+-  El arco iris tiene siete colores 1:N
+-  Los alumnos estudian las asignaturas N: M
+```
+
+### CHUNK 14 ###
+```markdown
+## Atributos asociados a una relación  
+Hasta este momento se ha considerado al atributo como un ítem asociado a una entidad, pero es posible   que   en   algunos   casos   particulares   la   información   deseada   no   se   pueda   representar asignándole atributos a las entidades entre las que hay establecida alguna relación. En estos casos se opta por asociar a la relación el atributo. Un ejemplo podría ser la representación de la vida laboral de los trabajadores de una empresa.  
+Supongamos que se dispone de dos entidades, la entidad trabajador y la entidad empresa. Para representar   la   información   deseada   se   utiliza   la   fecha   de   alta   y   de   baja   de   cada   uno   de   los trabajadores en la citada empresa. Por lo que no sería válido asignar la fecha de alta y de baja a ninguna de las entidades por separado pues la información que deseamos representar es la siguiente: 'dado un determinado trabajador y una empresa saber su fecha de alta y baja en la mencionada empresa'. La forma de solucionarlo es asignar esta información a la relación. De este modo, dado un trabajador y una empresa se podrá conocer tanto la fecha de incorporación como la fecha de cese de ese trabajador en esa empresa.
+```
+
+### CHUNK 15 ###
+```markdown
+## 2. Diagrama entidad-relación  
+El modelo entidad-relación aporta una herramienta de modelado para representar las entidades, relaciones y atributos: los diagramas Entidad-Relación. Mediante éstos, el esquema conceptual abstracto puede ser mostrado gráficamente y mantener una independencia conceptual con respecto a la implementación propiamente dicha. Este es uno de los motivos por el que este modelo es el más extendido.  
+Existen cuatro componentes principales en el diagrama entidad-relación:  
+-  Rectángulos etiquetados: utilizados para representar los conjuntos de entidades.
+-  Elipses etiquetadas: utilizadas para representar cada uno de los atributos que identifican a las entidades.
+-  Rombos etiquetados: utilizados para representar las relaciones que unen a las  
+entidades.  
+-  Líneas: utilizadas para unir las entidades a las relaciones y viceversa.  
+Queda por tanto,   a   través   de   estas   componentes,   representada   toda   la   información   necesaria (entidades, relaciones y atributos).  
+En la pregunta anterior se explicaba que a partir del conjunto de atributos que definen a una entidad el diseñador de la base de datos debe elegir uno que identificará de forma unívoca a esa entidad, es decir, debe elegir una llave. Existen varias formas de representar en el diagrama entidad-relación el atributo clave. Algunos autores se decantan por indicarlo a través de dos elipses concéntricas mientras que otros lo especifican subrayando el atributo. Nosotros elegiremos esta última opción. Otro dato que debe quedar plasmado en el diagrama entidad-relación es la cardinalidad de la relación.   Siendo   posible   representar   los   tres   tipos   de   cardinalidad   comentados   anteriormente. También para representar esta característica existen diferentes nomenclaturas, a continuación se explican dos de ellas:  
+-  Se utilizará una línea dirigida es decir, una flecha,   para representar la cardinalidad N y unalínea no dirigida para representar la cardinalidad varios.
+-  O bien, se puede hacer uso de los valores 1:1, 1:N, N:1, N: M asociados a la  relación.  
+Con el fin de darle una uniformidad al texto elegiremos una de las dos opciones, en este caso se ha optado por la segunda posibilidad.  
+A continuación se va a pasar a representar a través de unos ejemplos los casos posibles a los que nos podemos enfrentar:  
+Diagrama entidad-relación con cardinalidad 1:1  
+A través de este diagrama se representa la compra de un coche por un determinado cliente.  
+Diagrama entidad-relación con cardinalidad N:1  
+El diagrama entidad-relación de la figura 6.8 correspondería a la representación de la compra de un coche por varias personas.  
+Si deseáramos representar la posibilidad de que varios clientes puedan comprar varios coches, la cardinalidad establecida en la relación sería de N: M siendo el diagrama entidad-relación el de la figura 6.9:  
+Diagrama entidad-relación con cardinalidad N: M  
+La   última   opción   posible   sería   que   un   determinado   cliente   pudiera   comprar   varios   coches información representada en el diagrama de la figura 6.10:  
+Diagrama entidad-relación con cardinalidad 1: N
+```
+
+### CHUNK 16 ###
+```markdown
+## 3. Transformación del diagrama entidad-relación a tablas
+```
+
+### CHUNK 17 ###
+```markdown
+## 3.1. Transformación de entidades  
+Cada 'tipo de entidad' se convierte en el modelo relacional en una relación o tabla. El nombre que le demos a la misma será el del tipo de entidad del cual deriva.
+```
+
+### CHUNK 18 ###
+```markdown
+## 3.2. Transformación de atributos de entidades  
+Cada atributo de una entidad se transforma en una columna de la relación. En el modelo entidadrelación distinguiremos entre AIP (Atributo Identificador Principal) o llave primaria, y el resto de atributos.  
+-  Cada llave primaria pasará a ser la clave de la tabla. Éstas evidentemente, no podrán tomar valores nulos.
+-  El resto de atributos pasan a ser columnas de la tabla. En principio y salvo que se indique lo contrario, podrán tomar valores nulos. En el caso de obligatoriedad de estos atributos, lo dejaremos indicado como requerido.
+```
+
+### CHUNK 19 ###
+```markdown
+## 3.3. Transformación de relaciones  
+El   hecho   de   permitir   diferentes   cardinalidades   en   una   relación   hace   también   diferente   la transformación de las relaciones a tablas en función del grado que se establezca en la relación. Existiendo los siguientes casos:
+```
+
+### CHUNK 20 ###
+```markdown
+## 3.3.1. Transformación de relaciones 1:1  
+Existen dos posibilidades:  
+-  Se creará una tabla que contendrá los atributos de las dos entidades. Deberá seleccionarse la llave primaria de una de las entidades como clave de la tabla. Normalmente elegiremos la clave de la entidad más dominante.
+-  Se creará una tabla para cada una de las entidades, una de estas tablas deberá contener entre sus atributos la llave primaria de la otra entidad.
+```
+
+### CHUNK 21 ###
+```markdown
+## 3.3.2. Transformación de relaciones 1: n  
+Cuando la cardinalidad de la relación es de 1: N la transformación a tablas se realiza según la siguiente regla:  
+La entidad de las N ocurrencias hereda la clave de la entidad de la ocurrencia única.
+```
+
+### CHUNK 22 ###
+```markdown
+## 3.3.3. Transformación de relaciones n: m  
+Este tipo de asociaciones requieren una tabla de la interrelación, cuya clave será, al menos, la concatenación de las claves primarias de las entidades que asocia. Si la relación además contuviera atributos  propios, formarían obviamente, parte de la tabla que originan.
+```
+
+### CHUNK 23 ###
+```markdown
+## Ejemplo:  
+En el año 2004 las dependencias utilizadas por los empleados del departamento de investigación y desarrollo de nuevos productos de una empresa del sector alimenticio serán trasladadas a un nuevo polígono industrial. Se desea recabar información de forma que quede especificado el despacho en el que se ubicará cada empleado así como los proyectos de investigación en los que trabajan cada uno de ellos.  
+Se dispone de la siguiente información:  
+-  De cada empleado se conoce su NIF, NSS, su nombre, apellidos, dirección, provincia, fecha de nacimiento, sexo, cargo que ocupa en la actualidad.
+-  Cada proyecto de investigación tiene un código identificador y un nombre título del mismo, la cuantía asignada, la fecha de inicio y de finalización del mismo. Si cuenta con subvención pública adicional un breve resumen del mismo y el NIF del investigador principal o responsable.
+-  Cada despacho tiene un número asignado, un número de teléfono, el edificio al que pertenece (Ej: Productos para farmacia) así como un código que identifica ese edificio (Ej: PF).  
+Para la realización del ejercicio se han de tener en cuenta las siguientes restricciones:  
+-  Cada empleado tiene asignado un único despacho.
+-  En cada despacho puede haber varios empleados.
+-  En un proyecto de investigación trabajan varios empleados permitiéndose que una misma persona trabaje en más de un proyecto de investigación.
+-  Cada proyecto tiene un único investigador principal.  
+Toda base de datos debe reflejar aquella parcela del mundo real que en un momento nos interese modelizar. En este caso se pretende crear una base de datos en la que se guarde información relativa a los empleados que trabajan en ciertas dependencias de la empresa así como en los proyectos de investigación en los que están involucrados.  
+Los pasos que deben seguirse para resolver cualquier base de datos son los siguientes:  
+- 1.- Abstraer aquella información que sea relevante para el problema.
+- 2.- Definidas las entidades y relaciones que participarán en la base de datos se deberán elegir los atributos llave de cada una de las entidades.
+- 3.- Atendiendo a las restricciones impuestas en el ejercicio habrá que indicar las cardinalidades para cada una de las relaciones participantes.
+```
+
+### CHUNK 24 ###
+```markdown
+## Resolución del ejercicio  
+La información descrita queda representada a través del diagrama entidad-relación de la figura 6.11. (Pertenece, Participantes-Proyectos) que servirán de nexo de unión entre las entidades.  
+En él están especificadas tres tipos de entidades (Empleado, Despacho, Proyecto) y dos relaciones Cada una de las entidades está identificada por una serie de atributos, de ellos se ha elegido la llave candidata, quedando representada en el diagrama a través del atributo subrayado.
+```
+
+### CHUNK 25 ###
+```markdown
+## Entidad Empleado  
+Habría dos posibles llaves candidatas: N.I.F. y NSS para representar a la entidad empleado.  
+En este caso se ha optado por el N.I.F. Los dos atributos podrían ser llaves primarias ya que son números que servirán para identificar al empleado. Como se explicó anteriormente, la elección de dicha clave dependerá del diseñador de la base de datos, en este caso, se ha optado por la primera opción.
+```
+
+### CHUNK 26 ###
+```markdown
+## Entidad Despacho  
+Para identificar esta entidad se ha elegido como llave primaria, el número de despacho al ser éste un atributo único.
+```
+
+### CHUNK 27 ###
+```markdown
+## Entidad Proyecto  
+La llave primaria de esta entidad será el código asignado al proyecto.  
+Seleccionados los atributos llaves para cada una de las entidades el siguiente paso es establecer, de acuerdo con las restricciones establecidas en el problema, las cardinalidades de las relaciones que asocian las entidades.  
+Figura 6.11. Diagrama entidad-relación  
+Llegado a este punto, el siguiente paso para la resolución del ejercicio consistirá en transformar el diagrama entidad-relación a las tablas correspondientes.  
+Como se observa, a la relación Participa se le ha asociado la cardinalidad  M: N debido a que en las especificaciones del problema se decía que un determinado empleado podía participar en varios proyectos y en un determinado proyecto podrían trabajar varios empleados.  
+En cuanto a la relación establecida entre las entidades Empleado y Despacho la cardinalidad que se le asocia es N:1 ya que al igual que en el caso anterior, en el ejercicio se hace la puntualización siguiente: 'un determinado empleado tiene asignado un despacho y en un despacho pueden trabajar varios empleados'.  
+Siguiendo las reglas establecidas para la transformación del diagrama entidad-relación a tablas obtendríamos las tablas siguientes:  
+-  Empleado ( N.I.F.-Empleado, NºDespacho, NSS, Nombre, Apellidos, Dirección, Cargo, Sexo, FechaNa, Provincia)
+-  Despacho ( NºDespacho , Ubicación, Teléfono, Edificio)
+-  Proyecto (Cod-Proyecto, Título, Cuantía, Fecha Inic, Fecha Fin, Subvención, N.I.F. Resp)
+-  Participantes-Proyectos (N.I.F.-Empleado , Cod-Proyecto)  
+La tabla Empleado procede de la transformación de la relación establecida entre las entidades Empleado y Despacho. Al tener dicha relación una cardinalidad de N: 1 la tabla Empleado estará formada por los atributos de la entidad de la cual deriva más el atributo llave de la entidad que tiene cardinalidad mínima, que en este caso es NºDespacho.  
+De   igual   modo   surge   la   tabla   Participantes-Proyectos,   dicha   tabla   es   el   resultado   de   la transformación de la relación existente entre Empleado y Proyectos relación que tiene cardinal N: M. En este caso la tabla está formada por la concatenación de las llaves de las entidades que asocia.
+```
+
+
+
+========================================
+## 📄 Archivo: [Teoría] Transp.Tema2.Introd.Sistemas.Operativos-PEv2.pdf
+========================================
+
+**Método de extracción usado:** Docling
+
+**Chunks Detectados:** 77
+
+### CHUNK 1 ###
+```markdown
+## Tema 2. Introducción a los Sistemas Operativos
+```
+
+### CHUNK 2 ###
+```markdown
+## 2.1 Componentes de un Sistema Operativo (SO) multiprogramado.  
+- 2.1.1 Sistemas multiprogramados y de tiempo compartido.
+- 2.1.2 Concepto de proceso.
+- 2.1.3 Modelo de cinco estados de los procesos.
+```
+
+### CHUNK 3 ###
+```markdown
+## 2.2 Descripción y control de procesos.  
+- 2.2.1 Bloque de control de proceso (PCB).
+- 2.2.2 Control de procesos.
+- 2.3 Hebras (hilos).
+- 2.4 Gestión básica de memoria.
+- 2.4.1 Paginación
+- 2.4.2 Segmentación
+```
+
+### CHUNK 4 ###
+```markdown
+## Bibliografía básica  
+[Stal05]  
+W. Stallings, Sistemas Operativos, Aspectos Internos y Principios de Diseño (5ª Edición) . Pearson Education, 2005  
+[Carr07]  
+- J. Carretero, F. García, P. de Miguel, F. Pérez, Sistemas Operativos (2ª Edición) , McGraw-Hill, 2007  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+14-Oct-2016  
+- · Conocer los elementos necesarios para implementar la multiprogramación en un sistema operativo (SO).
+- · Conocer el concepto de proceso y el modelo de cinco estados de los procesos.
+- · Conocer el uso que realiza el SO del apoyo hardware e integrarlo en el modelo de cinco estados.
+- · Conocer el concepto de hebra (hilo), su modelo de cinco estados y su utilidad.
+- · Conocer la gestión básica de memoria que realiza el SO.
+```
+
+### CHUNK 5 ###
+```markdown
+## 2.1 Componentes de un SO multiprogramado  
+Tema 2. Introducción a los Sistemas Operativos
+```
+
+### CHUNK 6 ###
+```markdown
+## 2.1.1 Concepto de multiprogramación [Stall05] (pp. 58-67)
+```
+
+### CHUNK 7 ###
+```markdown
+## Procesamiento en Serie:  
+Manejadores de dispositivo  
+- · El programador interactúa directamente con la máquina, no existe S.O.
+- · Problemas: Baja utilización del tiempo de CPU, Tiempo de planificación alto.
+```
+
+### CHUNK 8 ###
+```markdown
+## Sistemas por lotes (Sistemas Batch):  
+- · Agrupa trabajos similares: reduce el tiempo de planificación.
+- · Trabajo = (programa + datos + ordenes de control para el sistema)
+- · Falta de interacción entre el usuario y el computador mientras se ejecuta su trabajo.
+- · Principal problema: CPU ociosa durante las E/S. Solución: Spooling: Superpone la E/S de un trabajo al cómputo de otros.  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+Cargador  
+Secuenciador de trabajos  
+Intérprete de tarjetas de control  
+Área para el programa de usuario  
+- · Control inicial en el Monitor
+- · Transferencia del control al trabajo
+- · Al finalizar el trabajo, el control vuelve al monitor  
+Monitor residente
+```
+
+### CHUNK 9 ###
+```markdown
+## 2.1 Componentes de un SO multiprogramado
+```
+
+### CHUNK 10 ###
+```markdown
+## 2.1.1 Concepto de multiprogramación  
+Program A  
+Run  
+Wait  
+Time  
+Run  
+Wait Run  
+Wait  
+Program A  
+Program B  
+Program €  
+Combined  
+Run  
+Run  
+A  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+B  
+Run  
+(a) Uniprogramming  
+Wait  
+Run  
+Wait  
+Run  
+Run  
+Wait  
+Wait  
+Run  
+A  
+Run  
+Run  
+B  
+Time  
+- (c Multiprogramming with three programs  
+Tema 2. Introducción a los Sistemas Operativos  
+Wait  
+Wait  
+Wait  
+Run  
+Run  
+Wait  
+Wait
+```
+
+### CHUNK 11 ###
+```markdown
+## 2.1 Componentes de un SO multiprogramado
+```
+
+### CHUNK 12 ###
+```markdown
+## 2.1.1 Concepto de multiprogramación  
+|                      | Trabajo 1          | Trabajo 2            | Trabajo 3            |
+|----------------------|--------------------|----------------------|----------------------|
+| Tipo de trabajo      | Computación pesada | Gran cantidad de E/S | Gran cantidad de E/S |
+| Duración             | 5 minutos          | 15 minutos           | 10 minutos           |
+| Memoria requerida    | 50 MB              | 100 MB               | 75 MB                |
+| ¿Necesita disco?     | NO                 | NO                   | SI                   |
+| ¿Necesita terminal?  | NO                 | SI                   | NO                   |
+| ¿Necesita impresora? | NO                 | NO                   | SI                   |  
+- · Trabajo1 utiliza mucho la CPU, Trabajo2 y Trabajo3 utilizan mucho los periféricos de E/S.  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+### CHUNK 13 ###
+```markdown
+## 2.1 Componentes de un SO multiprogramado  
+Tema 2. Introducción a los Sistemas Operativos  
+## 2.1 Componentes de un SO multiprogramado  
+Tema 2. Introducción a los Sistemas Operativos
+```
+
+### CHUNK 14 ###
+```markdown
+## Ejemplo de multiprogramación  
+| Monoprogramación   |                  | Multiprogramación         |
+|--------------------|------------------|---------------------------|
+| 20%                | 40%              | Uso del procesador        |
+| 33%                | 67%              | Uso de memoria            |
+| 33%                | 67%              | Uso de disco              |
+| 33%                | 67%              | Uso de impresora          |
+| 30 minutos         | 15 minutos       | Tiempo transcurrido       |
+| 6 trabajos/hora    | 12 trabajos/hora | Productividad             |
+| 18 minutos         | 10 minutos       | Tiempo de respuesta medio |  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+### CHUNK 15 ###
+```markdown
+## 2.1 Componentes de un SO multiprogramado  
+Tema 2. Introducción a los Sistemas Operativos
+```
+
+### CHUNK 16 ###
+```markdown
+## Definiciones  
+- S.O. multiprogramado: S.O. que permite que se ejecute más de un proceso simutáneamente y cuyos datos e instrucciones se encuentran en memoria principal.
+- S.O. monousuario: Proporciona servicios a un único usuario.
+- S.O. multiusuario: Proporciona servicios a varios usuarios simultáneamente.
+- S.O. monoprocesador: S.O. que gestiona un sistema de computación de un único procesador.
+- S.O. multiprocesador: S.O. que gestiona un sistema de computación de varios procesadores.
+- S.O. de tiempo compartido: S.O. multiprogramado donde se realiza un reparto de tiempo del procesador en pequeños trozos de tal forma que todos los procesos pueden avanzar adecuadamente. Especialmente diseñado para sistemas interactivos.  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+### CHUNK 17 ###
+```markdown
+## 2.1 Componentes de un SO multiprogramado  
+Tema 2. Introducción a los Sistemas Operativos  
+Algunas cuestiones interesantes …  
+-  ¿Un S.O. multiprogramado es un S.O. de tiempo compartido? ¿y al contrario?
+-  ¿Un S.O. de tiempo compartido tiene que ser multiusuario? ¿y monousuario?
+-  ¿Un S.O. monoprocesador tiene que ser monousuario? ¿y multiusuario?
+-  ¿Un S.O. multiprocesador tiene que ser monousuario? ¿y multiusuario?  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+## 2.1 Componentes de un SO multiprogramado  
+- 2.1.2 Concepto de proceso [Stal05] (pp. 68-71)
+- · Un programa en ejecución.
+- · Una instancia de un programa ejecutándose en un ordenador.
+- · La entidad que se puede asignar o ejecutar en un procesador.
+- · Una unidad de actividad caracterizada por un solo flujo de ejecución , un estado actual y un conjunto de recursos del sistema asociados.
+- · Un proceso está formado por:
+-  Un programa ejecutable .
+-  Datos que necesita el SO para ejecutar el programa .  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+Tema 2. Introducción a los Sistemas Operativos  
+## 2.1 Componentes de un SO multiprogramado  
+Tema 2. Introducción a los Sistemas Operativos  
+Bloque de Control de Proceso (PCB, Process Control Block) [Stal05] (pp. 108-114)  
+Identificador  
+Estado  
+Prioridad  
+Contador de programa  
+Punteros de memoria  
+Datos de contexto  
+Información de estado de E/S  
+Información de auditoría  
+·  
+·  
+·  
+- · Identificador de proceso , (PID, del inglés Process IDentificator).
+- · Contexto de ejecución : Contenido de los registros del procesador.
+- · Memoria donde reside el programa y sus datos.
+- · Información relacionada con recursos del sistema.
+- · Estado: En que situación se encuentra el proceso en cada momento (modelo de estados).
+- · Otra información.  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+## 2.1 Componentes de un SO multiprogramado  
+Tema 2. Introducción a los Sistemas Operativos
+```
+
+### CHUNK 18 ###
+```markdown
+## Implementación de Procesos Típica [Stal05] (Fig. 2.8, p. 70)  
+- · Esta implementación permite ver al proceso como una estructura de datos .
+- · El estado completo del proceso en un instante dado se almacena en su PCB ( Context en la figura).
+- · Esta estructura permite el desarrollo de técnicas potentes que aseguren la coordinación y la cooperación entre los procesos .  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+### CHUNK 19 ###
+```markdown
+## 2.1 Componentes de un SO multiprogramado  
+Tema 2. Introducción a los Sistemas Operativos
+```
+
+### CHUNK 20 ###
+```markdown
+## Concepto de traza de ejecución  
+- · Una traza de ejecución es un listado de la secuencia de las instrucciones de un programa que realiza el procesador para un proceso.
+- · Desde el punto de vista del procesador se entremezclan las trazas de ejecución de los procesos y las trazas del código del SO.  
+¿En qué situaciones se pueden entremezclar las trazas de los procesos y las trazas del código del SO?  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+### CHUNK 21 ###
+```markdown
+## 2.1 Componentes de un SO multiprogramado
+```
+
+### CHUNK 22 ###
+```markdown
+## Ejemplo de traza de ejecución  
+Main Memory  
+Process B  
+Process €  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+Tema 2. Introducción a los Sistemas Operativos  
+Dispatcher: Módulo del SO que se encarga de realizar el intercambio de procesos en el procesador.
+```
+
+### CHUNK 23 ###
+```markdown
+## 2.1 Componentes de un SO multiprogramado
+```
+
+### CHUNK 24 ###
+```markdown
+## Ejemplo de traza de ejecución  
+|   5000 | 8000   |   12000 |
+|--------|--------|---------|
+|   5001 | 8001   |   12001 |
+|   5002 | 8002   |   12002 |
+|   5003 | 8003   |   12003 |
+|   5004 |        |   12004 |
+|   5005 |        |   12005 |
+|   5006 |        |   12006 |
+|   5007 |        |   12007 |
+|   5008 |        |   12008 |
+|   5009 |        |   12009 |
+|   5010 |        |   12010 |
+|   5011 |        |   12011 |  
+(a Trace of Process A (b) Trace of Process B (c Trace of Process  
+5000 = Starting address of program of Process A  
+12000 = Starting address of program of Process €  
+8000 = Starting address of program of Process B
+```
+
+### CHUNK 25 ###
+```markdown
+## 100 = Starting address of dispatcher program  
+Shaded areas indicate execution of dispatcher process:  
+first and third colunns count instruction cycles:  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+being  
+Timeout  
+IO Request
+```
+
+### CHUNK 26 ###
+```markdown
+## Fundamentos del Software  
+Tema 2. Introducción a los Sistemas Operativos  
+Timeout  
+Timeout  
+Timeout
+```
+
+### CHUNK 27 ###
+```markdown
+## 2.1 Componentes de un SO multiprogramado  
+Tema 2. Introducción a los Sistemas Operativos  
+Llamadas al Sistema [Carr07] (pp. 114-115)  
+- · Es la forma en la que se comunican los programas de usuario con el SO en tiempo de ejecución.
+- · Son peticiones de servicio que se hace el proceso al SO.
+- · Ejemplos de llamadas al sistema:
+-  Solicitudes de E/S.
+-  Gestión de procesos.
+-  Gestión de memoria.
+- · Se implementan a través de una trampa ( trap ) o 'interrupción software'.  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+## 2.1 Componentes de un SO multiprogramado  
+Tema 2. Introducción a los Sistemas Operativos  
+Pasos realizados durante una llamada al Sistema  
+## 2.1 Componentes de un SO multiprogramado  
+Tema 2. Introducción a los Sistemas Operativos  
+- 2.1.3 Modelo de cinco estados de los procesos [Stal05] (pp. 114-120)
+- · El modelo de cinco estados trata de representar las actividades que el SO lleva a cabo sobre los procesos:
+-  Creación.
+-  Terminación.
+-  Multiprogramación.
+- · Para ello hace uso de cinco estados:  
+ Nuevo  
+ Preparado (listo para ejecutarse)  
+ Ejecutándose  
+ Bloqueado  
+ Finalizado  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+## 2.1 Componentes de un SO multiprogramado  
+Tema 2. Introducción a los Sistemas Operativos
+```
+
+### CHUNK 28 ###
+```markdown
+## 2.1.3 Modelo de cinco estados de los procesos
+```
+
+### CHUNK 29 ###
+```markdown
+## 2.1 Componentes de un SO multiprogramado  
+Tema 2. Introducción a los Sistemas Operativos
+```
+
+### CHUNK 30 ###
+```markdown
+## Transiciones entre estados  
+- · Nuevo → Preparado . El PCB está creado y el programa está disponible en memoria.
+- · Ejecutándose → Finalizado . El proceso finaliza normalmente o es abortado por el SO a causa de un error no recuperable.
+- · Preparado → Ejecutándose . El SO (planificador CPU) selecciona un proceso para que se ejecute en el procesador.
+- · Ejecutándose → Bloqueado . El proceso solicita algo al SO por lo que debe esperar.
+- · Ejecutándose → Preparado . Un proceso ha alcanzado el máximo tiempo de ejecución ininterrumpida.
+- · Bloqueado → Preparado . Se produce el evento por el cual el SO bloqueó al proceso.  
+Preparado (o Bloqueado) → Finalizado . Terminación de un proceso por parte de otro (en la mayoría de los SO modernos, no se permite).  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+### CHUNK 31 ###
+```markdown
+## 2.2 Descripción y control de procesos
+```
+
+### CHUNK 32 ###
+```markdown
+## 2.2.1  Descripción de procesos: PCB [Carr07] (p. 87)  
+- · Identificadores : Del proceso, del padre del proceso, del usuario, …
+- · Contexto de ejecución : valores de los registros PC PSW SP , , , …
+- · Información para control del proceso :
+- · Información de estado y planificación.
+- · Descripción de las regiones de memoria asignadas .
+- · Recursos asignados.
+- · Enlaces a colas de procesos.
+- · Comunicación entre procesos.  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+### CHUNK 33 ###
+```markdown
+## 2.2 Descripción y control de procesos  
+Tema 2. Introducción a los Sistemas Operativos  
+Creación de un proceso: Inicialización de PCB [Stal05] (p. 137)  
+- · Asignar identificador único al proceso.
+- · Asignar un nuevo PCB.
+- · Asignar memoria para el programa asociado.
+- · Inicializar PCB :
+- · PC : Dirección inicial de comienzo del programa.
+- · SP : Dirección de la pila de sistema.
+- · Memoria donde reside el programa.
+- · El resto de campos se inicializan a valores por omisión.  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+- 2.2 Descripción y control de procesos
+- 2.2.2  Control de procesos: modos de ejecución del procesador  [Carr07] (p. 4)
+- · Modo usuario . El programa (de usuario) que se ejecuta en este modo sólo se tiene acceso a:
+-  Un subconjunto de los registros del procesador.
+-  Un subconjunto del repertorio de instrucciones máquina.
+-  Un área de la memoria.
+- · Modo núcleo (kernel o supervisor o sistema). El programa (SO) que se ejecuta en este modo tiene acceso a todos los recursos de la máquina, tanto software como hardware.  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+## 2.2 Descripción y control de procesos  
+Tema 2. Introducción a los Sistemas Operativos
+```
+
+### CHUNK 34 ###
+```markdown
+## ¿Cómo utiliza el SO el modo de ejecución?  
+- · El modo de ejecución (incluido en PSW) cambia a modo kernel, automáticamente por hardware, cuando se produce:
+-  Una interrupción.
+-  Una excepción.
+-  Una llamada al sistema.
+- · Seguidamente se ejecuta la rutina del SO correspondiente al evento producido.
+- · Finalmente, cuando termina la rutina, el hardware restaura automáticamente el modo de ejecución a modo usuario.  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+### CHUNK 35 ###
+```markdown
+## 2.2 Descripción y control de procesos  
+Tema 2. Introducción a los Sistemas Operativos  
+Control de procesos: operación de cambio de modo [Stal05] (pp. 139-140)  
+- · Se ejecuta una rutina del SO en el contexto del proceso que se encuentra en estado ' Ejecutándose '.
+- · ¿Cuándo puede realizarse? Siempre que el SO pueda ejecutarse, luego solamente como resultado de:
+-  Una interrupción.
+-  Una excepción.
+-  Una llamada al sistema.  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+## 2.2 Descripción y control de procesos  
+Tema 2. Introducción a los Sistemas Operativos
+```
+
+### CHUNK 36 ###
+```markdown
+## Pasos en la operación de cambio de modo  
+- 1) El hardware automáticamente salva como mínimo el PC y PSW y cambia el bit de modo a modo kernel .
+- 2) Determinar automáticamente la rutina del SO que debe ejecutarse y cargar el PC con su dirección de comienzo.
+- 3) Ejecutar la rutina . Posiblemente la rutina comience salvando el resto de registros del procesador y termine restaurando en el procesador la información de registros previamente salvada .
+- 4) Volver de la rutina del SO al proceso que se estaba ejecutando. El hardware automáticamente restaura en el procesador la información del PC y PSW previamente salvada .  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+### CHUNK 37 ###
+```markdown
+## 2.2 Descripción y control de procesos  
+Control de procesos: operación de cambio de contexto (cambio de proceso) [Stal05] (pp. 138-139)  
+- · Un proceso en estado ' Ejecutándose ' cambia a otro estado y un proceso en estado ' Preparado ' pasa a estado ' Ejecutándose '.
+- · ¿Cuándo puede realizarse? Cuando el SO pueda ejecutarse y decida llevarlo a cabo. Luego solamente como resultado de:
+-  Una interrupción.
+-  Una excepción.
+-  Una llamada al sistema.  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+- 2.2 Descripción y control de procesos  
+Pasos en una operación de cambio de contexto (Dispatcher)  
+- 1) Salvar los registros del procesador en el PCB del proceso que actualmente está en estado ' Ejecutándose '.
+- 2) Actualizar el campo estado del proceso al nuevo estado al que pasa e insertar el PCB en la cola correspondiente.
+- 3) S eleccionar un nuevo proceso del conjunto de los que se encuentran en estado ' Preparado ' ( Scheduler o Planificador de CPU).
+- 4) Actualizar el estado del proceso seleccionado a ' Ejecutándose ' y sacarlo de la cola de preparados.
+- 5) Cargar los registros del procesador con la información de los registros almacenada en el PCB del proceso seleccionado.
+- ¿Si se produce una interrupción, una excepción o una llamada al sistema, se produce necesariamente un cambio de modo ? ¿y un cambio de contexto ?  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+### CHUNK 38 ###
+```markdown
+## 2.3 Hebras (hilos)
+```
+
+### CHUNK 39 ###
+```markdown
+## 2.3 Concepto de Hebra [Stal05] (pp. 158-161)  
+- · El concepto de proceso ( tarea ) tiene dos características diferenciadas que permiten al SO:
+- · Controlar la asignación de los recursos necesarios para la ejecución de programas.
+- · La ejecución del programa asociado al proceso de forma intercalada con otros programas.
+- · El concepto de proceso ( tarea ) y hebras asociadas se basa en separar estas dos características:
+- · La tarea se encarga de soportar todos los recursos necesarios (incluida la memoria ).
+- · Cada una de las hebras permite la ejecución del programa de forma ' independiente ' del resto de hebras .  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+### CHUNK 40 ###
+```markdown
+## 2.3 Hebras (hilos)
+```
+
+### CHUNK 41 ###
+```markdown
+## Concepto de Hebra  
+Figure 4.2 Single Threaded and Multithreaded Process Models  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+Tema 2. Introducción a los Sistemas Operativos
+```
+
+### CHUNK 42 ###
+```markdown
+## 2.3 Hebras (hilos)
+```
+
+### CHUNK 43 ###
+```markdown
+## Modelo de cinco estados para hebras  
+- · Las hebras debido a su característica de ejecución de programas presentan cinco estados análogos al modelo de estados para procesos:
+- · Ejecutándose
+- · Preparado (listo para ejecutarse)
+- · Bloqueado
+- · Nuevo
+- · Finalizado  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+2.3 Hebras (hilos)  
+Ventajas de las hebras [Stal05] (p. 163)  
+I/O  
+Request request  
+complete  
+Time quantum expires  
+Thread  
+A (Process 1)  
+Thread B (Process 1)  
+Thread € (Process 2)  
+Blocked  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+Process created  
+Ready  
+Tema 2. Introducción a los Sistemas Operativos  
+Time quantum expires  
+Running
+```
+
+### CHUNK 44 ###
+```markdown
+## 2.3 Hebras (hilos)
+```
+
+### CHUNK 45 ###
+```markdown
+## Ventajas de las hebras [Stal05] (pp. 160-165)  
+- · Menor tiempo de creación de una hebra en un proceso ya creado que la creación de un nuevo proceso.
+- · Menor tiempo de finalización de una hebra que de un proceso.
+- · Menor tiempo de cambio de contexto ( hebra ) entre hebras pertenecientes al mismo proceso.
+- · Facilitan la comunicación entre hebras pertenecientes al mismo proceso.
+- Single-Threaded Multithreaded · Permiten aprovechar las técnicas de programación concurrente y el multiprocesamiento simétrico .  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+### CHUNK 46 ###
+```markdown
+## 2.4 Gestión básica de memoria  
+- 2.4 Carga absoluta y reubicación [Stall05] (pp. 308-309, 331-337)
+- · Carga absoluta. Asignar direcciones físicas (direcciones de memoria principal) al programa en tiempo de compilación. El programa no es reubicable.
+- · Reubicación . Capacidad de cargar y ejecutar un programa en un lugar arbitrario de la memoria.  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+## 2.4 Gestión básica de memoria
+```
+
+### CHUNK 47 ###
+```markdown
+## Carga absoluta  
+Programa Fuente  
+Compilador  
+(y Encuadernador)  
+X  
+Programa  
+N  
+Ejecutable direcciones absolutas  
+Memoria Principal  
+S.O.  
+Cargador  
+X  
+N  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+Y  
+Y+M  
+Tema 2. Introducción a los Sistemas Operativos
+```
+
+### CHUNK 48 ###
+```markdown
+## Reubicación  
+Programa Fuente  
+Compilador  
+(y Encuadernador)  
+Programa  
+M  
+Ejecutable direcciones lógicas o relativas  
+Memoria Principal  
+S.O.  
+Cargador  
+O  
+Hardware
+```
+
+### CHUNK 49 ###
+```markdown
+## 2.4 Gestión básica de memoria  
+Tema 2. Introducción a los Sistemas Operativos
+```
+
+### CHUNK 50 ###
+```markdown
+## Reubicación estática  
+- · El compilador genera direcciones lógicas (relativas) de 0 a M.
+- · La decisión de dónde ubicar el programa en memoria principal se realiza en tiempo de carga .
+- · El cargador añade la dirección base de carga a todas las referencias relativas a memoria del programa .  
+Programa ejecutable con direcciones lógicas  
+MOVE A, 100  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+M  
+MOVE A, 1100  
+1000 + M  
+Memoria Principal
+```
+
+### CHUNK 51 ###
+```markdown
+## 2.4 Gestión básica de memoria
+```
+
+### CHUNK 52 ###
+```markdown
+## Reubicación dinámica  
+- · El compilador genera direcciones lógicas (relativas) de 0 a M.
+- · La traducción de direcciones lógicas a físicas se realiza en tiempo de ejecución luego el programa está cargado con referencias relativas.
+- · Requiere apoyo hardware .  
+b  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+R.Base  
+b  
+CPU  
++  
+Dirección  
+Lógica  
+Dirección  
+Física  
+Hardware  
+MOVE A, 100  
+b + M  
+Memoria Principal
+```
+
+### CHUNK 53 ###
+```markdown
+## 2.4 Gestión básica de memoria  
+Tema 2. Introducción a los Sistemas Operativos
+```
+
+### CHUNK 54 ###
+```markdown
+## Espacios para las direcciones de memoria  
+- · Espacio de direcciones lógico. Conjunto de direcciones lógicas (o relativas) que utiliza un programa ejecutable.
+- · Espacio de direcciones físico. Conjunto de  direcciones físicas (memoria principal) correspondientes a las direcciones lógicas del programa en un instante dado.
+- · Mapa de memoria de un ordenador . Todo el espacio de memoria direccionable por el ordenador. Normalmente depende del tamaño del bus de direcciones.
+- · Mapa de memoria de un proceso . Se almacena en una estructura de datos (que reside en memoria) donde se guarda el tamaño total del espacio de direcciones lógico y la correspondencia entre las direcciones lógicas y las físicas.  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+### CHUNK 55 ###
+```markdown
+## 2.4 Gestión básica de memoria
+```
+
+### CHUNK 56 ###
+```markdown
+## Ejemplo de mapa de memoria de un proceso [Carr07] (p. 277)  
+Pablo  
+Cerezo Sánchez  
+Álvaro Alejandro De Rada   ero Ejecutable  
+Eduardo Muñoz Del Pin ontador de programa inicial  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+### CHUNK 57 ###
+```markdown
+## 2.4 Gestión básica de memoria
+```
+
+### CHUNK 58 ###
+```markdown
+## Problema de la fragmentación de memoria [Stal05] (pp. 314-316)  
+SO  
+148 k  
+SO  
+148 k  
+SO  
+148 k  
+SO  
+Proceso 1  
+SO  
+Proceso 1  
+Proceso 4  
+Proceso 3  
+320 k  
+576 k  
+148 k  
+320 k  
+128 k  
+96 k  
+268 k  
+64 k  
+Proceso 1  
+Proceso 2  
+SO  
+Proceso 4  
+Proceso 3  
+320 k  
+224 k  
+352 k  
+148 k  
+320 k  
+128 k  
+96 k  
+268 k  
+64 k  
+Proceso 1  
+Proceso 2  
+Proceso 3  
+SO  
+Proceso 5  
+Proceso 4  
+Proceso 3  
+SO  
+Proceso 1  
+Proceso 3  
+896 k  
+148 k  
+320 k  
+224 k  
+268 k  
+64 k  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+128 k  
+320 k  
+224 k  
+268 k  
+84 k  
+148 k  
+230 k  
+90 k  
+128 k  
+96 k  
+268 k  
+64 k
+```
+
+### CHUNK 59 ###
+```markdown
+## 2.4 Gestión básica de memoria  
+Solución a la fragmentación de memoria [Stall05] (pp. 321-327)  
+- · Trocear el espacio lógico en unidades más pequeñas: páginas (elementos de longitud fija), o segmentos (elementos de longitud variable).
+- · Los trozos no tienen por qué ubicarse consecutivamente en el espacio físico.
+- · Los esquemas de organización del espacio lógico de direcciones y de traducción de una dirección del espacio lógico al espacio físico que comentaremos son:
+-  Paginación
+-  Segmentación  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+## 2.4 Gestión básica de memoria  
+Tema 2. Introducción a los Sistemas Operativos
+```
+
+### CHUNK 60 ###
+```markdown
+## 2.4.1 Paginación  
+- · El espacio de direcciones físicas de un proceso puede ser no contiguo.
+- · La memoria física se divide en bloques de tamaño fijo, denominados marcos de página . El tamaño es potencia de dos, de 512 B a 8 KB.
+- · El espacio lógico de un proceso se divide conceptualmente en bloques del mismo tamaño, denominados páginas.
+- · Los marcos de página contendrán páginas de los procesos.  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+### CHUNK 61 ###
+```markdown
+## 2.4 Gestión básica de memoria  
+Tema 2. Introducción a los Sistemas Operativos
+```
+
+### CHUNK 62 ###
+```markdown
+## 2.4.1 Paginación  
+Las direcciones lógicas , que son las que genera la CPU, se dividen en número de página (p) y desplazamiento dentro de la página (d).  
+Las direcciones físicas se dividen en número de marco (m, marco donde está almacenada la página) y desplazamiento (d).  
+m  
+d  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+### CHUNK 63 ###
+```markdown
+## 2.4 Gestión básica de memoria
+```
+
+### CHUNK 64 ###
+```markdown
+## 2.4.1 Paginación  
+Cuando la CPU genere una dirección lógica será necesario traducirla a la dirección física correspondiente, la tabla de páginas mantiene información necesaria para realizar dicha traducción. Existe una tabla de páginas por proceso.  
+Tabla de marcos de página, usada por el S.O. y contiene información sobre cada marco de página.  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+### CHUNK 65 ###
+```markdown
+## 2.4 Gestión básica de memoria
+```
+
+### CHUNK 66 ###
+```markdown
+## Contenido de la tabla de páginas  
+Una entrada por cada página del proceso:  
+- · Número de marco en el que está almacenada la página si está en MP.
+- · Modo de acceso autorizado a la página (bits de protección).  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+Tema 2. Introducción a los Sistemas Operativos
+```
+
+### CHUNK 67 ###
+```markdown
+## 2.4 Gestión básica de memoria  
+Tema 2. Introducción a los Sistemas Operativos
+```
+
+### CHUNK 68 ###
+```markdown
+## Esquema de traducción  
+Dirección física = m * tamaño\_página + Desplazamiento  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+### CHUNK 69 ###
+```markdown
+## 2.4 Gestión básica de memoria  
+Tema 2. Introducción a los Sistemas Operativos  
+Implementación de la Tabla de Páginas  
+- · La tabla de páginas se mantiene en memoria principal.
+- · El registro base de la tabla de páginas ( RBTP ) apunta a la tabla de páginas (suele almacenarse en el PCB del proceso).
+- · En este este esquema cada acceso a una instrucción o dato requiere dos accesos a memoria , uno a la tabla de páginas y otro a memoria.  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+## 2.4 Gestión básica de memoria  
+Búfer de Traducción Adelantada (TLB) [Stal05] (pp. 349-351)  
+- · El problema de los dos accesos a memoria se resuelve con una caché hardware de consulta rápida denominada búfer de traducción adelantada o TLB Translation Look-aside Buffer ( ).
+- · El TLB se implementa como un conjunto de registros asociativos que permiten una búsqueda en paralelo.
+- · De esta forma, para traducir una dirección:
+- 1 Si existe ya en el registro asociativo, obtenemos el marco.
+- 2 Si no, la buscamos en la tabla de páginas y se actualiza el TLB con esta nueva entrada.  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+## 2.4 Gestión básica de memoria  
+Tema 2. Introducción a los Sistemas Operativos
+```
+
+### CHUNK 70 ###
+```markdown
+## Esquema de traducción con TLB  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+### CHUNK 71 ###
+```markdown
+## 2.4 Gestión básica de memoria  
+Tema 2. Introducción a los Sistemas Operativos
+```
+
+### CHUNK 72 ###
+```markdown
+## 2.4.2 Segmentación  
+Esquema de organización de memoria que soporta mejor la visión de memoria del usuario: un programa es una colección de unidades lógicas -segmentos-, p. ej. procedimientos, funciones, pila, tabla de símbolos, matrices, etc.
+```
+
+### CHUNK 73 ###
+```markdown
+## 2.4 Gestión básica de memoria
+```
+
+### CHUNK 74 ###
+```markdown
+## Tabla de Segmentos  
+Una dirección lógica es una tupla:  
+&lt;número\_de\_segmento, desplazamiento&gt;  
+- La Tabla de Segmentos aplica direcciones bidimensionales definidas por el usuario en direcciones físicas de una dimensión. Cada entrada de la tabla tiene los siguientes elementos (aparte de presencia, modificación y protección):
+- » base - dirección física donde reside el inicio del segmento en memoria.
+- » tamaño - longitud del segmento.  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+Tema 2. Introducción a los Sistemas Operativos
+```
+
+### CHUNK 75 ###
+```markdown
+## 2.4 Gestión básica de memoria
+```
+
+### CHUNK 76 ###
+```markdown
+## Implementación de la Tabla de Segmentos  
+- · La tabla de segmentos se mantiene en memoria principal.
+- · El Registro Base de la Tabla de Segmentos ( RBTS ) apunta a la tabla de segmentos (suele almacenarse en el PCB del proceso).
+- · El Registro Longitud de la Tabla de Segmentos ( STLR ) indica el número de segmentos del proceso; el nº de segmento s, generado en una dirección lógica, es legal si s &lt; STLR (suele almacenarse en el PCB del proceso).  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+2.4 Gestión básica de memoria  
+Tema 2. Introducción a los Sistemas Operativos
+```
+
+### CHUNK 77 ###
+```markdown
+## Esquema de traducción  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+
+
+========================================
+## 📄 Archivo: [Teoría] Transp.Tema3.Compilacion.y.Enlazado.pdf
+========================================
+
+**Método de extracción usado:** Docling
+
+**Chunks Detectados:** 122
+
+### CHUNK 1 ###
+```markdown
+## Tema 3. Compilación y Enlazado de Programas  
+- 3.1 Lenguajes de Programación.
+- 3.2 Construcción de Traductores.
+- 3.3 Proceso de Compilación.
+- 3.3.1 Análisis Léxico.
+- 3.3.2 Análisis Sintáctico.
+- 3.3.3 Análisis Semántico.
+- 3.3.4 Generación y Optimización de Código.
+- 3.4 Intérpretes.
+- 3.5 Modelos de Memoria de un Proceso.
+- 3.6 Ciclo de Vida de un Programa.
+- 3.7 Bibliotecas.
+- 3.8 Automatización del Proceso de Compilación y Enlazado.  
+[Prie06]  
+A. Prieto, A. Lloris, J.C. Torres, Introducción a la Informática (4ª Edición) , McGraw-Hill, 2006  
+[Carr07]  
+J. Carretero, F. García, P. de Miguel, F. Pérez, Sistemas Operativos (2ª Edición) , McGraw-Hill, 2007  
+[Aho08]  
+A.V. Aho, M.S. Lam, R. Sethi, J.D. Ullman, Compiladores. Principios, Técnicas y Herramientas (2ª Edición) . Addison Wesley, 2008.  
+Bibliografía básica  
+- · Justificar la existencia de los lenguajes de programación.
+- · Conocer el proceso de traducción.
+- · Diferenciar entre compilación e interpretación.
+- · Identificar los elementos que intervienen en la gestión de memoria.
+- · Conocer las necesidades de memoria de los procesos.
+- · Conocer el proceso de enlazado de programas.
+- · Conocer las diferencias entre enlace estático y dinámico.
+- · Reconocer diferentes tipos de bibliotecas.
+```
+
+### CHUNK 2 ###
+```markdown
+## 3.1 Lenguajes de Programación
+```
+
+### CHUNK 3 ###
+```markdown
+## Concepto de Lenguaje de Programación [Prie06] (pp. 581-591)  
+Lenguaje de programación es un conjunto de símbolos y de reglas para combinarlos, que se usan para expresar algoritmos.
+```
+
+### CHUNK 4 ###
+```markdown
+## Características:  
+- · Son independientes de la arquitectura física del computador, lo que aumenta la portabilidad de los programas.
+- · Una instrucción en un lenguaje de alto nivel da lugar, tras el proceso de traducción, a varias instrucciones en lenguaje máquina.
+- · Un lenguaje de alto nivel utiliza notaciones fácilmente reconocibles por las personas en el ámbito en que se usan.  
+| A Ito Nivel   |        |
+|---------------|--------|
+|               | 021404 |
+```
+
+### CHUNK 5 ###
+```markdown
+## 3.2 Construcción de Traductores  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 6 ###
+```markdown
+## Definición de Gramática  
+Una gramática proporciona una especificación sintáctica precisa de un lenguaje de programación.  
+La complejidad de la verificación sintáctica depende del tipo de gramática que define el lenguaje.  
+Una gramática se define como G = (V N , V T , P, S) , donde:  
+- · VN es el conjunto de símbolos no terminales.
+- · VT es el conjunto de símbolos terminales.
+- · P es el conjunto de producciones o reglas gramaticales.
+- · S es el símbolo inicial (es un símbolo no terminal).
+```
+
+### CHUNK 7 ###
+```markdown
+## 3.2 Construcción de Traductores  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 8 ###
+```markdown
+## Definición de Traductor  
+Traductor es un programa que recibe como entrada un texto en un lenguaje de programación concreto y produce, como salida, un texto en lenguaje máquina equivalente.  
+Entrada --&gt; lenguaje fuente , que define a una máquina virtual.  
+Salida   --&gt; lenguaje objeto , que define a una máquina real.  
+Existen dos tipos de traductores:  
+- · Compilador.
+- · Intérprete .
+```
+
+### CHUNK 9 ###
+```markdown
+## 3.2 Construcción de Traductores  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 10 ###
+```markdown
+## Definición de Compilador  
+Compilador: traduce la especificación de entrada a lenguaje máquina incompleto y con instrucciones máquina incompletas -&gt; se necesita un complemento llamado enlazador.  
+Enlazador (linker): completa los programas ligando las instrucciones máquina necesarias (añade rutinas binarias de funcionalidades no programadas directamente en el programa fuente) y genera un programa ejecutable para la máquina real.
+```
+
+### CHUNK 11 ###
+```markdown
+## 3.2 Construcción de Traductores  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 12 ###
+```markdown
+## Definición de Intérprete  
+Intérprete: lee un programa fuente escrito para una máquina virtual, realiza la traducción de manera interna y ejecuta una a una las instrucciones obtenidas para la máquina real.  
+No se genera ningún programa objeto equivalente al descrito en el programa fuente.  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+### CHUNK 13 ###
+```markdown
+## 3.2 Construcción de Traductores  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 14 ###
+```markdown
+## Esquema de Traducción
+```
+
+### CHUNK 15 ###
+```markdown
+## 3.2 Construcción de Traductores  
+Tema 3. Compilación y Enlazado de Programas  
+Definición de Gramática: conceptos previos [Aho08] (pp. 117-118, 197)  
+Alfabeto  
+: conjunto finito de símbolos.  
+Ejemplo: Binario = { 0, 1 }  
+Cadena  
+: secuencia finita de símbolos usando un alfabeto concreto.  
+Ejemplos: 110,  0110, 1, 00011  
+Símbolos terminales : elementos de un alfabeto usados para formar cadenas.  
+Ejemplos: 0, 1  
+Símbolos no terminales : variables sintácticas que representan conjuntos de cadenas (en el ejemplo, sería N). Se utilizan en las reglas gramaticales y no son elementos del alfabeto.  
+Ejemplo: N -&gt; N 0  | N 1  |  0  |   1  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+## 3.2 Construcción de Traductores
+```
+
+### CHUNK 16 ###
+```markdown
+## Ejemplo  
+Dada la gramática siguiente:  
+<!-- formula-not-decoded -->  
+id  
+Y el texto de entrada: id+id*(id-(id/id))  
+Usando las reglas de formación gramatical, se obtendría una representación ( árbol sintáctico ) que valida la construcción del texto de entrada  verificación sintáctica correcta.  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+Tema 3. Compilación y Enlazado de Programas  
+E  
+E  
+id  
+E
+```
+
+### CHUNK 17 ###
+```markdown
+## 3.3 Proceso de Compilación: Fases de Traducción  
+Tema 3. Compilación y Enlazado de Programas  
+Fases en la construcción de un traductor [Aho08] (pp. 4-11)
+```
+
+### CHUNK 18 ###
+```markdown
+## 3.3 Fases de Traducción
+```
+
+### CHUNK 19 ###
+```markdown
+## Análisis Léxico. Función Principal y Conceptos [Aho08] (pp. 109-111)  
+Función : Leer los caracteres de la entrada del programa fuente, agruparlos en lexemas (palabras) y producir como salida una secuencia de tokens para cada lexema en el programa fuente (eliminando caracteres superfluos y comentarios).  
+Conceptos que surgen del Analizador Léxico:  
+- · Lexema o Palabra : Secuencia de caracteres del alfabeto con significado propio.
+- · Token : Concepto asociado a un conjunto de lexemas que, según la gramática del lenguaje fuente, tienen la misma misión sintáctica (en algunos casos, llevará asociado un valor de atributo).
+- · Patrón : Descripción de la forma que pueden tomar los lexemas de un token.
+```
+
+### CHUNK 20 ###
+```markdown
+## 3.3 Fases de Traducción  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 21 ###
+```markdown
+## Análisis Léxico. Función Principal y Conceptos. Ejemplo  
+| Token   | Descripción informal               | Lexemas de ejemplo      |
+|---------|------------------------------------|-------------------------|
+| IF      | Caracteres 'i' y 'f'               | if                      |
+| ELSE    | Caracteres 'e', 'l', 's' y 'e'     | else                    |
+| OP_COMP | Operadores <, >, <=, >=, !=, ==    | <=, ==, !=, …           |
+| IDENT   | Letra seguida por letras y dígitos | pi, dato1, dato3, D3    |
+| NUMERO  | Cualquier constante numérica       | 0, 210, 23.45, 0.899, … |  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+### CHUNK 22 ###
+```markdown
+## 3.3 Fases de Traducción
+```
+
+### CHUNK 23 ###
+```markdown
+## Análisis Léxico. Función Principal y Conceptos. Error Léxico  
+En muchos lenguajes de programación se consideran la mayoría de los siguientes tokens:  
+- · Un token para cada palabra reservada (if, do, while, else, …).
+- · Los tokens para los operadores (individuales o agrupados).
+- · Un token que representa a todos los identificadores tanto de variables como de subprogramas.
+- · Uno o más tokens que representan a las constantes (números y cadenas de literales).
+- · Un token para cada signo de puntuación (paréntesis izquierdo, paréntesis derecho, llave izquierda, llave derecha, coma, punto, punto y coma, corchete derecho, corchete izquierdo, …).  
+Error léxico : Se producirá cuando el carácter de la entrada no tenga asociado a ninguno de los patrones disponibles en nuestra lista de tokens (ej: carácter extraño en la formación de una palabra reservada: whi¿le ).
+```
+
+### CHUNK 24 ###
+```markdown
+## 3.3 Fases de Traducción
+```
+
+### CHUNK 25 ###
+```markdown
+## Análisis Léxico. Especificación de los Tokens usando expresiones regulares  
+Se pueden usar expresiones regulares para identificar un patrón de símbolos del alfabeto como pertenecientes a un token determinado:  
+- 1 Cero 0 mas veces , operador
+- 2 Uno 0 más veces , operador +: r* = r+|X.
+- 3 Cero 0 una operador ? vez,
+- Una forma cómoda de definir clases de caracteres es de la siguiente forma:  
+<!-- formula-not-decoded -->
+```
+
+### CHUNK 26 ###
+```markdown
+## 3.3 Fases de Traducción
+```
+
+### CHUNK 27 ###
+```markdown
+## Análisis Léxico. Especificación de los Tokens. Ejemplo  
+Dada la gramática mostrada anteriormente, los patrones que van a definir a los tokens serían los que muestra la tabla de la derecha:  
+<!-- formula-not-decoded -->  
+| ID      |                 |
+|---------|-----------------|
+|         | 'if'            |
+| THEN    | 'then'          |
+| PAR_IZQ | '('             |
+| PAR_DER | ')'             |
+| OP_BIN  | '+'|'-'|'*'|'/' |
+```
+
+### CHUNK 28 ###
+```markdown
+## 3.3 Fases de Traducción  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 29 ###
+```markdown
+## Análisis Sintáctico  
+Las gramáticas ofrecen beneficios considerables tanto para los que diseñan lenguajes como para los que diseñan los traductores. Entre ellos destacamos los siguientes:  
+- · Una gramática proporciona una especificación sintáctica precisa de un lenguaje de programación.
+- · A partir de ciertas clases gramaticales es posible construir de manera automática un analizador sintáctico eficiente.
+- · Permiten revelar ambigüedades sintácticas y puntos problemáticos en el diseño del lenguaje.
+- · Una gramática permite que el lenguaje pueda evolucionar o se desarrolle de forma iterativa agregando nuevas construcciones.
+```
+
+### CHUNK 30 ###
+```markdown
+## 3.3 Fases de Traducción  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 31 ###
+```markdown
+## Función del Analizador Sintáctico  
+Objetivo : Analizar las secuencias de tokens y comprobar  que  son  correctas sintácticamente.  
+A partir de una secuencia de tokens el analizador sintáctico nos devuelve:  
+- -  Si  la  secuencia  es  correcta  o  no  sintácticamente  (existe  un  conjunto  de  reglas gramaticales aplicables para poder estructurar la secuencia de tokens).
+- - El orden en el que hay que aplicar las producciones de la gramática para obtener la secuencia de entrada ( árbol sintáctico ).  
+Si  no  se  encuentra  un  árbol  sintáctico  para  una  secuencia  de  entrada,  entonces  la secuencia de entrada es incorrecta sintácticamente (tiene errores sintácticos).
+```
+
+### CHUNK 32 ###
+```markdown
+## 3.3 Fases de Traducción  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 33 ###
+```markdown
+## Análisis Sintáctico. Gramáticas Libres de Contexto [Aho08] (pp.197)  
+Una gramática definida como G = (V N , V T , P, S) , donde:  
+- · VN es el conjunto de símbolos no terminales.
+- · VT es el conjunto de símbolos terminales.
+- · P es el conjunto de producciones o reglas gramaticales.
+- · S es el símbolo inicial.  
+Se dice que es una gramática libre de contexto cuando el conjunto de producciones P es de la forma:  
+<!-- formula-not-decoded -->  
+Es decir, solo admite tener un símbolo no terminal en la parte izquierda de las producciones. La denominación libre de contexto se debe a que donde aparezca A se podría poner a , independientemente del contexto en el que se encuentre A.
+```
+
+### CHUNK 34 ###
+```markdown
+## 3.3 Fases de Traducción  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 35 ###
+```markdown
+## Análisis Sintáctico. Gramáticas ambiguas  
+Una gramática es ambigua cuando admite más de un árbol sintáctico para una misma secuencia de símbolos de entrada.  
+ecuencia de entrada Ejemplo : Dadas las producciones de la gramática del ejemplo de la diapositiva 9 y dada la misma s id+id*id , se puede apreciar que le pueden corresponder dos árboles sintácticos.  
+Cuando programamos en un determinado lenguaje:  
+- · ¿A qué nos referimos cuando hablamos de ' precedencia de operadores '?
+- · ¿Por qué hay que utilizar los paréntesis para evitar la precedencia de operador ?  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+### CHUNK 36 ###
+```markdown
+## 3.3 Fases de Traducción  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 37 ###
+```markdown
+## Análisis Semántico  
+La semántica de un lenguaje de programación es el significado dado a las distintas construcciones sintácticas.  
+En los lenguajes de programación, el significado está ligado a la estructura sintáctica de las sentencias.  
+Ejemplo : En una sentencia de asignación, según la sintaxis del lenguaje C, expresada mediante la producción siguiente:
+```
+
+### CHUNK 38 ###
+```markdown
+## sent\_asignacion  IDENTIFICADOR   OP\_ASIG   expresion   PYC  
+donde IDENTIFICADOR , OP\_ASIG y PYC son símbolos terminales (tokens) que representan, respectivamente, a una variable, el operador de asignación '=' y al delimitador de sentencia ';', deben cumplirse las siguientes reglas semánticas:  
+- · IDENTIFICADOR debe estar previamente declarado.
+- · El tipo de la expresion debe ser acorde con el tipo del IDENTIFICADOR .
+```
+
+### CHUNK 39 ###
+```markdown
+## 3.3 Fases de Traducción  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 40 ###
+```markdown
+## Análisis Semántico  
+- · Durante la fase de análisis semántico se producen errores cuando se detectan construcciones sin un significado correcto (p.e. variable no declarada, tipos incompatibles en una asignación, llamada a un procedimiento incorrecto o con número de argumentos incorrectos, …).
+- · En lenguaje C es posible realizar asignaciones entre variables de distintos tipos, aunque algunos compiladores devuelven warnings o avisos de que algo puede realizarse mal a posteriori.
+- · Otros lenguajes impiden la asignación de datos de diferente tipo (lenguaje Pascal).
+```
+
+### CHUNK 41 ###
+```markdown
+## 3.3 Fases de Traducción  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 42 ###
+```markdown
+## Generación de Código  
+- · En esta fase se genera un archivo con un código en lenguaje objeto (generalmente lenguaje máquina) con el mismo significado que el texto fuente.
+- · En algunos, se intercala una fase de generación de código intermedio para proporcionar independencia de las fases de análisis con respecto al lenguaje máquina (portabilidad del compilador) o para hacer más fácil la optimización de código.
+```
+
+### CHUNK 43 ###
+```markdown
+## 3.3 Fases de Traducción  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 44 ###
+```markdown
+## Optimización de Código  
+- · Esta fase existe para mejorar el código mediante comprobaciones locales a un grupo de instrucciones (bloque básico) o a nivel global.
+- · Se pueden realizar optimizaciones de código tanto al código intermedio (si existe) como al código objeto final. Generalmente, las optimizaciones se aplican a códigos intermedios.  
+Ejemplo : Una asignación dentro de un bucle for en lenguaje C:  
+```
+.... for (i=0; i<1000; i++) { r= 37.0-i*35; b= 7.5; z= b-sin(-r/35000); } .... b= 7.5; for (i=0; i<1000; i++) { r= 37.0-i*35; z= b-sin(-r/35000); }
+```  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+### CHUNK 45 ###
+```markdown
+## 3.3 Fases de Traducción  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 46 ###
+```markdown
+## Fases de Traducción. Ejemplo (1/2) [Aho08]  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+### CHUNK 47 ###
+```markdown
+## 3.3 Fases de Traducción  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 48 ###
+```markdown
+## Fases de Traducción. Ejemplo (2/2) [Aho08]  
+asign ident  
+(+)  
+opbin ident  
+ident  
+Analizador Semántco identl  
+identz ident3  
+entareal  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+const
+```
+
+### CHUNK 49 ###
+```markdown
+## 3.4 Intérpretes  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 50 ###
+```markdown
+## Intérpretes  
+Intérprete : hace que un programa fuente escrito en un lenguaje vaya, sentencia a sentencia, traduciéndose y ejecutándose directamente por el computador.  
+Consecuencias inmediatas:  
+- · No se crea un archivo o programa objeto almacenable en memoria para posteriores ejecuciones, es decir, cada vez que se ejecute el programa hay que volver a analizarlo.
+- · La ejecución del programa escrito en lenguaje fuente está supervisada por el intérprete.
+- · Las instrucciones de los bucles se analizan en cada iteración.
+- · La optimización solo se puede hacer a nivel de instrucción, no de estructuras, ni bloques, ni programas.
+- · Ejemplo : Bash.
+```
+
+### CHUNK 51 ###
+```markdown
+## 3.4 Intérpretes
+```
+
+### CHUNK 52 ###
+```markdown
+## Intérpretes
+```
+
+### CHUNK 53 ###
+```markdown
+## ¿Cuándo es útil un intérprete?  
+- · El programador trabaja en un entorno interactivo y se desean obtener los resultados de la ejecución de una instrucción antes de ejecutar la siguiente.
+- · El programador lo ejecuta escasas ocasiones y el tiempo de ejecución no es importante.
+- · Las instrucciones del lenguaje tiene una estructura simple y pueden ser analizadas fácilmente.
+- · Cada instrucción será ejecutada una sola vez.  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 54 ###
+```markdown
+## ¿Cuándo no es útil un intérprete?  
+- · Si las instrucciones del lenguaje son complejas.
+- · Los programas van a trabajar en modo de producción y la velocidad es importante.
+- · Las instrucciones serán ejecutadas con frecuencia.
+```
+
+### CHUNK 55 ###
+```markdown
+## 3.5 Modelos de Memoria de un Proceso  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 56 ###
+```markdown
+## Modelo de Memoria de un Proceso [Carr07] (pp.219-231)  
+Elementos responsables de la gestión de memoria:  
+- · Lenguaje de programación.
+- · Compilador.
+- · Enlazador.
+- · Sistema operativo.
+- · Hardware para la gestión de memoria: MMU - Memory Management Unit.
+```
+
+### CHUNK 57 ###
+```markdown
+## 3.5 Modelos de Memoria de un Proceso  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 58 ###
+```markdown
+## Niveles de la Gestión de Memoria  
+- · Nivel de procesos - reparto de memoria entre los procesos. Responsabilidad del SO.
+```
+
+### CHUNK 59 ###
+```markdown
+## Aumenta el nivel de detalle  
+- · Nivel de regiones - distribución del espacio asignado a las regiones de un proceso.  Gestionado por el SO aunque la división en regiones la hace el compilador.
+- · Nivel de zonas - reparto de una región entre las diferentes zonas (nivel estático, dinámico basado en pila y dinámico basado en heap) de esta. Gestión del lenguaje de programación con soporte del SO.
+```
+
+### CHUNK 60 ###
+```markdown
+## 3.5 Modelos de Memoria de un Proceso
+```
+
+### CHUNK 61 ###
+```markdown
+## Necesidades de Memoria de un Proceso  
+- · Tener un espacio lógico independiente.
+- · Espacio protegido del resto de procesos.
+- · Posibilidad de compartir memoria.
+- · Soporte para diferentes regiones.
+- · Facilidades de depuración.
+- · Uso de un mapa amplio de memoria.
+- · Uso de diferentes tipos de objetos de memoria.
+- · Persistencia de datos.
+- · Desarrollo modular.
+- · Carga dinámica de módulos (por ejemplo, plug-in).  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 62 ###
+```markdown
+## 3.5 Modelos de Memoria de un Proceso  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 63 ###
+```markdown
+## Modelo de Memoria de un Proceso [Carr07] (pp.246-251)  
+Estudiaremos aspectos relacionados con la gestión del mapa de memoria de un proceso, desde la generación del ejecutable a su carga en memoria:  
+- · Nivel de regiones.
+- · Nivel de zonas.
+```
+
+### CHUNK 64 ###
+```markdown
+## Para ello veremos:  
+- · Implementación de tipos de objetos necesarios para un programa y su correspondencia con el mapa de memoria.
+- · Ciclo de vida de un programa.
+- · Estructura de un ejecutable.
+- · Bibliotecas.
+```
+
+### CHUNK 65 ###
+```markdown
+## 3.5 Modelos de Memoria de un Proceso  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 66 ###
+```markdown
+## Tipos de Datos (desde el punto de vista de su implementación en memoria)  
+- · Datos estáticos:
+- · Globales a todo el programa, módulo o locales a una función (ámbito de visibilidad de una variable).
+- · Constantes o variables.
+- · Con o sin valor inicial - implementación con direccionamiento absoluto o direccionamiento relativo (PIC - código independiente de la posición).
+- · Datos dinámicos asociados a la ejecución de una función:
+- · Se almacenan en pila en un registro de activación (contiene variables locales, parámetros, dirección de retorno) .
+- · Se crean al activar una función y se destruyen al terminar la misma.
+- · Datos dinámicos controlados por el programa heap (zona de memoria usada tiempo de ejecución para albergar los datos no conocidos en tiempo de compilación).
+```
+
+### CHUNK 67 ###
+```markdown
+## Espacio de direcciones de un proceso
+```
+
+### CHUNK 68 ###
+```markdown
+## 3.5 Modelos de Memoria de un Proceso  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 69 ###
+```markdown
+## Ejemplo de evolución de la Pila (Stack) en la ejecución de un programa  
+#include &lt;stdio.h&gt;  
+int a();  
+int b();  
+int c();
+```
+
+### CHUNK 70 ###
+```markdown
+## 3.5 Modelos de Memoria de un Proceso  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 71 ###
+```markdown
+## Código Independiente de la Posición (PIC, Position Independent Code )  
+- · Un fragmento de código cumple esta propiedad si puede ejecutarse en cualquier parte de la memoria.
+- · Es necesario que todas sus referencias a instrucciones o datos no sean absolutas sino relativas a un registro, por ejemplo, contador de programa.  
+Suponemos instrucciones que ocupan 4 direcciones de memoria , por lo tanto, el incremento del PC se produce en 4.
+```
+
+### CHUNK 72 ###
+```markdown
+## 3.5 Modelos de Memoria de un Proceso  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 73 ###
+```markdown
+## Ejemplos de diferentes Objetos de Memoria  
+```
+int a ; /* variable estÆtica global sin valor inicial     */ int b= 8; /* variable estÆtica global con valor inicial     */ static int c; /* variable estÆtica de módulo sin valor inicial  */ static int d= 8; /* variable estÆtica de módulo con valor inicial  */ const int e= 8; /* constante estÆtica global                      */ static const int f= 8;  /* constante estÆtica de módulo                   */ extern int g; /* referencia a variable global de otro módulo    */ void funcion ( int h) /* parÆmetro: variable dinÆmica de función        */ { int i; /* variable dinÆmica de función sin valor inicial */ int j= 8; /* variable dinÆmica de función con valor inicial */ static int k; /* variable estÆtica local sin valor inicial      */ static int l= 8; /* variable estÆtica local con valor inicial      */ { int m; /* variable dinÆmica de bloque sin valor inicial  */ int n= 8; /* variable dinÆmica de bloque con valor inicial  */ } . . . . }
+```  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+### CHUNK 74 ###
+```markdown
+## 3.6 Ciclo de Vida de un Programa
+```
+
+### CHUNK 75 ###
+```markdown
+## Ciclo de vida de un programa [Carr07] (pp. 254-262)  
+A partir de un código fuente, un programa debe pasar por varias fases antes de poder ejecutarse:  
+- 1. Preprocesado (archivos .i en C).
+- 2. Compilación (archivos .s en C).
+- 3. Ensamblado (archivos .o en C).
+- 4. Enlazado (archivos .exe y a.out).
+- 5. Carga y Ejecución.  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+Tema 3. Compilación y Enlazado de Programas  
+Código fuente  
+,  
+hello.c hello.cc  
+Código precompilado hello.i  
+Precompilador  
+Compilador  
+C/C++  
+Código en ensamblador hello.s  
+Archivo objeto hello.o  
+Enlazador  
+Archivo ejecutable/binario  
+hello, hello.exe  
+Almacenado en el DD  
+Cargador del SO  
+Ejecución de un programa (proceso)  
+Espacio de direcciones del proceso  
+Memoria RAM  
+Assembler  
+Código objeto relocalizable  
+Otros archivos objeto/módulos  
+Bibliotecas  
+Bibliotecas  
+(enlace diferido)
+```
+
+### CHUNK 76 ###
+```markdown
+## 3.6 Ciclo de Vida de un Programa
+```
+
+### CHUNK 77 ###
+```markdown
+## Ejemplo de Compilación  
+gcc/g++ es un wrapper (envoltorio) que invoca a:  
+bash:~$ gcc -v ejemplo.c  
+```
+cpp1 ...  // preprocesador cc … // compilador as … // ensamblador collect2 …// wrapper que invoca al enlazador ld
+```  
+Podemos salvar los archivos temporales con:  
+<!-- formula-not-decoded -->  
+Podemos generar el archivo ensamblador con:  
+<!-- formula-not-decoded -->  
+El archivo objeto con:  
+<!-- formula-not-decoded -->  
+Enlazar un objeto para generar el ejecutable con:  
+bash:~$ ld objeto.o -o eje  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+### CHUNK 78 ###
+```markdown
+## Fundamentos del Software  
+Tema 3. Compilación y Enlazado de Programas  
+```
+.section        __TEXT,__text,regular,pure_instructions .macosx_version_min 10, 13 .globl  _main .p2align        4, 0x90 _main:                                  ## @main .cfi_startproc ## BB#0: pushq   %rbp Lcfi0: .cfi_def_cfa_offset 16 Lcfi1: .cfi_offset %rbp, -16 movq    %rsp, %rbp Lcfi2: .cfi_def_cfa_register %rbp subq    $16, %rsp leaq    L_.str(%rip), %rdi movl    _x(%rip), %esi movb    $0, %al callq   _printf xorl    %esi, %esi movl    %eax, -4(%rbp)          ## 4-byte Spill movl    %esi, %eax addq    $16, %rsp popq    %rbp retq .cfi_endproc .section        __DATA,__data .globl  _x                      ## @x .p2align        2 _x: .long   42                      ## 0x2a .section        __TEXT,__cstring,cstring_literals L_.str:                                 ## @.str .asciz  "Hola mundo, x = %d\n" .subsections_via_symbols
+```
+```
+
+### CHUNK 79 ###
+```markdown
+## 3.6 Ciclo de Vida de un Programa  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 80 ###
+```markdown
+## Compilación  
+El compilador procesa cada uno de los archivos de código fuente para generar el correspondiente archivo objeto.
+```
+
+### CHUNK 81 ###
+```markdown
+## Realiza las siguientes acciones:  
+- o Genera código objeto y calcula cuánto espacio ocupan los diferentes tipos de datos.
+- o Asigna direcciones a los símbolos estáticos (instrucciones o datos) y resuelve las referencias bien de forma absoluta o relativa (necesita reubicación).
+- o Las referencias a símbolos dinámicos se resuelven usando direccionamiento relativo a pila para datos relacionados a la invocación de una función, o con direccionamiento indirecto para el heap. No necesitan reubicación al no aparecer en el archivo objeto.
+- o Genera la Tabla de símbolos e información de depuración .
+```
+
+### CHUNK 82 ###
+```markdown
+## 3.6 Ciclo de Vida de un Programa
+```
+
+### CHUNK 83 ###
+```markdown
+## Ejemplo
+```
+
+### CHUNK 84 ###
+```markdown
+## Programa ejemplo:
+```
+
+### CHUNK 85 ###
+```markdown
+## Tabla de símbolos:  
+```
+include <stdio.h> x = 42; () printf (' Hola Mundo, x = %d\ n', x); $ gcc -c hola.c $ nm hola.o 0000000000000000 T _ main U _ printf 000000000000002 c D _x
+```  
+```
+# int int main { }
+```  
+nm : orden Linux para ver las diferentes secciones de un archivo .o (y con opción -a se pueden ver símbolos que pueden depurarse):  
+T indica sección de Texto (instrucciones máquina del programa). U indica objetos no definidos en el programa (cadena de printf). D indica sección de Datos (la variable global x).  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 86 ###
+```markdown
+## 3.6 Ciclo de Vida de un Programa  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 87 ###
+```markdown
+## Enlazado  
+El enlazador (linker) debe agrupar los archivos objetos de la aplicación y las bibliotecas, y resolver las referencias entre ellos.  
+En ocasiones debe realizar reubicaciones dependiendo del esquema de gestión de memoria utilizado.
+```
+
+### CHUNK 88 ###
+```markdown
+## 3.6 Ciclo de Vida de un Programa  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 89 ###
+```markdown
+## Funciones del Enlazador  
+- · Se completa la etapa de resolución de símbolos externos utilizando la tabla de símbolos.
+- · Se agrupan las zonas de características similares de los diferentes módulos en regiones (código, datos inicializados o no, etc.) .
+- · Se realiza la reubicación de módulos formando regiones - hay que transformar las referencias dentro de un módulo a referencias dentro de las regiones. Tras esta fase cada archivo objeto tiene una lista de reubicación que contiene los nombres de los símbolos y los desplazamientos dentro del archivo que deben aún parchearse.
+```
+
+### CHUNK 90 ###
+```markdown
+## 3.6 Ciclo de Vida de un Programa  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 91 ###
+```markdown
+## Agrupamiento de módulos en regiones
+```
+
+### CHUNK 92 ###
+```markdown
+## 3.6 Ciclo de Vida de un Programa
+```
+
+### CHUNK 93 ###
+```markdown
+## Tipos de enlazado y ámbito  
+- · Atributos de enlazado : externo, interno o sin enlazado.
+- · Los tipos de enlazado definen una especie de ámbito :
+- · Enlazado externo --&gt; visibilidad global.
+- · Enlazado interno --&gt; visibilidad de fichero.
+- · Sin enlazado --&gt; visibilidad de bloque.
+- · El tipo de enlazado indica si el mismo nombre (de una variable o función) en otro ámbito se refiere al mismo objeto o a otro distinto. Esto permite definir la visibilidad de los identificadores.  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 94 ###
+```markdown
+## 3.6 Ciclo de Vida de un Programa  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 95 ###
+```markdown
+## Ejemplo  
+| void   | func( int );                         | Objeto   | Tipo             |
+|--------|--------------------------------------|----------|------------------|
+| {      | int main ()                          | x        | Enlazado externo |
+|        |                                      | st       | Enlazado interno |
+| for    | (x = 0; x < 10; x++)        func(x); | func     | Enlazado externo |
+| }      |                                      | j        | Sin enlazado     |  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+### CHUNK 96 ###
+```markdown
+## 3.6 Ciclo de Vida de un Programa  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 97 ###
+```markdown
+## Carga en memoria principal y Ejecución  
+La reubicación del proceso se realiza en la carga (reubicación estática) o en ejecución (reubicación dinámica) y es función del Sistema Operativo ayudado por un hardware específico (MMU - Unidad de Gestión de Memoria). Depende del tipo de gestión de memoria que se realice:  
+- · Paginación.
+- · Segmentación.
+```
+
+### CHUNK 98 ###
+```markdown
+## 3.6 Ciclo de Vida de un Programa  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 99 ###
+```markdown
+## Diferencias entre archivos objeto y archivos ejecutables  
+- · Los archivos objeto (resultado de la compilación) y ejecutable (resultado del enlazado) son muy similares en cuanto a contenidos.
+- · Su principales diferencias son:
+- · En el ejecutable la cabecera del archivo contiene el punto de inicio del mismo, es decir, la primera instrucción que se cargará en el PC.
+- · En cuanto a las regiones, sólo hay información de reubicación si ésta se ha de realizar en la carga.
+```
+
+### CHUNK 100 ###
+```markdown
+## 3.6 Ciclo de Vida de un Programa  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 101 ###
+```markdown
+## Formato de archivo ejecutable
+```
+
+### CHUNK 102 ###
+```markdown
+## 3.6 Ciclo de Vida de un Programa  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 103 ###
+```markdown
+## Formatos de archivo objeto y ejecutables  
+|      | Descripción                                                                                                                                                                                                       |
+|------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|      | Es el formato original de los sistemas Unix  Consta de tres secciones: text, data y bss que se corresponden con el código; datos inicializados y sin inicializar. No tiene información para depuración.           |
+| COFF | El Common Object File Format posee múltiples secciones cada una con su cabecera pero están limitadas en número.  Aunque permite inforación de depuración; ésta es limitada. Es el formato utilizado por Windows . |
+| ELF  | Executable and Linking Format es similar al COFF pero elimina algunas de restricciones. Se utiliza en los sistemas Unix modernos; incluido GNU/Linux y Solaris.                                                   |
+```
+
+### CHUNK 104 ###
+```markdown
+## 3.6 Ciclo de Vida de un Programa
+```
+
+### CHUNK 105 ###
+```markdown
+## Ejemplos de secciones de un archivo ejecutable ELF (readelf)  
+-  .text -Instrucciones . Compartida por todos los procesos que ejecutan el mismo binario. Permisos: r y w. Es de las regiones más afectada por la optimización realizada por parte del compilador.
+-  .bss -Block Started by Symbol : datos no inicializados y variables estáticas. El archivo objeto almacena su tamaño pero no los bytes necesarios para su contenido.
+-  .data -Variables globales y estáticas inicializadas . Permisos: r y w.
+-  .rdata o .rodata -Constantes o cadenas literales .
+-  .reloc - Información de reubicación para la carga .
+-  Tabla de símbolos - Información necesaria ( nombre y dirección ) para localizar y reubicar definiciones y referencias simbólicas del programa. Cada entrada representa un símbolo .
+-  Registros de reubicación - Información utilizada por el enlazador para ajustar los contenidos de las secciones a reubicar.
+```
+
+### CHUNK 106 ###
+```markdown
+## 3.7 Bibliotecas
+```
+
+### CHUNK 107 ###
+```markdown
+## Definiciones [Carr07] (pp.262-264)  
+- · Biblioteca: colección de objetos, normalmente relacionados entre sí.
+- · Las bibliotecas favorecen modularidad y reusabilidad de código.
+- · Podemos clasificarlas según la forma de enlazarlas:
+- · Bibliotecas estáticas - se ligan con el programa en el enlazado ( .a )
+- · Bibliotecas dinámicas - se ligan con el programa en ejecución ( .so )  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 108 ###
+```markdown
+## Figure 2. Static vs. dynamic linking
+```
+
+### CHUNK 109 ###
+```markdown
+## 3.7 Bibliotecas  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 110 ###
+```markdown
+## Bibliotecas Estáticas  
+Una biblioteca estática es básicamente un conjunto de archivos objeto que se copian en un único archivo que forma la biblioteca.  
+Pasos para su creación:  
+- 
+- Construimos el código fuente: double media(double a, double b) { return (a+b) / 2; }
+-  Generamos el objeto: gcc -c calc\_mean.c -o calc\_mean.o
+- 
+- Archivamos el objeto (creamos la biblioteca): ar rcs libmean.a  calc\_mean.o
+-  Utilizamos la biblioteca:  
+gcc -static prueba.c -L. -lmean -o statically\_linked  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+### CHUNK 111 ###
+```markdown
+## 3.7 Bibliotecas
+```
+
+### CHUNK 112 ###
+```markdown
+## Bibliotecas Estáticas  
+Inconvenientes de las bibliotecas estáticas:  
+- · El código de la biblioteca está en todos los ejecutables que la usan, lo que desperdicia disco y memoria principal.
+- · Si actualizamos una biblioteca estática, debemos recompilar los programas que la usan para que se puedan beneficiar de la nueva versión.
+- · Producen ejecutables grandes.  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 113 ###
+```markdown
+## 3.7 Bibliotecas  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 114 ###
+```markdown
+## Bibliotecas Dinámicas  
+Las bibliotecas dinámicas se integran con los procesos que las usan en tiempo de ejecución, por ello se realiza previamente la reubicación de módulos.  
+Resuelven los inconvenientes que presentan las bibliotecas estáticas.  
+El archivo correspondiente a una biblioteca dinámica se diferencia de un archivo ejecutable en los siguientes aspectos:  
+- · Contiene información de reubicación.
+- · Contiene una tabla de símbolos.
+- · En la cabecera no se almacena información de punto de entrada.  
+Al usar una biblioteca dinámica, en el proceso de montaje del programa ejecutable se incluye un módulo de montaje dinámico (enlazador dinámico) : carga y monta las bibliotecas dinámicas usadas por el programa durante su ejecución.
+```
+
+### CHUNK 115 ###
+```markdown
+## 3.7 Bibliotecas  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 116 ###
+```markdown
+## Estructura de un ejecutable que usa bibliotecas dinámicas (1/2)  
+PTL - Procedure Linkaje Table en ELF (tabla de símbolos e información de reubicación )  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+### CHUNK 117 ###
+```markdown
+## 3.7 Bibliotecas  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 118 ###
+```markdown
+## Estructura de un ejecutable que usa bibliotecas dinámicas (2/2)  
+ld.so.1 es el enlazador dinámico que está en el código del ejecutable x es una dirección física de memoria principal donde comienza el código de la función malloc  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+```
+
+### CHUNK 119 ###
+```markdown
+## 3.7 Bibliotecas
+```
+
+### CHUNK 120 ###
+```markdown
+## Creación y uso de Bibliotecas Dinámicas  
+-  Generamos el objeto de la biblioteca:  
+gcc -c -fPIC calc\_mean.c -o calc\_mean.o gcc -shared -Wl,-soname,libmean.so.1 -o libmean.so.1.0.1  
+-  Creamos la bibloteca: calc\_mean.o
+-  Usamos la biblioteca:  
+gcc main.c -o dynamically\_linked -L. -lmean  
+-  La orden para ver las bibliotecas que están enlazadas con un programa es: ldd hola  
+Tema 3. Compilación y Enlazado de Programas
+```
+
+### CHUNK 121 ###
+```markdown
+## 3.8 Automatización del Proceso de Compilación y Enlazado.  
+Tema 3. Compilación y Enlazado de Programas  
+Automatizar la construcción es la técnica utilizada durante el ciclo de vida de desarrollo de software donde la transformación del código fuente en el ejecutable se realiza mediante un guión (script).  
+La automatización mejora la calidad del resultado final y permite el control de versiones.
+```
+
+### CHUNK 122 ###
+```markdown
+## Varias formas:  
+- · Herramienta make - archivos makefile.
+- · IDE (Integrated Development Environment - Entornos de Desarrollo Integrados), que embebe los guiones y el proceso de compilación y enlazado, p.e. CodeBlocks .
+```
+
+
+
+========================================
+## 📄 Archivo: [Teoría] Transp.Tema4.SistemasDeArchivos.Intr.BasesDatos-2020.pdf
+========================================
+
+**Método de extracción usado:** Docling
+
+**Chunks Detectados:** 57
+
+### CHUNK 1 ###
+```markdown
+1er Curso del Doble Grado en Ingeniería Informática
+```
+
+### CHUNK 2 ###
+```markdown
+## Tema 4. Sistemas de archivos. Introducción a las bases de datos.  
+- 4.1. Concepto de archivo y directorio.
+- 4.2. Organización de archivos.
+- 4.3. Bases de datos.
+- 4.4. Sistema de gestión de la base de datos.
+- · Conocer los conceptos básicos de archivo, registro, campo, directorio y estructura jerárquica de archivos.
+- · Conocer los distintos tipos de organización interna de archivos.
+- · Conocer las acciones involucradas en el acceso a un registro en cada una de las organizaciones posibles de un archivo.
+- · Comprender los problemas inherentes a la gestión de archivos frente al uso de una base de datos.
+- · Conocer las características de una base de datos.
+- · Conocer el concepto de sistema de gestión de base de datos y las funciones que debe cumplir.  
+[Prieto 06] A. Prieto, A. Lloris, J.C. Torres. Introducción a la Informática (4ª Edición) . McGraw-Hill, 2006.
+```
+
+### CHUNK 3 ###
+```markdown
+## 4.1 Concepto de archivo y directorio  
+Tema 4. Sistemas de archivos. Introducción a las bases de datos  
+Concepto de archivo [Prie06] (pp. 595-598)  
+Archivo es un conjunto de información sobre un mismo tema, tratada como una unidad de almacenamiento en memoria secundaria y organizada de forma estructurada para la búsqueda de un dato individual.  
+Un archivo está compuesto de registros homogéneos que contienen información sobre el tema.  
+Un registro es una estructura dentro del archivo que contiene la información correspondiente a un elemento individual.  
+Un registro se puede dividir en campos. Un campo es un dato que representa una información unitaria o independiente.  
+Tema 4. Sistemas de archivos. Introducción a las bases de datos
+```
+
+### CHUNK 4 ###
+```markdown
+## Operaciones sobre archivos  
+El sistema operativo permite que el usuario pueda aludir al archivo mediante un nombre , independientemente de la forma en que se almacene en el dispositivo (p.e., un disco).  
+Todo archivo tiene asociados unos atributos , además del nombre, como: tamaño, fecha de creación y de modificación, propietario, permisos de acceso, etc. (dependerá del sistema operativo).  
+El SO proporciona órdenes o servicios para operar sobre los archivos como:  
+-  Crear/copiar/borrar/renombrar un archivo.
+-  Establecer/obtener atributos de un archivo.
+-  Abrir/cerrar un archivo para el procesamiento de su contenido.
+-  Leer/escribir un registro de un determinado archivo.  
+Gestión de archivos [Prie06] (p. 596)  
+Gestión del acceso a archivos realizada por el sistema operativo  
+Tema 4. Sistemas de archivos. Introducción a las bases de datos
+```
+
+### CHUNK 5 ###
+```markdown
+## Gestión de archivos: comentarios  
+- · El sistema operativo transporta, cada vez que se accede al dispositivo, una cantidad fija de información que depende de las características físicas de éste: bloque o registro físico, de longitud distinta al tamaño del registro.
+- · El sistema operativo transforma la dirección lógica usada en los programas de usuario en la dirección física con la que se direcciona en el dispositivo.
+- · Un archivo es una estructura de datos externa al programa que lo usa; en las operaciones de lectura/escritura se transfiere la información a/desde un buffer en memoria principal asociado a las operaciones de entrada/salida sobre el archivo.
+```
+
+### CHUNK 6 ###
+```markdown
+## Clasificación de archivos según el tipo de registros  
+- 1. Longitud fija.
+- 2. Longitud variable.
+- · Con delimitador: un determinado carácter llamado delimitador marca el fin de un registro (suelen usarse como delimitadores el salto de línea, nulo, etc.).
+- · Con cabecera: cada registro contiene un campo inicial que almacena el número de bytes del registro.
+- 3. Longitud indefinida : el sistema operativo no realiza ninguna gestión sobre la longitud de los registros ya que el archivo no tiene realmente ninguna estructura interna.
+- · En cada operación de lectura/escritura se transfiere una determinada subcadena del archivo y será el programa de usuario quien indique al SO el principio y final de ese registro.  
+Una posibilidad añadida: disponer de un campo clave (o llave) que permita localizar rápidamente un registro.  
+Tema 4. Sistemas de archivos. Introducción a las bases de datos
+```
+
+### CHUNK 7 ###
+```markdown
+## Concepto de directorio  
+Directorio es un archivo especial que permite agrupar archivos según las necesidades de los usuarios. En cada dispositivo existe una estructura jerárquica donde se localizan todos los archivos de los distintos usuarios que lo usan.  
+En la visión que el usuario tiene de la estructura jerárquica de archivos se utilizan los siguientes conceptos:  
+- · Directorio actual o de trabajo.
+- · Directorio inicial o home.
+- · Rutas (pathname) absolutas y relativas.
+- · Lista de búsqueda.
+- · Enlace duro, enlace simbólico.  
+El sistema operativo proporciona operaciones para manejar los conceptos anteriores.
+```
+
+### CHUNK 8 ###
+```markdown
+## 4.2 Organización de archivos  
+Tema 4. Sistemas de archivos. Introducción a las bases de datos
+```
+
+### CHUNK 9 ###
+```markdown
+## Organización secuencial [Prie06] (pp. 600-602)  
+Los registros están almacenados físicamente de forma contigua.  
+Ejemplo de archivo secuencial almacenado en una cinta magnética. (IRG: inter record gap)
+```
+
+### CHUNK 10 ###
+```markdown
+## La organización secuencial es adecuada:  
+- · Cuando se quiere leer los registros en la misma secuencia en que están almacenados.
+- · Cuando se necesita leer la mayoría de los registros del archivo.
+```
+
+### CHUNK 11 ###
+```markdown
+## Ventajas :  
+- · Buen aprovechamiento del espacio.
+- · Sencilla de utilizar .
+- · Se puede utilizar con dispositivos secuenciales que son de bajo precio.
+```
+
+### CHUNK 12 ###
+```markdown
+## Organización secuencial: operaciones sobre archivos  
+-  Añadir. Sólo es posible escribir al final del archivo, después del último registro escrito.
+-  Consulta o recuperación. Se realiza en orden secuencial, es decir, el orden en el que se hubieran escrito determina el orden en el que se leen los registros. Para leer el registro que ocupa la posición n en el archivo es necesario leer previamente los n-1 registros que hay antes que él.
+-  Inserción, modificación y eliminación. No es fácil realizar estas operaciones sobre un archivo secuencial.
+- · La modificación de un registro solo es posible si no se aumenta su longitud.
+- · No es posible eliminar un registro del archivo, pero se puede realizar un borrado lógico, es decir, marcarlo de tal forma que al leer se identifique como no válido.
+- · En otros casos es necesario crear un archivo nuevo con las actualizaciones que se quieran realizar.
+```
+
+### CHUNK 13 ###
+```markdown
+## Organización secuencial encadenada [Prie06] (pp. 602-604)  
+Junto a cada registro se almacena un puntero con la dirección física del registro siguiente, dando lugar a una cadena de registros.  
+El último registro de la cadena contiene una marca especial en el lugar del puntero indicando que ya no hay más registros en el archivo.  
+Principal ventaja : facilidad de inserción y borrado de registros.  
+Principal inconveniente : limita las consultas de forma secuencial.
+```
+
+### CHUNK 14 ###
+```markdown
+## Organización secuencial encadenada: operaciones sobre archivos  
+-  Consulta o recuperación. La consulta es secuencial, al igual que en un archivo con organización secuencial pura. Cada vez que se lee un registro se lee la posición del siguiente, lo que permite seguir la secuencia lógica del archivo.
+-  Inserción. Hay que seguir los siguientes pasos:
+- 1. Localizar la posición donde se desea insertar; es decir, entre qué dos registros debe estar el nuevo registro del archivo.
+- 2. Escribir el registro en una zona libre de memoria.
+- 3. Asignar al nuevo registro como puntero la dirección física del registro siguiente.
+- 4. Modificar el registro anterior para actualizar el valor de su puntero de forma que contenga la dirección del nuevo registro.
+-  Borrado. Para borrar un registro se asigna al puntero del registro anterior la dirección del registro siguiente al que se desea borrar.
+-  Modificación. Si el cambio no implica un aumento de longitud del registro, éste puede reescribirse en el mismo espacio. En caso contrario, se debe insertar el registro y luego borrar la versión anterior al cambio.
+```
+
+### CHUNK 15 ###
+```markdown
+## Organización secuencial encadenada: ejemplo de inserción
+```
+
+### CHUNK 16 ###
+```markdown
+## Se inserta un registro con llave "Gato  
+| Dir . Fisica   | LLave    | Puntero   |
+|----------------|----------|-----------|
+| 1              | Alba     |           |
+| 2              | Elefante | 3         |
+|                | Lcon     | 8         |
+| 4              | Coral    | 2         |
+| 5              | Mosca    | 6         |
+| 6              | Ñu       | 7         |
+| 7              | Pantera  | 0         |
+| 8              | Morsa    | 5         |
+| 10             |          |           |  
+| Dir . Física   | LLave    | Puntero   |
+|----------------|----------|-----------|
+| 1              | Alba     |           |
+| 2              | Elefante | 3         |
+| 3              |          | 8         |
+| 4              | Coral    | 2         |
+| 5              | Mosca    | 6         |
+|                | Ñu       |           |
+|                | Pantera  | 0         |
+| 8              | Morsa    | 5         |
+| 9              | Gato     | 3         |
+| 10             |          |           |  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+|   Dir . Física | LLave    | Puntero   |
+|----------------|----------|-----------|
+|              1 | Alba     |           |
+|              2 | Elefante |           |
+|              3 | Leon     | 8         |
+|              4 | Coral    | 2         |
+|              5 | Mosca    | 6         |
+|              6 | Ñu       | 7         |
+|              7 | Pantera  | 0         |
+|              8 | Morsa    | 5         |
+|              9 | Gato     | 3         |
+|             10 |          |           |  
+Paso 4
+```
+
+### CHUNK 17 ###
+```markdown
+## Organización secuencial indexada [Prie06] (pp. 604-608)  
+Un archivo con organización secuencial indexada está formado por dos estructuras: zona de registros y zona de índices.  
+Zona de registros : es una zona donde se direccionan los registros del archivo; está dividida en tramos (conjunto de registros consecutivos). Los registros están ordenados según el valor de una llave.  
+Zona de índices : es una zona en la que por cada tramo de la zona de registros hay un registro que contiene:  
+- · El mayor valor de la llave del tramo (valor de llave del último registro del tramo).
+- · La dirección del primer registro del tramo.  
+La gestión de la estructura la realiza el sistema operativo o un software especial, por lo que el usuario de esta estructura no necesita conocer la existencia de ambas zonas, pudiendo contemplar ambas como un todo.  
+Tema 4. Sistemas de archivos. Introducción a las bases de datos
+```
+
+### CHUNK 18 ###
+```markdown
+## Organización secuencial indexada: ejemplo
+```
+
+### CHUNK 19 ###
+```markdown
+## Organización secuencial indexada: operaciones sobre archivos  
+-  Consulta. Se realiza por llave (esto es, localizar un registro conocida su llave) sin necesidad de leer los registros que no se encuentran en su mismo tramo. El procedimiento a seguir para realizar una consulta por llave es:
+- 1. Leer secuencialmente las llaves en la zona de índices hasta encontrar una mayor o igual a la del registro buscado.
+- 2. Obtener la dirección de comienzo del tramo donde está el registro.
+- 3. Leer secuencialmente el tramo de la zona de registros a partir de la dirección obtenida en la zona de índices hasta encontrar el registro buscado o uno con valor de llave mayor que el buscado (en este último caso el registro no se encuentra en el archivo).  
+Tema 4. Sistemas de archivos. Introducción a las bases de datos
+```
+
+### CHUNK 20 ###
+```markdown
+## Organización secuencial indexada: ejemplo  
+Consulta de un registro con llave 'Digital'.
+```
+
+### CHUNK 21 ###
+```markdown
+## Organización secuencial indexada: operaciones sobre archivos  
+-  Inserción. Dado que ambas zonas son secuenciales, no es posible insertar un registro en archivos con esta organización.
+- · En algunos casos se permite la escritura de nuevos registros al final de la zona de registros. Estos registros, como es lógico, no podrán ser consultados por llave con el procedimiento descrito anteriormente.
+-  Borrado . Al estar los registros escritos en secuencia no es posible borrar un registro.
+- · La única forma de eliminar la información contenida en un registro es marcándolo, lo que se conoce como borrado lógico.
+-  Modificación . Las modificaciones son posibles tan sólo si el registro no aumenta de longitud al ser modificado y no se altera el valor de la llave del mismo.
+```
+
+### CHUNK 22 ###
+```markdown
+## Organización directa o aleatoria [Prie06] (pp. 608-611)  
+Un archivo con organización directa o aleatoria (' random ') es un archivo escrito sobre un soporte de acceso directo para el cual existe una función de transformación que genera la dirección de cada registro en el archivo a partir de un campo que se usa como llave.  
+El nombre de 'aleatorio' se debe a que normalmente no existe ninguna vinculación aparente entre el orden lógico de los registros y su orden físico.  
+La organización directa es útil para archivos donde los accesos deben realizarse por llave, accediéndose siempre a registros concretos.  
+Si la información se va a procesar en conjunto, con frecuencia puede ser más rentable una organización secuencial indexada.
+```
+
+### CHUNK 23 ###
+```markdown
+## Organización directa o aleatoria: problema de los sinónimos  
+Un problema fundamental de esta organización es elegir adecuadamente la función de  transformación o método de direccionamiento que se va a utilizar ya que pueden darse las siguientes situaciones no deseadas:  
+- · Que haya direcciones que no se corresponden con ninguna llave y, por tanto, habrá zonas de disco sin utilizar.
+- · Que haya direcciones que se correspondan con más de una llave. En este caso se dice que las llaves son sinónimas para esa transformación o que se produce una colisión.  
+Hay dos formas de resolver el problema de los sinónimos , siempre a costa de complicar la estructura del archivo:  
+- · Cuando se asocia a una llave una dirección ya ocupada por un registro distinto (esto es, por un sinónimo de esta llave), se busca en el archivo hasta encontrar una posición libre donde escribir el registro.
+- · Se reserva una zona de desbordamiento donde se escribirán los registros que no se pueden escribir en la posición que les corresponde según la transformación. Esta zona se puede gestionar secuencialmente o encadenada a la zona principal de registros.
+```
+
+### CHUNK 24 ###
+```markdown
+## Organización directa o aleatoria: métodos de direccionamiento  
+- 1) Direccionamiento directo. Se utiliza como dirección la propia llave y solo es factible cuando la llave es numérica y su rango de valores no es mayor que el rango de direcciones en el archivo.
+- · Por ejemplo, el archivo de habitaciones de un hotel puede organizarse en forma aleatoria con direccionamiento directo haciendo coincidir la dirección con el número de habitación.  
+Inconveniente : En algunos casos pueden quedar lagunas de direcciones sin utilizar, en lugares conocidos de antemano. En este caso se pueden ocupar dichas direcciones desplazando las direcciones superiores.  
+- 2) Direccionamiento asociado. Se puede utilizar cualquier tipo de llave. Si se utiliza este método debe construirse una tabla en la que se almacena para cada llave la dirección donde se encuentra el registro correspondiente. Dicha tabla se debe guardar mientras exista el archivo.  
+## Organización directa o aleatoria: métodos de direccionamiento  
+- 3) Direccionamiento calculado ('hashing'). La dirección de cada registro se obtiene realizando una transformación sobre la llave.
+```
+
+### CHUNK 25 ###
+```markdown
+## Se utiliza cuando:  
+- · La llave no es numérica, en cuyo caso se necesita una conversión previa para obtener un número a partir de ella.
+-  Por ejemplo se usa el equivalente decimal al propio código binario del carácter (al carácter A le correspondería el 65, ...)
+- · La llave es numérica pero toma valores en un rango inadecuado para usarse directamente como dirección.
+```
+
+### CHUNK 26 ###
+```markdown
+## Organización directa o aleatoria: operaciones sobre archivos  
+-  Consulta. La consulta se realiza por llave. Para leer un registro debe aplicarse a la llave el algoritmo de transformación, este algoritmo devuelve un número que es la dirección del registro que se quiere leer.  Si el registro con la llave buscada no se encuentra allí, se procederá según se haya resuelto la gestión de sinónimos o colisiones.
+-  Borrado. Siempre se realiza un borrado lógico, pudiéndose reutilizar el espacio del registro eliminado.
+-  Modificación e inserción. Siempre se puede modificar o insertar un nuevo registro, realizando la transformación de la llave correspondiente.
+```
+
+### CHUNK 27 ###
+```markdown
+## 4.3  Bases de datos  
+Tema 4. Sistemas de archivos. Introducción a las bases de datos  
+Problemática [Prie06] (pp. 617-628)  
+En una aplicación convencional con archivos aparecen los siguientes problemas :  
+- 1. Dificultad de mantenimiento. Si hay archivos con información parcialmente duplicada, realizar las actualizaciones necesarias es un problema complejo y costoso. Normalmente, es necesario actualizar varios archivos con diferentes organizaciones. Si la actualización no se realiza correctamente se tendrá información incoherente.
+- 2. Redundancia. Se dice que hay redundancia si un dato se puede deducir a partir de otros datos (se dan los problemas explicados en el caso anterior).
+- 3. Rigidez de búsqueda. El archivo se concibe para acceder a los datos de un modo determinado. Sin embargo, en la mayoría de los casos es necesario (o al menos deseable) combinar acceso secuencial y directo por varias claves.
+```
+
+### CHUNK 28 ###
+```markdown
+## Problemática  
+- 4. Dependencia con los programas. En un archivo no están reflejadas las archivo es quien determina en cada caso dichas relaciones.
+- Esto ocurre aun en el caso de que la alteración sea ajena al programa.  Así por programas que no lo usan.
+- relaciones existentes entre campos y registros. El programa que trabaja con el En consecuencia, cualquier modificación de la estructura de un archivo obliga a modificar todos los programas que lo usen. ejemplo, si se aumenta la longitud de un campo habrá que modificar incluso los
+- 5. Seguridad. Uno de los mayores problemas de cualquier sistema de información es mantener la seguridad necesaria sobre los datos que contiene.
+- Si se está trabajando con archivos, el control deberá realizarlo el propio programa.
+- El aspecto de la seguridad es particularmente deficitario en los sistemas de archivos.
+```
+
+### CHUNK 29 ###
+```markdown
+## Concepto de Base de Datos [Prie06] (pp. 617-630)  
+Las bases de datos surgen como alternativa a los sistemas de archivos, intentando eliminar o al menos reducir sus inconvenientes.  
+Una base de datos es un sistema formado por un conjunto de datos y un paquete software para gestión de dicho conjunto de datos de tal modo que:  
+- · Se controla el almacenamiento de datos redundantes.
+- · Los datos resultan independientes de los programas que los usan.
+- · Las relaciones entre los datos se almacenan junto a ellos.
+- · Se puede acceder a los datos de diversas formas.  
+La forma en la que se almacenan las relaciones entre datos y el utilizar como unidad de almacenamiento el campo además del registro, es el fundamento de la independencia respecto a los programas de aplicación.
+```
+
+### CHUNK 30 ###
+```markdown
+## Requisitos que deben cumplir las Bases de Datos  
+- 1. Acceso múltiple. Diversos usuarios pueden acceder a la base de datos, sin que se produzcan conflictos, ni visiones incoherentes.
+- 2. Utilización múltiple. Cada usuario podrá tener una imagen o visión particular de la estructura de la base de datos.
+- 3. Flexibilidad. Se podrán usar distintos métodos de acceso, con tiempos de respuesta razonablemente pequeños.
+- 4. Seguridad. Se controlará el acceso a los datos (a nivel de campo), impidiéndoselo a los usuarios no autorizados.
+- 5. Protección contra fallos. Deben existir mecanismos concretos de recuperación en caso de fallo de la computadora.  
+## Requisitos que deben cumplir las Bases de Datos  
+- 6. Independencia física. Se puede cambiar el soporte físico de la base de datos sin que esto repercuta en la base de datos ni en los programas que la utilizan.
+- 7. Independencia lógica. Se pueden modificar los datos contenidos en la base, las relaciones existentes entre ellos o incluir nuevos datos, sin afectar a los programas que la usan.
+- 8. Redundancia controlada. Los datos se almacenan una sola vez.
+- 9. Interfaz de alto nivel. Existe una forma sencilla y cómoda de utilizar la base al menos desde un lenguaje de programación de alto nivel.
+- 10. Interrogación directa (' query '). Existe una utilidad que permite el acceso a los datos de forma interactiva o conversacional.  
+Tema 4. Sistemas de archivos. Introducción a las bases de datos
+```
+
+### CHUNK 31 ###
+```markdown
+## Estructura de una Base de Datos  
+Se dice que uno o más atributos de una entidad es un identificador o clave primaria si el valor de dichos atributos determina de forma unívoca cada uno de los elementos de dicha entidad, y no existe ningún subconjunto de él que permita identificar a la entidad de manera única.  
+En una base de datos se almacenan además de las entidades, las relaciones existentes entre ellas.  
+En la implementación de la base de datos, estas relaciones se almacenan con punteros que inserta automáticamente el software que la maneja y esto es "transparente" al usuario.
+```
+
+### CHUNK 32 ###
+```markdown
+## Niveles de abstracción de la información: vistas y esquemas  
+- · Nivel de vista . Permite describir diferentes vistas o subesquemas , cada una de las cuales se corresponde con la parte de la base de datos que interesa a un determinado grupo de usuarios. Además limita el acceso solo a la información de la vista.
+- · Nivel conceptual . Describe el esquema de la base de datos . En éste se especifica qué información se guarda en la base de datos, incluyendo todos los datos almacenados en ella y las relaciones entre ellos. Este nivel se utiliza en la administración de la base de datos.
+- · Nivel físico . Describe cómo se almacenan los datos, con las estructuras de datos necesarias para ello.  
+Tema 4. Sistemas de archivos. Introducción a las bases de datos
+```
+
+### CHUNK 33 ###
+```markdown
+## Modelos de datos  
+Modelo de datos : grupo de herramientas conceptuales que permite describir los datos, sus relaciones, su semántica y sus limitaciones. Ayuda a describir la estructura de una base de datos.  
+Clasificación de los modelos de datos:  
+- · Modelos lógicos basados en objetos . Describen los datos a nivel conceptual y a nivel de vista, permiten una estructuración flexible y especificar limitaciones de los datos. Caso a tratar: Modelo entidad-relación.
+- · Modelos lógicos basados en registros .  Describen los datos a nivel conceptual y a nivel de vista, permitiendo especificar la estructura lógica pero no las limitaciones de los datos. Casos a tratar: Modelo jerárquico, Modelo en red y Modelo relacional.
+- · Modelos físicos de los datos . Describen los datos en el nivel de implementación de los sistemas de base de datos.
+```
+
+### CHUNK 34 ###
+```markdown
+## Modelo entidad-relación: conceptos básicos  
+- · Entidad : objeto que tiene existencia propia, que puede distinguirse de otros y del cuál se quiere almacenar información de ciertas características. Ejemplo: Pepe con DNI 24324450 y que vive en Granada.
+- · Conjunto de entidades : grupo de entidades del mismo tipo que representa la estructura genérica de una entidad de interés. Las entidades pueden pertenecer a más de un conjunto de entidades. Ejemplo: Cliente.
+- · Relación : asociación entre varias entidades. Ejemplo: El cliente con DNI 24324450 compra un coche con matricula 6670 BBC el 7/11/2005.
+- · Conjunto de relaciones : grupo de relaciones del mismo tipo que representa la estructura genérica de las relaciones entre conjuntos de entidades. Ejemplo: Compra.
+- · Grado de una relación : número de tipos de entidad que intervienen en un tipo de relación. Ejemplo: En el caso de la relación en la que un cliente compra un coche, el grado de la relación es 2.
+- · Atributo : unidad básica de información sobre un tipo de entidad o un tipo de relación. Ejemplos: DNI, Nombre, Dirección, Fecha de compra.
+```
+
+### CHUNK 35 ###
+```markdown
+## Modelo entidad-relación: tipos de correspondencias (cardinalidad)  
+Cardinalidad : expresa el número de entidades con las que puede asociarse o corresponderse una determinada entidad mediante una relación.  
+En el caso de un conjunto binario de relaciones R entre los conjuntos de relaciones A y B, los tipos de correspondencias o cardinalidades pueden ser:  
+- · Uno a uno (1:1) : a cada entidad de A le puede corresponder una única entidad de B y viceversa.
+- · Uno a muchos (1:N): a cada entidad de A le puede corresponder más de una entidad de B, pero cada entidad de B solo puede asociarse con una única entidad de A.
+- · Muchos a uno (N:1): a cada entidad de A le puede corresponder una única entidad de B, pero cada entidad de B puede asociarse con varias entidades de A.
+- · Muchos a muchos (N:M): a cada entidad de A le puede corresponder más de una entidad de B, y a cada entidad de B le puede corresponder más de una entidad de A.
+```
+
+### CHUNK 36 ###
+```markdown
+## Modelo entidad-relación: Diagrama entidad-relación  
+Diagrama entidad-relación : representación gráfica de la estructura de una base de datos organizada según el Modelo entidad-relación.
+```
+
+### CHUNK 37 ###
+```markdown
+## Sus componentes principales son:  
+- · Rectángulos : representan conjuntos de entidades.
+- · Rombos : representan conjuntos de relaciones.
+- · Elipses : representan atributos (de conjuntos de entidades o de conjuntos de relaciones).
+- · Representación de la cardinalidad . Se puede hacer de varias maneras:
+- · Con una etiqueta asociada al conjunto de relaciones (solo para relaciones binarias).
+- · Poniendo una punta de flecha que señale hacia el conjunto de relaciones que participa de forma 'uno' y usando una línea sin punta en el caso de conjuntos de entidades que participan de forma 'muchos'.
+```
+
+### CHUNK 38 ###
+```markdown
+## Modelo entidad-relación: ejemplos de diagrama entidad-relación
+```
+
+### CHUNK 39 ###
+```markdown
+## Modelos lógicos basados en registros: tipos de Bases de Datos
+```
+
+### CHUNK 40 ###
+```markdown
+## 1) Modelo de datos jerárquico.  
+Permite especificar una base de datos jerárquica , donde se establece una relación jerárquica entre los datos en forma de árbol, y no es posible definir relaciones muchos a muchos.
+```
+
+### CHUNK 41 ###
+```markdown
+## 2) Modelo de datos en red.  
+Permite especificar una base de datos en red , donde pueden darse relaciones binarias con cualquier cardinalidad (1:1, 1:N, N:1, N:M) y no es necesario que la estructura tenga forma de árbol.
+```
+
+### CHUNK 42 ###
+```markdown
+## Modelos lógicos basados en registros: tipos de Bases de Datos
+```
+
+### CHUNK 43 ###
+```markdown
+## 3) Modelo de datos relacional.  
+Permite especificar una base de datos relacional , que estará formada por tablas. Una tabla es una estructura bidimensional formada por una sucesión de registros del mismo tipo.  
+Si se imponen ciertas condiciones a las tablas, se pueden tratar como relaciones matemáticas .  
+Las tablas deben cumplir las siguientes condiciones:  
+- 1. Todos los registros de una tabla son del mismo tipo. Para almacenar registros de tipos distintos se usan tablas distintas.
+- 2. En ninguna tabla aparecen campos repetidos.
+- 3. En ninguna tabla existen registros duplicados.
+- 4. El orden de los registros en la tabla es indiferente. En cada momento se pueden recuperar los registros en un orden particular.
+- 5. En cada tabla hay una llave, formada por uno o varios campos.
+```
+
+### CHUNK 44 ###
+```markdown
+## Modelos lógicos basados en registros: tipos de Bases de Datos  
+- 3) Modelo de datos relacional: ejemplo tablas.
+```
+
+### CHUNK 45 ###
+```markdown
+## Equipos  
+| Cod_equipo   | Nombre   | Localidad   |
+|--------------|----------|-------------|
+|              | Mazorcos |             |
+| 2            | Dehesa   | Madrid      |
+| 3            | Canaleja | Alcorcón    |
+```
+
+### CHUNK 46 ###
+```markdown
+## Jugadores  
+|   Cod_jugador |   Cod_equipo | Nombre          |   Edad |
+|---------------|--------------|-----------------|--------|
+|             1 |            1 | Luis Valderrama |     42 |
+|             2 |            1 | Raúl Turrión    |     35 |
+|             3 |            2 | Luis Fernández  |     40 |
+|             4 |            3 | Isaac Sánchez   |     43 |
+|             5 |            3 | Dimas Moreno    |     31 |
+```
+
+### CHUNK 47 ###
+```markdown
+## Transformación del Modelo entidad-relación al Modelo de datos relacional  
+Dado un Diagrama entidad-relación, el paso a tablas o relaciones del Modelo de datos relacional se efectúa como sigue:  
+- · Conjuntos de entidades:
+- · Se define una tabla para cada conjunto de entidades.
+- · Para cada atributo se define una columna en la tabla.
+- · Conjuntos de relaciones sin atributos propios:
+- · Cardinalidad 1:1: En la tabla de uno de los conjuntos de entidades (el que se considere principal) se añaden las columnas necesarias para albergar los atributos que forman la clave del otro conjunto de entidades.
+- · Cardinalidad 1:N o N:1: En la tabla del conjunto de entidades que participa de forma 'muchos' se añaden las columnas necesarias para albergar los atributos que forman la clave del otro conjunto de entidades.
+- · Cardinalidad N:M: Se define una tabla propia para el conjunto de relaciones y, en ella, se definen las columnas necesarias para albergar los atributos que forman la clave de cada uno de los conjuntos de entidades que relaciona ese conjunto de relaciones.  
+## Transformación del Modelo entidad-relación al Modelo de datos relacional
+```
+
+### CHUNK 48 ###
+```markdown
+## · Conjuntos de relaciones con atributos propios:  
+- · Cardinalidad 1:1, 1:N o N:1: Se puede seguir el mismo enfoque dado para conjuntos de relaciones sin atributos propios, pero añadiendo también las columnas necesarias para albergar los atributos del conjunto de relaciones en la misma tabla del conjunto de entidades donde se añada la clave del otro conjunto de entidades. Esta forma está desaconsejada desde el punto de vista conceptual y por cuestiones de mantenimiento del software.
+- · Cardinalidad N:M, 1:1, 1:N o N:1 : Se define una tabla propia para el conjunto de relaciones y, en ella, se definen las columnas necesarias para albergar los atributos que forman la clave de cada uno de los conjuntos de entidades que relaciona ese conjunto de relaciones; en esa misma tabla, además, se definen las columnas necesarias para albergar los atributos propios del conjunto de relaciones.  
+Tema 4. Sistemas de archivos. Introducción a las bases de datos
+```
+
+### CHUNK 49 ###
+```markdown
+## Transformación del Modelo entidad-relación al Modelo de datos relacional: ejemplos
+```
+
+### CHUNK 50 ###
+```markdown
+## Cliente  
+Coche
+```
+
+### CHUNK 51 ###
+```markdown
+## Compra  
+DNI  
+Nombre  
+Dirección  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+Matrícula  
+Marca  
+DNI  
+Matrícula  
+Fecha  
+Tema 4. Sistemas de archivos. Introducción a las bases de datos
+```
+
+### CHUNK 52 ###
+```markdown
+## Transformación del Modelo entidad-relación al Modelo de datos relacional: ejemplos
+```
+
+### CHUNK 53 ###
+```markdown
+## Médico
+```
+
+### CHUNK 54 ###
+```markdown
+## Paciente  
+Nº de colegiado  
+Nombre  
+DEPARTAMENTO DE \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  
+Nº de tarjeta sanitaria  
+Nº de colegiado  
+Nombre  
+Dirección
+```
+
+### CHUNK 55 ###
+```markdown
+## 4.4 Sistema de gestión de la base de datos
+```
+
+### CHUNK 56 ###
+```markdown
+## Definición de sistema de gestión de base de datos  
+Sistema de gestión de la base de datos - SGBD ("Data Base Management System" - DBMS): conjunto de software destinado a la creación, control y manipulación de la información de una base de datos.  
+Un SGBD debe permitir la realización de las siguientes tareas :  
+- 1. Definición del esquema de la base de datos y de los distintos subesquemas.
+- 2. Acceso a los datos desde algún lenguaje de alto nivel.
+- 3. Interrogación (o recuperación de la información) directa en modo conversacional.
+- 4. Organización física de la base de datos y recuperación tras fallos del sistema.  
+Tema 4. Sistemas de archivos. Introducción a las bases de datos
+```
+
+### CHUNK 57 ###
+```markdown
+## Lenguajes específicos en un SGBD  
+Las tres primeras tareas se realizan mediante dos lenguajes específicos:  
+- · Lenguaje de descripción de datos  DDL ( , "Data Description Language» ). Se usa para la descripción del esquema y de los subesquemas.
+- · Lenguaje de manipulación de datos  DML ( , "Data Manipulation Language»). Se utiliza para el acceso a la base de datos desde lenguajes de alto nivel o en modo conversacional.
+- El sistema de gestión de la base de datos actúa como intermediario entre los programas de aplicación y el sistema operativo, lo que permite que los programas sean independientes de la estructura física de los datos.
+```
+
+
+
+========================================
+## 📄 Archivo: [Teoría] Transp.Tema5.GeneracionDepuracionAplicaciones_2000.pdf
+========================================
+
+**Método de extracción usado:** Docling
+
+**Chunks Detectados:** 67
+
+### CHUNK 1 ###
+```markdown
+## Tema 5. Generación y Depuración de Aplicaciones  
+- 5.1 Concepto de plataforma. Software
+- independiente de plataforma
+- 5.2 Plataformas para el desarrollo de aplicaciones
+- 5.3 Técnicas de depuración de programas
+- · Conocer conceptos y propiedades de calidad (portabilidad, productividad, etc.) a incorporar en el proceso de desarrollo de software.
+- · Conocer los fundamentos de los procesos de generación y depuración de aplicaciones.
+- · Conocer técnicas a aplicar en las diferentes fases de generación y desarrollo de programas.
+- · Comprender la importancia de plataformas y entornos de desarrollo y depuración de aplicaciones.
+```
+
+### CHUNK 2 ###
+```markdown
+## Bibliografía básica  
+- · [Agans06] David J. Agans: ' Debugging: The 9 Indispensable Rules for Finding Even the Most Elusive Software and Hardware Problems ', Amacom, 2006
+- Disponible en:
+- · [Bottcher18] Evan Bottcher. ' What I Talk About When I Talk About Platforms'. https://martinfowler.com/articles/talk-about-platforms.html (Último acceso: Abril 2020)
+- · [Dooley16] John F. Dooley. ' Software Development, Design and Coding: With Patterns, Debugging, Unit Testing, and Refactoring ', Apress, 2017
+- · [Stallman18] Richard Stallman, Roland Pesch, Stan Shebs. ' Debugging with GDB: The GNU Source-Level Debugger ', 12th Media Services, 2018
+- · [Zeller09] A. Zeller: 'Why Programs Fail ' (2nd Edition), Morgan Kaufmann Publishers (Elsevier), 2009
+```
+
+### CHUNK 3 ###
+```markdown
+## 5.1 Plataforma  
+Tema 4. Generación y depuración de aplicaciones
+```
+
+### CHUNK 4 ###
+```markdown
+## Concepto de Plataforma  
+Plataforma: Combinación de hardware y/o software utilizada para ejecutar aplicaciones software.  
+La versión más simple de plataforma puede ser una arquitectura de computadora o sistema operativo. Otros ejemplos son los navegadores web y sus plugin asociados, las máquinas virtuales (ejemplo, JVM), las plataformas de computación en la nube (Amazon Web Services, Google Cloud, Microsoft Azure, IBM Bluemix, etc.).  
+Ejemplos de plataformas:  
+| Sistema Operativo   | Arquitectura Hardware                                                                                               |
+|---------------------|---------------------------------------------------------------------------------------------------------------------|
+| Microsoft Windows   | x86                                                                                                                 |
+| Linux/Unix          | X86, RISC, SPARC                                                                                                    |
+| Mac OS X            | X86, PowerPC                                                                                                        |
+| Android             | Dispositivos móviles basados en arquitecturas  ARM, MIPS y x86                                                      |
+| Java                | Múltiples SOs para los que existen  implementaciones de Java Virtual Machine , y  por tanto múltiples arquitecturas |
+```
+
+### CHUNK 5 ###
+```markdown
+## 5.1 Plataforma  
+Tema 4. Generación y depuración de aplicaciones
+```
+
+### CHUNK 6 ###
+```markdown
+## Clasificación del software  
+En cuanto a plataformas, el software se puede clasificar como:  
+- 1. Dependiente de la plataforma particular para la cual se desarrolla y ejecuta (bien sea una plataforma hardware, sistema operativo o máquina virtual)
+- 2. Multiplataforma, cuando el software se ha desarrollado e interopera en varias plataformas.  
+Una aplicación multiplataforma se puede ejecutar en:  
+- 1. tantas plataformas como existan (caso ideal de software independiente de la plataforma ), o
+- 2. tan sólo en dos plataformas diferentes, por ejemplo, una aplicación multiplataforma se podría ejecutar en Microsoft Windows y Linux en arquitecturas x86.
+```
+
+### CHUNK 7 ###
+```markdown
+## 5.1 Plataforma
+```
+
+### CHUNK 8 ###
+```markdown
+## Software multiplaforma  
+- El software multiplataforma puede dividirse en dos tipos :
+- 1. Aplicaciones que requieren su creación o compilación para cada plataforma específica donde se ejecutarán.
+- 2. Aplicaciones que directamente se pueden ejecutar en más de una plataforma sin preparación especial (p. ej., plataforma Java):  
+Aplicaciones  escritas  en  un lenguaje interpretado (o precompilado en un código intermedio) portable: el intérprete y  los  paquetes  para  su  ejecución  son estándares para varias plataformas.  
+Fuente figura:  
+http://parasitovirtual.wordpress.com/2010/09/23/introduccion-a-java/  
+Tema 4. Generación y depuración de aplicaciones
+```
+
+### CHUNK 9 ###
+```markdown
+## 5.1 Plataforma  
+Tema 4. Generación y depuración de aplicaciones
+```
+
+### CHUNK 10 ###
+```markdown
+## Plataforma Java (1/3)  
+Ejemplo de plataforma a mayor nivel de abstracción (incluye lenguaje de programación) que el proporcionado por un sistema operativo.  
+Java 2 Platform Standard Edition 5.0  
+Fuente figura: http://luizgustavoss.wordpress.com/2009/02/06/visao-geral-da-tecnologia-java/
+```
+
+### CHUNK 11 ###
+```markdown
+## 5.1 Plataforma  
+Tema 4. Generación y depuración de aplicaciones
+```
+
+### CHUNK 12 ###
+```markdown
+## Plataforma Java (2/3)  
+- · Requiere máquina virtual JVM ( Java Virtual Machine ): el mismo código se puede ejecutar en todos los sistemas que implementen JVM.
+- · Los ejecutables Java no se ejecutan nativamente sobre el sistema operativo, es decir, ni Windows, Linux, Mac OS X, etc, ejecutan programas Java directamente. Sin embargo, Java Native Interface (JNI) permite el acceso a funciones específicas del sistema operativo.
+- · Para aplicaciones Java móviles : Windows y Mac OS utilizan plugins en los navegadores para su ejecución; y Android soporta Java directamente.
+```
+
+### CHUNK 13 ###
+```markdown
+## Fuente figura:  
+http://profejavaoramas.blogspot.com.es/201 0/04/maquina-virtual-de-java-jvm.html
+```
+
+### CHUNK 14 ###
+```markdown
+## 5.1 Plataforma  
+Tema 4. Generación y depuración de aplicaciones
+```
+
+### CHUNK 15 ###
+```markdown
+## Plataforma Java (3/3)  
+- · JVM ejecuta programas Java compilados a lenguaje intermedio ( bytecodes ) independiente de hardware y sistema operativo donde se ejecuta; los programas Java son multiplataforma , pero no la JVM (hay una para cada sistema operativo).
+- · Hay un compilador JIT ( Just In Time ) dentro de la JVM ( desde la version 1.2) que traduce Java bytecodes en instrucciones nativas del procesador en tiempo de ejecución, las cuales se almacenan para su posterior reutilización.
+- · El uso del compilador JIT permite que, después de un breve retardo en la carga y prácticamente su total compilación, las aplicaciones Java se ejecuten tan rápidamente como programas nativos .
+```
+
+### CHUNK 16 ###
+```markdown
+## 5.1 Plataforma
+```
+
+### CHUNK 17 ###
+```markdown
+## Plataforma Android (1/3)  
+- · La arquitectura de Android está formada por distintas capas, todas ellas basadas en software libre. Cada una de las capas utiliza elementos de la capa inferior para realizar sus funciones (pila de software):
+- · Kernel de Linux . Es la base de la plataforma Android: generación de subprocesos, administración de memoria de bajo nivel, funciones de seguridad claves, etc.  
+Tema 4. Generación y depuración de aplicaciones  
+Dialer  
+Package  
+View  
+|                 |           | Libc   | Android Runtime (ART)   |
+|-----------------|-----------|--------|-------------------------|
+| Media Framework | OpenGL ES |        | Core Libraries          |
+```
+
+### CHUNK 18 ###
+```markdown
+## Hardware Abstraction Layer (HAL)  
+Audio  
+Bluetooth  
+Camera  
+Sensors  
+- · Capa de abstracción de hardware (HAL). Módulos de biblioteca que implementan interfaces para un tipo específico de componente de hardware (ej. módulo de la cámara o de Bluetooth).  
+Fuente figura: https://developer.android.com/guide/platform
+```
+
+### CHUNK 19 ###
+```markdown
+## 5.1 Plataforma
+```
+
+### CHUNK 20 ###
+```markdown
+## Plataforma Android (2/3)  
+- · Tiempo de ejecución de Android (ART). El Ejecuta varias máquinas virtuales en dispositivos de memoria baja utilizando archivos DEX (formato de código de bytes diseñado especialmente para Android y optimizado para ocupar un espacio de memoria mínimo).
+```
+
+### CHUNK 21 ###
+```markdown
+## Fundamentos del Software  
+Tema 4. Generación y depuración de aplicaciones  
+- · Bibliotecas C/C++ nativas. Muchos componentes y servicios centrales del sistema Android, como el ART y la HAL, se basan en código nativo que requiere bibliotecas nativas escritas en C y C++.  
+Fuente figura: https://developer.android.com/guide/platform
+```
+
+### CHUNK 22 ###
+```markdown
+## 5.1 Plataforma
+```
+
+### CHUNK 23 ###
+```markdown
+## Plataforma Android (3/3)  
+- · Marco de trabajo de la API de Java. El conjunto de funciones del SO Android está disponible mediante API escritas en lenguaje Java, necesarias para crear apps de Android simplificando la reutilización de componentes del sistema y servicios centrales y modulares.
+- · Apps del sistema. Se incluye un conjunto de apps centrales para correo electrónico, mensajería SMS, calendarios, navegación en Internet y contactos, entre otros elementos. Las apps del sistema funcionan como apps para los usuarios y brindan capacidades claves a las cuales los desarrolladores pueden acceder desde sus propias apps.  
+|                 | OpenMAX AL   | Libc   | Android Runtime (ART)   |
+|-----------------|--------------|--------|-------------------------|
+| Media Framework | OpenGL ES    |        | Core Libraries          |  
+Fuente figura: https://developer.android.com/guide/platform
+```
+
+### CHUNK 24 ###
+```markdown
+## 5.2  Framework de Desarrollo de Aplicaciones  
+Tema 4. Generación y depuración de aplicaciones
+```
+
+### CHUNK 25 ###
+```markdown
+## Herramientas básicas para el desarrollo software en Linux  
+| Fases                                  | Herramientas                                                                                                                                                                                                                                                           |
+|----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Generador de código fuente             | Editores de texto ( pico ,  emacs ,  xemacs , …)                                                                                                                                                                                                                       |
+| Sangrado código fuente                 | indent  sangra un programa en C sintácticamente correcto                                                                                                                                                                                                               |
+| Compilación código fuente              | gcc  y  g++  de GNU pre-procesa, compila, optimiza, y enlaza para generar  archivos ejecutables                                                                                                                                                                        |
+| Gestión de software basado  en módulos | make  actualiza archivos en base a relaciones de dependencia previamente  almacenadas                                                                                                                                                                                  |
+| Gestión de bibliotecas                 | • ar  permite crear y manipular archivadores en base a conjunto de archivos  • ranlib  genera y añade una tabla de índice de contenidos a archivadores  acelerando la fase de enlazado  • nm  visualiza información de archivos objeto que ayuda a depurar bibliotecas |
+| Control de versiones                   | CVS (Sistema Concurrente de Versiones) es una interfaz a RCS (Sistemas de  Control de Revisiones), permite gestión de versiones en múltiples directorios y  con múltiples desarrolladores                                                                              |
+```
+
+### CHUNK 26 ###
+```markdown
+## 5.2  Framework de Desarrollo de Aplicaciones  
+Tema 4. Generación y depuración de aplicaciones
+```
+
+### CHUNK 27 ###
+```markdown
+## Integrated Development Environment (IDE)  
+- · Entorno integrado de desarrollo (IDE): aplicación que proporciona un conjunto de herramientas relacionadas para el desarrollo del software:
+- · creación y edición de código fuente;
+- · generadores (compiladores, interpretes, enlazadores, gestores de bibliotecas, etc) de código objeto;
+- · despliegue y depuración de programas.
+- · La integración de herramientas contrasta con el desarrollo utilizando las herramientas aisladas que incluye Linux ( gcc make , , …)
+- · IDEs ejemplo : Microsoft Visual Studio, Eclipse, SharpDevelop , etc.
+- · IDEs actuales para el desarrollo de software orientado a objetos ( ej: Netbeans ) incluyen otras herrramientas adicionales: navegadores para diagramas de jerarquía de clases, inspectores de objetos, etc.
+```
+
+### CHUNK 28 ###
+```markdown
+## 5.2  Framework de Desarrollo de Aplicaciones  
+Tema 4. Generación y depuración de aplicaciones
+```
+
+### CHUNK 29 ###
+```markdown
+## Objetivos de un IDE  
+- · Máximizar la productividad de los programadores con herramientas provistas de interfaces de usuario similares: todo el desarrollo se lleva a cabo bajo una misma aplicación.
+- · Reducir tareas de configuración de múltiples herramientas proporcionando un conjunto de facilidades de forma cohesiva .
+- · Aprender rapidamente a utilizar un IDE que integra manualmente todas las herramientas.
+- · Acelerar el aprendizaje de lenguajes de programación , por ejemplo, el código se puede analizar mientras se edita para conocer de forma inmediata errores léxicos, sintácticos, etc.
+```
+
+### CHUNK 30 ###
+```markdown
+## 5.2  Framework de Desarrollo de Aplicaciones  
+Tema 4. Generación y depuración de aplicaciones
+```
+
+### CHUNK 31 ###
+```markdown
+## Tipos de IDE  
+- 1. Dedicados a un sólo lenguaje de programación y con un conjunto de caracteríticas propias del paradigma de programación al cual pertenece (p. ej. herramienta para manejo de jerarquía de clases en orientación a objetos).
+- 2. IDEs que soportan múltiples lenguajes de programación :
+- a) Alternativamente mediante plugins (es posible instalar varios lenguajes al mismo tiempo): Los IDEs Eclipse y Netbeans soportan entre otros C/C++, Ada, Perl, Python, Ruby, y PHP; o
+- a) Al mismo tiempo para un conjunto de lenguajes/plataformas relacionados: Microsoft Visual Studio y Xcode (OS X/iOS y lenguajes C/C++, Objective-C, Java, AppleScript, Python, …)
+```
+
+### CHUNK 32 ###
+```markdown
+## 5.2  Framework de Desarrollo de Aplicaciones
+```
+
+### CHUNK 33 ###
+```markdown
+## IDE ejemplo: NetBeans para Java  
+Fuente figura: http://www.nacho-alvarez.es/blog/2008/10/13/problema-con-sun-wireless-toolkit-bajonetbeans-ventana-en-blanco/
+```
+
+### CHUNK 34 ###
+```markdown
+## 5.2  Framework de Desarrollo de Aplicaciones  
+Tema 4. Generación y depuración de aplicaciones
+```
+
+### CHUNK 35 ###
+```markdown
+## IDEs y Programación Visual  
+- · La programación visual hace uso de IDEs que permiten a los diseñadores/programadores crear nuevas aplicaciones combinando bloques/nodos de código mediante diagramas de estructura y de flujos, normalmente basados en el lenguaje UML ( Unified Modeling Language, https://www.uml.org/ )
+```
+
+### CHUNK 36 ###
+```markdown
+## · Ejemplos :  
+- 1. Lego Mindstorms System : utilizando la potencia de navegadores como Mozilla.
+- 2. KTechlab :IDE abierto y simulador para desarrollar software para microcontroladores.
+- 3. LabVIEW y EICASLAB : especializados en programación distribuida.
+```
+
+### CHUNK 37 ###
+```markdown
+## 5.2  Framework de Desarrollo de Aplicaciones  
+Tema 4. Generación y depuración de aplicaciones
+```
+
+### CHUNK 38 ###
+```markdown
+## Framework de desarrollo software  
+- · Framework de desarrollo software : abstracción que proporciona software con funcionalidad genérica que puede cambiarse selectivamente mediante código de usuario para la creación de aplicaciones.
+- · Incluye herramientas similares a las encontradas en IDEs (compiladores, bibliotecas, etc.), así como una API ( Application Programming Interface ).
+- · Un framework tiene caracteristicas clave para la reutilización software que lo distinguen de otras alternativas tales como bibliotecas o bloques/nodos de código en IDEs.
+```
+
+### CHUNK 39 ###
+```markdown
+## 5.2  Framework de Desarrollo de Aplicaciones  
+Tema 4. Generación y depuración de aplicaciones
+```
+
+### CHUNK 40 ###
+```markdown
+## Objetivos de un framework  
+- · Facilitar y reducir el tiempo el desarrollo evitando dedicar tiempo a detalles de bajo nivel.
+- · Por ejemplo, un desarrollador debe escribir la funcionalidad para la gestión de un sistema bancario en Web en lugar de los mecanismos para manejar peticiones y gestión de estado tales como crear hebras para atender una nueva petición cuando el resto de hebras ya sirven otras peticiones previas.
+- · Debido a la complejidad de las APIs, un framework conlleva un tiempo extra de aprendizaje inicialmente.
+- · Generalmente los frameworks se centran en dominios específicos : compiladores para diferentes lenguajes y plataformas, sistemas de soporte a la decisión, middleware, computación de altas prestaciones.
+```
+
+### CHUNK 41 ###
+```markdown
+## 5.2  Framework de Desarrollo de Aplicaciones  
+Tema 4. Generación y depuración de aplicaciones
+```
+
+### CHUNK 42 ###
+```markdown
+## Características de un framework  
+- · Inversion de control: a diferencia de las bibliotecas o aplicaciones normales, el código del framework invoca al código proporcionado por el usuario del framework.
+- · El framework tiene un comportamiento útil por defecto .
+- · Extensibilidad : un framework puede ser ampliado sobreescribiendo de forma selectiva o especializa su código con la funcionalidad  específica proporcionada por el usuario.
+- · El código del framework no puede ser modificado, excepto por extensibilidad (como se ha comentado en el punto anterior).
+```
+
+### CHUNK 43 ###
+```markdown
+## 5.2  Framework de Desarrollo de Aplicaciones  
+Tema 4. Generación y depuración de aplicaciones
+```
+
+### CHUNK 44 ###
+```markdown
+## Arquitectura de un framework  
+- · Un framework se define mediante componentes básicos , y las relaciones entre ellos, que no pueden ser modificados ( frozen spots ).
+- · Existen partes predeterminadas donde el programador añade su código con la funcionalidad específca deseada ( hot spots ).
+- · Ejemplo de arquitectura de un framework orientado a objetos:
+- o El framework consta de clases abstractas y concretas, y su instanción consiste en componer y especializar dichas clases.
+- o Las clases definidas por el usuario reciben mensajes de las clases del frameword (inversión de control); los desarrolladores manejan ésto implementando los métodos abstractos de la superclase.
+```
+
+### CHUNK 45 ###
+```markdown
+## 5.3  Técnicas de Depuración de Programas  
+Tema 4. Generación y depuración de aplicaciones
+```
+
+### CHUNK 46 ###
+```markdown
+## Definición y objetivos  
+- · Depuración : es una actividad compleja consistente en encontrar y solucionar errores cometidos en el diseño y codificación de programas.
+- · Objetivos de las técnicas aplicadas a la depuración:
+- o Incrementar la productividad encontrando y solucionando errores más rapida y efectivamente.
+- o Mejorar la calidad de los programas eliminando defectos.
+- o Prevenir errores como mejor solución.
+- o Mejorar lenguajes de programación y herramientas identificando errores estáticamente y detectando el incumplimiento de invariantes dinámicamente, e.g., definición de sistemas de tipos en Java y C#.
+```
+
+### CHUNK 47 ###
+```markdown
+## 5.3  Técnicas de Depuración de Programas  
+Tema 4. Generación y depuración de aplicaciones
+```
+
+### CHUNK 48 ###
+```markdown
+## Fases para la generación de fallos  
+- · Creación de un defecto : Pieza de código creada por el programador que puede causar infección como consecuencia de un error, cambios en los requisitos originales, o interacciones impredecibles entre componentes (p. ej. programas distribuidos).
+- · El defecto produce infección . Los estados  a alcanzar en la ejecución del programa difieren de los previstos por el programador.
+- · Propagación de la infección . Como un programa accede a su estado actual para su ejecución, una infección se puede propagar a otros estados.
+- · La infección causa el fallo : Error observable externamente en el comportamiento de un programa.
+```
+
+### CHUNK 49 ###
+```markdown
+## 5.3  Técnicas de Depuración de Programas  
+Tema 4. Generación y depuración de aplicaciones
+```
+
+### CHUNK 50 ###
+```markdown
+## Ejecución de un programa como secuencia de estados ( Fuente fig.: [Zeller09])
+```
+
+### CHUNK 51 ###
+```markdown
+## 5.3  Técnicas de Depuración de Programas  
+Tema 4. Generación y depuración de aplicaciones
+```
+
+### CHUNK 52 ###
+```markdown
+## Propiedades en la generación de fallos  
+- · Un estado de programa viene definido por los valores de las variables y la posición de ejecución (contador de programa).
+- · Cada estado determina los siguientes estados hasta alcanzar el estado final.
+- · Las pruebas muestran la presencia de defectos pero nunca la ausencia:
+- o Hay defectos que no provocan infecciones, y hay infecciones que no provocan fallos.
+- o La ausencia de fallos no implica ausencia de defectos.
+- · La cadena de infección viene definida por la relación causa-efecto desde el defecto a fallo; la depuración consiste en identificar dicha cadena de infección para eliminar el defecto.
+```
+
+### CHUNK 53 ###
+```markdown
+## 5.3  Técnicas de Depuración de Programas
+```
+
+### CHUNK 54 ###
+```markdown
+## Fases de depuración  
+- 1. Registrar el problema.
+- 2. Reproducir el fallo (the failure) : más complicado para programas no-deterministas y de larga ejecución.
+- 3. Automatizar y simplificar el caso de prueba.
+- 4. Encontrar posibles origenes de la infección.
+- 5. Centrar la búsqueda en los orígenes más probables.
+- 6. Aislar la cadena de infección.
+- 7. Corregir el defecto: sencillo si está claro el defecto que produce el fallo.  
+Tema 4. Generación y depuración de aplicaciones
+```
+
+### CHUNK 55 ###
+```markdown
+## 5.3  Técnicas de Depuración de Programas  
+Tema 4. Generación y depuración de aplicaciones
+```
+
+### CHUNK 56 ###
+```markdown
+## Características del proceso de depuración  
+- · Las fases 4-6 están directamente relacionadas con comprender cómo se produce el fallo .
+- · La depuración es un problema de búsqueda en dos dimensiones:
+- 1. Espacio : parte del estado (conjunto de variables) que está infectado.
+- 2. Tiempo : cuando tiene lugar la infección (estado).
+- · La búsqueda es de envergadura incluso para los programas sencillos:
+- 1. Los estados pueden comprender muchas variables.
+- 2. La ejecución puede constar de muchos estados.
+```
+
+### CHUNK 57 ###
+```markdown
+## 5.3  Técnicas de Depuración de Programas
+```
+
+### CHUNK 58 ###
+```markdown
+## Ejemplo de estado de ejecución:  
+- · compilador GNU.
+- · 44.000 variables (vértices).
+- · aprox. 42.000 referencias entre variables (arcos) (Fuente: [Zeller09])  
+Tema 4. Generación y depuración de aplicaciones
+```
+
+### CHUNK 59 ###
+```markdown
+## 5.3  Técnicas de Depuración de Programas
+```
+
+### CHUNK 60 ###
+```markdown
+## Búsqueda del defecto (Fuente: [Zeller09])  
+- · Se aplican dos principios básicos para la búsqueda:
+- 1. separar estados sanos de infectados, y
+- 2. separar variables relevantes e irrelevantes.
+- · Un fallo puede ocurrir debido a ciertos valores de variables en estados anteriores (!), lo cual determina dependencias que ayudan a localizar el defecto .  
+Tema 4. Generación y depuración de aplicaciones
+```
+
+### CHUNK 61 ###
+```markdown
+## 5.3  Técnicas de Depuración de Programas  
+Tema 4. Generación y depuración de aplicaciones
+```
+
+### CHUNK 62 ###
+```markdown
+## Programación estructurada y depuración  
+La construcción de programas estructurados ayuda de forma importante a la depuración gracias a las siguientes características:  
+- 1. Contiene un conjunto de funciones bien definidas .
+- 2. Utiliza construcciones iterativas (como while y for ) en vez de goto .
+- 3. Utiliza variables que tienen un propósito y a las cuales se les ha dado un nombre significativo.
+- 4. Utiliza tipos de datos estructurados para representar datos complejos.
+- 5. Utiliza ADTs ( Abstract Data Type ) o directamente el paradigma de programación orientado a objetos .
+```
+
+### CHUNK 63 ###
+```markdown
+## 5.3  Técnicas de Depuración de Programas  
+Tema 4. Generación y depuración de aplicaciones
+```
+
+### CHUNK 64 ###
+```markdown
+## Depurador  
+Definición : Herramienta software que ayuda a ejecución controlada de un programa para ayudar a encontrar el defectos que producen un fallos.
+```
+
+### CHUNK 65 ###
+```markdown
+## Características :  
+- 1. Interactivo. Aunque se puede usar en modo batch , su rol principal es interactuar con el programador.
+- 2. Proporciona un conjunto de instrucciones que indican las acciones de depuración a realizar.
+- 3. Permite detectar errores en tres categorías :
+- a. Sintácticos : detectados durante la fase de compilación o la de enlazado.
+- b. Ejecución : p. ej., acceder fuera del espacio de direcciones asignadas ( segmentation fault ) o realizar una operación de división por cero, ambas produciendo la terminación del programa.
+- c. Lógicos : p. ej., bucles que iteran más o menos veces de las previstas.
+```
+
+### CHUNK 66 ###
+```markdown
+## 5.3  Técnicas de Depuración de Programas  
+Tema 4. Generación y depuración de aplicaciones
+```
+
+### CHUNK 67 ###
+```markdown
+## Tipos de errores comunes  
+Los tipos de errores más comunes que se producen cuando se programa son:  
+- 1. Escribir  código  de  una  forma  desestructurada . Cuando  un  programa  se estructura  adecuadamente,  se  divide  el  problema  en  sub-problemas  sobre  los cuales  se  puede  trabajar  independientemente  (razonar  sobre  su  solución  y probarla) y después  componer  las distintas partes. Esto facilita mucho  la depuración posterior.
+- 2. Programar sin pensar : Antes de comenzar a codificar hay que diseñar la solución al  problema planteado, pensando las distintas alternativas de solución posibles y entendiendo el algoritmo que se ha de seguir.
+```
+
+
+
+========================================
+## 📄 Archivo: [Ejercicios] ProblemasTema1.pdf
+========================================
+
+_(Procesamiento saltado: Enfoque actual en 'Teoría')_
+
+
+
+========================================
+## 📄 Archivo: [Ejercicios] ProblemasTema2-2.pdf
+========================================
+
+_(Procesamiento saltado: Enfoque actual en 'Teoría')_
+
+
+
+========================================
+## 📄 Archivo: [Ejercicios] ProblemasTema3-2.pdf
+========================================
+
+_(Procesamiento saltado: Enfoque actual en 'Teoría')_
+
+
+
+========================================
+## 📄 Archivo: [Ejercicios] ProblemasTema4-1.pdf
+========================================
+
+_(Procesamiento saltado: Enfoque actual en 'Teoría')_
+
+
+
+========================================
+## 📄 Archivo: [Prácticas] Módulo.I.Órdenes.Unix.y.Shell.Bash-1.pdf
+========================================
+
+_(Procesamiento saltado: Enfoque actual en 'Teoría')_
+
+
+
+========================================
+## 📄 Archivo: [Prácticas] Módulo.II.Compilación.y.depuración.de.programas.v1.pdf
+========================================
+
+_(Procesamiento saltado: Enfoque actual en 'Teoría')_
+

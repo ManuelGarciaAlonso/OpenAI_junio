@@ -1,0 +1,221 @@
+### 🔖 Ejercicio 1
+
+```markdown
+- 1. Dado un proceso en un SO con su información de contexto, de datos y de código según se muestra en la figura y que ya ha sido atendido en un 50% y le resta la otra mitad para finalizar su ejecución. Con la idea de optimizar el espacio de memoria para que el SO pudiera disponer de un mayor número de procesos en ésta, ¿podría reducirse el espacio que ocupa en memoria en alguna de las siguientes instancias?
+
+(a)La lista de procesos.
+
+- (b)Información del contexto del proceso.
+- (c) Tamaño de los datos.
+- (d)Tamaño del código.
+```
+
+### 🔖 Ejercicio 2
+
+```markdown
+- 2. ¿Por qué cuando un proceso está en modo 'ejecutándose' y pretende acceder a una dirección de memoria fuera del área asignada, se informa de que se ha producido un error en la ejecución? ¿Quién informa de ello? Razone la respuesta.
+```
+
+### 🔖 Ejercicio 3
+
+```markdown
+- 3. ¿Tiene sentido un modelo de 5 estados de los procesos en un SO monousuario? Razone la respuesta.
+```
+
+### 🔖 Ejercicio 4
+
+```markdown
+- 4. Dado un proceso que está en modo 'ejecutándose' y pretende acceder a una dirección de memoria fuera del área asignada, lo cual sería un error en la ejecución, ¿a qué modo pasaría dicho proceso? Razone la respuesta. (a)Bloqueado.
+- (b)No cambia de modo.
+- (c) Finalizado.
+- (d)Preparado.
+```
+
+### 🔖 Ejercicio 5
+
+```markdown
+- 5. Un  planificador  de  procesos  tiene  una  tarea  concreta  dentro  de  un  SO  multiprogramado.  ¿Tiene  sentido disponer de un planificador de procesos en un SO monoprogramado? Razone la respuesta.
+```
+
+### 🔖 Ejercicio 6
+
+```markdown
+- 6. Dado  un  SO  multiprogramado,  ¿bajo  qué  circunstancias  se  podría  prescindir  del  planificador  de  procesos? Razone la respuesta.
+```
+
+### 🔖 Ejercicio 7
+
+```markdown
+- 7. Diga cuales de las siguientes operaciones pueden realizarse únicamente en modo supervisor, o modo kernel:
+- a) Consultar la hora del sistema.
+- b) Cambiar la fecha del sistema.
+- c) Leer una pista/sector de un disco magnético.
+- d) Generar  una interrupción software.
+- e) Generar una interrupción.
+- f) Modificar la dirección de un vector de la tabla de vectores de interrupción.
+- g) Deshabilitar las interrupciones.
+```
+
+### 🔖 Ejercicio 8
+
+```markdown
+- 8. En el caso de un ordenador que se vaya a usar únicamente para un único usuario, ¿qué interés puede tener la existencia de los modos de funcionamiento supervisor/usuario?
+```
+
+### 🔖 Ejercicio 9
+
+```markdown
+- 9. Cuestiones sobre procesos, y asignación de CPU:
+- a) ¿Es  necesario  que  lo  último  que  haga  todo  proceso  antes  de  finalizar  sea  una  llamada  al  sistema  para finalizar? ¿Sigue siendo esto cierto en sistemas monoprogramados?
+- b) Cuando el controlador de un dispositivo produce una interrupción ¿se produce necesariamente un cambio de contexto?,  ¿y cuando se produce una llamada al sistema?
+- c) Cuando un proceso se bloquea, ¿deberá encargarse él directamente de cambiar el valor de su estado en el descriptor de proceso o PCB?
+- d) Sea un proceso que cambia de Ejecutándose a Bloqueado, ¿puede este cambio provocar un cambio de estado en otros procesos? Si es así, ¿en qué casos?
+- e) Idem para el cambio de estado Bloqueado a Ejecutable.
+```
+
+### 🔖 Ejercicio 10
+
+```markdown
+- 10. En los primeros ordenadores, cada byte de datos leído o escrito, era manejado directamente por la CPU (es decir,  no  existía  DMA  -  Acceso  Directo  a  Memoria).  ¿Qué  implicaciones  tenía  esta  organización  para  la multiprogramación?
+```
+
+### 🔖 Ejercicio 11
+
+```markdown
+- 11. ¿Por qué no es el intérprete de órdenes (shell) parte del propio sistema operativo? ¿Qué ventajas aporta el no serlo?
+
+| Código   | 12922 KB   |
+|----------|------------|
+| Pila     | 3002 KB    |
+| Datos    | 434 KB     |
+```
+
+### 🔖 Ejercicio 12
+
+```markdown
+- 12. Para cada una de las llamadas al sistema siguientes, especificar y explicar si su procesamiento por el sistema operativo implica un cambio de contexto:
+- a) Crear un proceso.
+- b) Abortar un proceso, es decir, terminarlo forzosamente.
+- c) Suspender o bloquear un proceso.
+- d) Reanudar un proceso (inverso al caso anterior).
+- e) Modificar la prioridad de un proceso.
+```
+
+### 🔖 Ejercicio 13
+
+```markdown
+- 13. ¿Tiene sentido mantener ordenada por prioridades la cola de procesos bloqueados? Si lo tuviera, ¿en qué casos sería útil hacerlo?
+```
+
+### 🔖 Ejercicio 14
+
+```markdown
+- 14. ¿Por qué se utilizan potencias de dos para los tamaños de página, número de páginas en el espacio lógico de un proceso, y números de marcos de página?
+```
+
+### 🔖 Ejercicio 15
+
+```markdown
+- 15. Sitúese en un sistema paginado, en donde la memoria real tiene un tamaño de 16 Mbytes, una dirección lógica ocupa 32 bits, de los cuales los 22 de la izquierda constituyen el número de página, y los 10 de la derecha el desplazamiento dentro de la página. Según lo anterior,
+- a) ¿Qué tamaño tiene cada página?
+- b) ¿En cuántos marcos de página se divide la memoria física?
+- c) ¿Qué tamaño deberá tener el campo Número de Marco de la Tabla de Páginas?
+- d) Además de dicho campo, suponga que la Tabla de Páginas tiene los siguientes campos con los siguientes valores: Protección: 1 bit     (1= Sólo se permite leer; 0= Cualquier tipo de acceso). ¿Cuál es el tamaño de la Tabla de Páginas para un proceso cuyo espacio de memoria lógico es de 103K bytes?
+```
+
+### 🔖 Ejercicio 16
+
+```markdown
+- 16. Suponga que la tabla de páginas para el proceso actual se parece a la de la figura. Todos los números son decimales, la numeración comienza en todos los casos desde cero, y todas las direcciones de memoria son direcciones en bytes. El tamaño de página es de 1024 bytes.
+- ¿Qué direcciones físicas corresponderán con cada una de las siguientes direcciones lógicas del proceso?
+- a)
+- 999
+- b) 2121
+- c) 5400
+```
+
+### 🔖 Ejercicio 17
+
+```markdown
+- 17. ¿Qué tipo de fragmentación se produce en un sistema de gestión de memoria paginado? ¿Qué decisiones de diseño se pueden tomar para minimizar dicho problema, y cómo afectan estas decisiones al comportamiento del sistema?
+```
+
+### 🔖 Ejercicio 18
+
+```markdown
+- 18. Suponga que un proceso emite una dirección lógica igual a 2453 y que se utiliza la técnica de paginación, con páginas de 1024 palabras
+- a) Indique el par de valores (número de página, desplazamiento) que corresponde a dicha dirección.
+- b) ¿Es posible que dicha dirección lógica se traduzca en la dirección física 9322? Razónelo.
+
+|   Número de  página virtual |   Número de marco  de página |
+|-----------------------------|------------------------------|
+|                           0 |                            4 |
+|                           1 |                            7 |
+|                           2 |                            1 |
+|                           3 |                            2 |
+|                           4 |                           10 |
+|                           5 |                            0 |
+```
+
+### 🔖 Ejercicio 19
+
+```markdown
+- 19. Suponga que tenemos 3 procesos ejecutándose concurrentemente en un determinado instante. El sistema operativo utiliza un sistema de memoria con  paginación.  Se  dispone  de  una  memoria  física  de  131072  bytes (128K).  Sabemos  que  nuestros  procesos  al  ser  ejecutados  tienen  los parámeros que se muestran en la tabla.
+
+| Proceso   |   código |   pila |   datos |
+|-----------|----------|--------|---------|
+| A         |    20480 |  14288 |   10240 |
+| B         |    16384 |   8200 |    8192 |
+| C         |    18432 |  13288 |    9216 |
+
+Los datos indican el tamaño en bytes de cada uno de los segmentos que forman parte de la imagen del proceso. Sabiendo que una página no puede contener partes de dos segmentos diferentes  (pila,  código  o  datos),  hemos  de  determinar  el  tamaño  de  página  que  debería  utilizar  nuestro sistema y se barajan dos opciones: páginas de 4096 bytes (4K) o páginas de 512 bytes (1/2K). Se pide:
+
+- a) ¿Cuál sería la opción más apropiada, 4096 bytes o 512 bytes?. Justifica totalmente la respuesta mostrando todos los cálculos que has necesitado para llegar a dicha conclusión.
+- b) ¿Cuál es el formato de cada entrada de la Tabla de Páginas con el tamaño de página elegido? Justifica el tamaño  de  los  campos  con  direcciones.  Puedes  añadir  los  bits  que  consideres  necesarios  para  el  buen funcionamiento del sistema indicando para que van a ser utilizados.
+- c) ¿Cuántas Tablas de Páginas habrá en este sistema?¿Cuántas entradas hay en cada tabla de páginas (filas)?
+```
+
+### 🔖 Ejercicio 20
+
+```markdown
+- 20. En la gestión de memoria en un sistema paginado, ¿qué estructura/s de datos necesitará mantener el Sistema Operativo para administrar el espacio libre?
+```
+
+### 🔖 Ejercicio 21
+
+```markdown
+- 21. Estamos trabajando con un sistema operativo que emplea una gestión de memoria paginada. Cada página tiene un tamaño de 2.048 bytes. La memoria física disponible para los procesos es de 8 MBytes. Suponga que primero llega un proceso que necesita 31.566 posiciones de memoria (o bytes) y, después, llega otro proceso que consume 18.432 posiciones cuando se carga en memoria. Se pide calcular la  fragmentación interna provocada en cada proceso.
+```
+
+### 🔖 Ejercicio 22
+
+```markdown
+- 22. Considere la siguiente tabla de segmentos:
+
+|    |   Segmento  dirección base  longitud |     |
+|----|--------------------------------------|-----|
+|  0 |                                  219 | 600 |
+|  1 |                                 2300 |  14 |
+|  2 |                                   90 | 100 |
+|  3 |                                 1327 | 580 |
+|  4 |                                 1952 |  96 |
+
+¿Qué direcciones físicas corresponden a las direcciones lógicas (nº\_segmento, desplazamiento) siguientes? Si no puede traducir alguna dirección lógica a física, explique el por qué.
+
+a) 0, 430
+
+b) 1, 10
+
+c) 3, 400
+
+d) 4, 112
+```
+
+### 🔖 Ejercicio 23
+
+```markdown
+- 23. ¿Qué cambio de contexto tardará menos y por qué?
+- a) El producido entre dos hebras del mismo proceso.
+- b) El producido entre dos hebras de distintos procesos.
+```
+

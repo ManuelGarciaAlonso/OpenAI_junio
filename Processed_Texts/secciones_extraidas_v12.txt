@@ -1,0 +1,563 @@
+# Resultados del Preprocesamiento de PDFs (2025-04-09 23:00:54)
+Directorios escaneados: ['/mnt/c/Users/34644/Desktop/TFM/FS/Teoria', '/mnt/c/Users/34644/Desktop/TFM/FS/BoletinesEjercicios', '/mnt/c/Users/34644/Desktop/TFM/FS/Prácticas']
+
+
+
+## 📄 Archivo: [Teoría] Tema1.pdf
+
+_(Procesamiento saltado: Enfoque actual en 'Ejercicios')_
+
+
+
+## 📄 Archivo: [Teoría] Tema4-BD-EntidadRelacion.pdf
+
+_(Procesamiento saltado: Enfoque actual en 'Ejercicios')_
+
+
+
+## 📄 Archivo: [Teoría] Transp.Tema2.Introd.Sistemas.Operativos-PEv2.pdf
+
+_(Procesamiento saltado: Enfoque actual en 'Ejercicios')_
+
+
+
+## 📄 Archivo: [Teoría] Transp.Tema3.Compilacion.y.Enlazado.pdf
+
+_(Procesamiento saltado: Enfoque actual en 'Ejercicios')_
+
+
+
+## 📄 Archivo: [Teoría] Transp.Tema4.SistemasDeArchivos.Intr.BasesDatos-2020.pdf
+
+_(Procesamiento saltado: Enfoque actual en 'Ejercicios')_
+
+
+
+## 📄 Archivo: [Teoría] Transp.Tema5.GeneracionDepuracionAplicaciones_2000.pdf
+
+_(Procesamiento saltado: Enfoque actual en 'Ejercicios')_
+
+
+
+## 📄 Archivo: [Ejercicios] ProblemasTema1.pdf
+
+**Método de extracción usado:** Docling
+
+**Ejercicios Detectados:** 9
+
+### 🔖 Ejercicio 1
+
+```markdown
+- 1. El método de comunicación de E/S en el que la CPU está esperando hasta que la operación de E/S ha finalizado se conoce como:
+- (a) E/S Programada.
+- (b) E/S Dirigida por Interrupciones.
+- (c) DMA.
+- (d) E/S a Distancia.
+```
+
+### 🔖 Ejercicio 2
+
+```markdown
+- 2. El método de comunicación de E/S en el que el dispositivo de E/S informa a la CPU en qué momento está preparado el dispositivo para la transferencia de datos se conoce como:
+- (a) E/S Programada.
+- (b) E/S Dirigida por Interrupciones.
+- (c) DMA.
+- (d) E/S a Distancia.
+```
+
+### 🔖 Ejercicio 3
+
+```markdown
+- 3. Cuál de las siguientes afirmaciones es correcta:
+- (a) En algunas computadoras un programa puede ejecutarse sin necesidad de cargarlo en la memoria principal.
+- (b) Un programa, para que se ejecute, debe estar cargado en la memoria principal.
+- (c) Un programa, para que se ejecute, basta con que esté en el disco duro.
+- (d) Un programa, para que se ejecute, si está en lenguaje máquina, puede estar en cualquier unidad.
+```
+
+### 🔖 Ejercicio 4
+
+```markdown
+- 4. Dado el esquema de un computador elemental según se ha descrito en el tema, el puntero de pila (SP) indica:
+- (a) La dirección de memoria donde debe saltar el programa después de ejecutarse la instrucción de retorno correspondiente.
+- (b) La dirección de memoria donde se encuentra la dirección donde debe saltar el programa después de ejecutarse la instrucción de retorno correspondiente.
+- (c) La dirección de memoria a donde se ha producido el último salto.
+- (d) La dirección de memoria donde se encuentra la dirección a donde se ha producido la última llamada a una subrutina.
+```
+
+### 🔖 Ejercicio 5
+
+```markdown
+- 5. Sea un ordenador elemental con una arquitectura tal y como se muestra en la figura, es decir, tres registros de propósito general, registro contador de programa (PC) y registro de instrucción (IR). El registro SP (Puntero de pila)  contiene  la  dirección  35  y  la  pila  crece  hacia  posiciones  menores  de  memoria.  La  memoria  principal dispone de 256 palabras donde cada palabra tiene la longitud necesaria para albergar la instrucción de mayor tamaño. Describa el estado final de ejecución del procesador a partir del estado actual de la CPU mostrado en la figura. Ponga todos los valores de los registros de cada ciclo de instrucción realizado por el procesador hasta llegar a dicho estado final.
+```
+
+### 🔖 Ejercicio 6
+
+```markdown
+- 6. Suponiendo que el lenguaje máquina de la arquitectura anterior dispone de 14 instrucciones distintas, muestre cuántos bits serían necesarios para codificar las instrucciones SUMAR R0,R1,R2 y MOVER 20,R0 respectivamente.
+
+
+
+| Instrucción     | Descripción                                                 |
+|-----------------|-------------------------------------------------------------|
+| MOVER Orig,Dest | Copia el valor del origen  (Orig) al destino (Dest).        |
+| SUMAR Ri,Rj,Rk  | Suma el valor de Ri y Rj,  depositando el resultado en  Rk. |
+| IN Pi, Dest     | Lee del Puerto (Pi) y lo  deposita en el destino (Dest).    |
+| OUT Pi, Orig    | Escribe el contenido del  origen (Orig) en el puerto Pi.    |
+| HALT            | Detiene al procesador.                                      |
+```
+
+### 🔖 Ejercicio 7
+
+```markdown
+- 7. Imagina  que  el  procesador  está  ejecutando  el  programa  de  usuario  del  ejercicio  5  y  en  este  momento  al terminar de ejecutar la instrucción actual, el procesador se da cuenta de que hay una interrupción pendiente. Escribe  los  pasos  que  se  dan  en  el  sistema  y  por  quién  (software  o  hardware)  hasta  que  se  resuelve  el tratamiento de la interrupción y el programa finaliza, sabiendo que la rutina de tratamiento de la interrupción comienza en la dirección de memoria principal 56 y termina en la dirección de memoria principal 70.
+```
+
+### 🔖 Ejercicio 8
+
+```markdown
+- 8. Basándonos en el ejercicio 7, ¿hay diferencias si en vez de producirse una interrupción se ha producido una excepción? Indique cuales.
+```
+
+### 🔖 Ejercicio 9
+
+```markdown
+- 9. Sea un ordenador elemental con una arquitectura tal y como se muestra en la figura, es decir, tres registros de propósito general, registro contador de programa (PC), registro de instrucción (IR) y registro de pila (SP). La memoria principal dispone de 512 palabras donde cada palabra tiene la longitud necesaria para albergar la instrucción de mayor  tamaño. Describa el estado final de ejecución del procesador a partir del estado actual de la CPU mostrado en la figura y tras la ejecución del programa (nótese que la instrucción de la dirección 10 ya se ha ejecutado).
+
+| Instrucción   |                                                                     |
+|---------------|---------------------------------------------------------------------|
+| COMP Ri Rj    | estado. En otro caso, lo desactiva                                  |
+| IN Pi M[N]    | Lee del Puerto (Pi) y lo deposita en dirección de memoria N.        |
+| JNE N         | Si el bit de estado no está activo, salta la dirección de memoria N |
+| OUI Ri Pi     | Escribe el contenido del                                            |
+| HALI          | Detiene al procesador                                               |
+| CALL N        | Guarda el PC en la pila Y salta a la dirección de memoria N.        |
+| REI           | Saca un elementode la pila y lo almacena en PC.                     |
+| ADD Ri Rj Rk  | Rk= Ri+Rj                                                           |
+```
+
+
+
+## 📄 Archivo: [Ejercicios] ProblemasTema2-2.pdf
+
+**Método de extracción usado:** Docling
+
+**Ejercicios Detectados:** 23
+
+### 🔖 Ejercicio 1
+
+```markdown
+- 1. Dado un proceso en un SO con su información de contexto, de datos y de código según se muestra en la figura y que ya ha sido atendido en un 50% y le resta la otra mitad para finalizar su ejecución. Con la idea de optimizar el espacio de memoria para que el SO pudiera disponer de un mayor número de procesos en ésta, ¿podría reducirse el espacio que ocupa en memoria en alguna de las siguientes instancias?
+
+(a)La lista de procesos.
+
+- (b)Información del contexto del proceso.
+- (c) Tamaño de los datos.
+- (d)Tamaño del código.
+```
+
+### 🔖 Ejercicio 2
+
+```markdown
+- 2. ¿Por qué cuando un proceso está en modo 'ejecutándose' y pretende acceder a una dirección de memoria fuera del área asignada, se informa de que se ha producido un error en la ejecución? ¿Quién informa de ello? Razone la respuesta.
+```
+
+### 🔖 Ejercicio 3
+
+```markdown
+- 3. ¿Tiene sentido un modelo de 5 estados de los procesos en un SO monousuario? Razone la respuesta.
+```
+
+### 🔖 Ejercicio 4
+
+```markdown
+- 4. Dado un proceso que está en modo 'ejecutándose' y pretende acceder a una dirección de memoria fuera del área asignada, lo cual sería un error en la ejecución, ¿a qué modo pasaría dicho proceso? Razone la respuesta. (a)Bloqueado.
+- (b)No cambia de modo.
+- (c) Finalizado.
+- (d)Preparado.
+```
+
+### 🔖 Ejercicio 5
+
+```markdown
+- 5. Un  planificador  de  procesos  tiene  una  tarea  concreta  dentro  de  un  SO  multiprogramado.  ¿Tiene  sentido disponer de un planificador de procesos en un SO monoprogramado? Razone la respuesta.
+```
+
+### 🔖 Ejercicio 6
+
+```markdown
+- 6. Dado  un  SO  multiprogramado,  ¿bajo  qué  circunstancias  se  podría  prescindir  del  planificador  de  procesos? Razone la respuesta.
+```
+
+### 🔖 Ejercicio 7
+
+```markdown
+- 7. Diga cuales de las siguientes operaciones pueden realizarse únicamente en modo supervisor, o modo kernel:
+- a) Consultar la hora del sistema.
+- b) Cambiar la fecha del sistema.
+- c) Leer una pista/sector de un disco magnético.
+- d) Generar  una interrupción software.
+- e) Generar una interrupción.
+- f) Modificar la dirección de un vector de la tabla de vectores de interrupción.
+- g) Deshabilitar las interrupciones.
+```
+
+### 🔖 Ejercicio 8
+
+```markdown
+- 8. En el caso de un ordenador que se vaya a usar únicamente para un único usuario, ¿qué interés puede tener la existencia de los modos de funcionamiento supervisor/usuario?
+```
+
+### 🔖 Ejercicio 9
+
+```markdown
+- 9. Cuestiones sobre procesos, y asignación de CPU:
+- a) ¿Es  necesario  que  lo  último  que  haga  todo  proceso  antes  de  finalizar  sea  una  llamada  al  sistema  para finalizar? ¿Sigue siendo esto cierto en sistemas monoprogramados?
+- b) Cuando el controlador de un dispositivo produce una interrupción ¿se produce necesariamente un cambio de contexto?,  ¿y cuando se produce una llamada al sistema?
+- c) Cuando un proceso se bloquea, ¿deberá encargarse él directamente de cambiar el valor de su estado en el descriptor de proceso o PCB?
+- d) Sea un proceso que cambia de Ejecutándose a Bloqueado, ¿puede este cambio provocar un cambio de estado en otros procesos? Si es así, ¿en qué casos?
+- e) Idem para el cambio de estado Bloqueado a Ejecutable.
+```
+
+### 🔖 Ejercicio 10
+
+```markdown
+- 10. En los primeros ordenadores, cada byte de datos leído o escrito, era manejado directamente por la CPU (es decir,  no  existía  DMA  -  Acceso  Directo  a  Memoria).  ¿Qué  implicaciones  tenía  esta  organización  para  la multiprogramación?
+```
+
+### 🔖 Ejercicio 11
+
+```markdown
+- 11. ¿Por qué no es el intérprete de órdenes (shell) parte del propio sistema operativo? ¿Qué ventajas aporta el no serlo?
+
+| Código   | 12922 KB   |
+|----------|------------|
+| Pila     | 3002 KB    |
+| Datos    | 434 KB     |
+```
+
+### 🔖 Ejercicio 12
+
+```markdown
+- 12. Para cada una de las llamadas al sistema siguientes, especificar y explicar si su procesamiento por el sistema operativo implica un cambio de contexto:
+- a) Crear un proceso.
+- b) Abortar un proceso, es decir, terminarlo forzosamente.
+- c) Suspender o bloquear un proceso.
+- d) Reanudar un proceso (inverso al caso anterior).
+- e) Modificar la prioridad de un proceso.
+```
+
+### 🔖 Ejercicio 13
+
+```markdown
+- 13. ¿Tiene sentido mantener ordenada por prioridades la cola de procesos bloqueados? Si lo tuviera, ¿en qué casos sería útil hacerlo?
+```
+
+### 🔖 Ejercicio 14
+
+```markdown
+- 14. ¿Por qué se utilizan potencias de dos para los tamaños de página, número de páginas en el espacio lógico de un proceso, y números de marcos de página?
+```
+
+### 🔖 Ejercicio 15
+
+```markdown
+- 15. Sitúese en un sistema paginado, en donde la memoria real tiene un tamaño de 16 Mbytes, una dirección lógica ocupa 32 bits, de los cuales los 22 de la izquierda constituyen el número de página, y los 10 de la derecha el desplazamiento dentro de la página. Según lo anterior,
+- a) ¿Qué tamaño tiene cada página?
+- b) ¿En cuántos marcos de página se divide la memoria física?
+- c) ¿Qué tamaño deberá tener el campo Número de Marco de la Tabla de Páginas?
+- d) Además de dicho campo, suponga que la Tabla de Páginas tiene los siguientes campos con los siguientes valores: Protección: 1 bit     (1= Sólo se permite leer; 0= Cualquier tipo de acceso). ¿Cuál es el tamaño de la Tabla de Páginas para un proceso cuyo espacio de memoria lógico es de 103K bytes?
+```
+
+### 🔖 Ejercicio 16
+
+```markdown
+- 16. Suponga que la tabla de páginas para el proceso actual se parece a la de la figura. Todos los números son decimales, la numeración comienza en todos los casos desde cero, y todas las direcciones de memoria son direcciones en bytes. El tamaño de página es de 1024 bytes.
+- ¿Qué direcciones físicas corresponderán con cada una de las siguientes direcciones lógicas del proceso?
+- a)
+- 999
+- b) 2121
+- c) 5400
+```
+
+### 🔖 Ejercicio 17
+
+```markdown
+- 17. ¿Qué tipo de fragmentación se produce en un sistema de gestión de memoria paginado? ¿Qué decisiones de diseño se pueden tomar para minimizar dicho problema, y cómo afectan estas decisiones al comportamiento del sistema?
+```
+
+### 🔖 Ejercicio 18
+
+```markdown
+- 18. Suponga que un proceso emite una dirección lógica igual a 2453 y que se utiliza la técnica de paginación, con páginas de 1024 palabras
+- a) Indique el par de valores (número de página, desplazamiento) que corresponde a dicha dirección.
+- b) ¿Es posible que dicha dirección lógica se traduzca en la dirección física 9322? Razónelo.
+
+|   Número de  página virtual |   Número de marco  de página |
+|-----------------------------|------------------------------|
+|                           0 |                            4 |
+|                           1 |                            7 |
+|                           2 |                            1 |
+|                           3 |                            2 |
+|                           4 |                           10 |
+|                           5 |                            0 |
+```
+
+### 🔖 Ejercicio 19
+
+```markdown
+- 19. Suponga que tenemos 3 procesos ejecutándose concurrentemente en un determinado instante. El sistema operativo utiliza un sistema de memoria con  paginación.  Se  dispone  de  una  memoria  física  de  131072  bytes (128K).  Sabemos  que  nuestros  procesos  al  ser  ejecutados  tienen  los parámeros que se muestran en la tabla.
+
+| Proceso   |   código |   pila |   datos |
+|-----------|----------|--------|---------|
+| A         |    20480 |  14288 |   10240 |
+| B         |    16384 |   8200 |    8192 |
+| C         |    18432 |  13288 |    9216 |
+
+Los datos indican el tamaño en bytes de cada uno de los segmentos que forman parte de la imagen del proceso. Sabiendo que una página no puede contener partes de dos segmentos diferentes  (pila,  código  o  datos),  hemos  de  determinar  el  tamaño  de  página  que  debería  utilizar  nuestro sistema y se barajan dos opciones: páginas de 4096 bytes (4K) o páginas de 512 bytes (1/2K). Se pide:
+
+- a) ¿Cuál sería la opción más apropiada, 4096 bytes o 512 bytes?. Justifica totalmente la respuesta mostrando todos los cálculos que has necesitado para llegar a dicha conclusión.
+- b) ¿Cuál es el formato de cada entrada de la Tabla de Páginas con el tamaño de página elegido? Justifica el tamaño  de  los  campos  con  direcciones.  Puedes  añadir  los  bits  que  consideres  necesarios  para  el  buen funcionamiento del sistema indicando para que van a ser utilizados.
+- c) ¿Cuántas Tablas de Páginas habrá en este sistema?¿Cuántas entradas hay en cada tabla de páginas (filas)?
+```
+
+### 🔖 Ejercicio 20
+
+```markdown
+- 20. En la gestión de memoria en un sistema paginado, ¿qué estructura/s de datos necesitará mantener el Sistema Operativo para administrar el espacio libre?
+```
+
+### 🔖 Ejercicio 21
+
+```markdown
+- 21. Estamos trabajando con un sistema operativo que emplea una gestión de memoria paginada. Cada página tiene un tamaño de 2.048 bytes. La memoria física disponible para los procesos es de 8 MBytes. Suponga que primero llega un proceso que necesita 31.566 posiciones de memoria (o bytes) y, después, llega otro proceso que consume 18.432 posiciones cuando se carga en memoria. Se pide calcular la  fragmentación interna provocada en cada proceso.
+```
+
+### 🔖 Ejercicio 22
+
+```markdown
+- 22. Considere la siguiente tabla de segmentos:
+
+|    |   Segmento  dirección base  longitud |     |
+|----|--------------------------------------|-----|
+|  0 |                                  219 | 600 |
+|  1 |                                 2300 |  14 |
+|  2 |                                   90 | 100 |
+|  3 |                                 1327 | 580 |
+|  4 |                                 1952 |  96 |
+
+¿Qué direcciones físicas corresponden a las direcciones lógicas (nº\_segmento, desplazamiento) siguientes? Si no puede traducir alguna dirección lógica a física, explique el por qué.
+
+a) 0, 430
+
+b) 1, 10
+
+c) 3, 400
+
+d) 4, 112
+```
+
+### 🔖 Ejercicio 23
+
+```markdown
+- 23. ¿Qué cambio de contexto tardará menos y por qué?
+- a) El producido entre dos hebras del mismo proceso.
+- b) El producido entre dos hebras de distintos procesos.
+```
+
+
+
+## 📄 Archivo: [Ejercicios] ProblemasTema3-2.pdf
+
+**Método de extracción usado:** Docling
+
+**Ejercicios Detectados:** 16
+
+### 🔖 Ejercicio 1
+
+```markdown
+- 1. Un procesador (CPU) puede interpretar y ejecutar directamente las instrucciones de un programa en:
+- (a) Lenguaje de alto nivel de tipo intérprete.
+- (b) Lenguaje ensamblador o en lenguaje máquina, cualquiera de los dos.
+- (c) Sólo lenguaje máquina.
+- (d) En pseudocódigo o en lenguaje ensamblador.
+```
+
+### 🔖 Ejercicio 2
+
+```markdown
+- 2. ¿Es lo mismo un token que un lexema? Muestre algún ejemplo.
+```
+
+### 🔖 Ejercicio 3
+
+```markdown
+- 3. ¿El compilador es la única utilidad necesaria para generar un programa ejecutable en una computadora?
+```
+
+### 🔖 Ejercicio 4
+
+```markdown
+- 4. El análisis léxico es una etapa de la compilación cuyo objetivo es:
+- (a) Extraer la estructura de cada sentencia, reconociendo los componentes léxicos (tokens) del lenguaje.
+- (b) Descomponer el programa fuente en sus componentes léxicos (tokens).
+- (c) Extraer el significado de las distintas construcciones sintácticas y elementos terminales.
+- (d) Sintetizar el programa objeto.
+```
+
+### 🔖 Ejercicio 5
+
+```markdown
+- 5. El análisis sintáctico es una etapa de la compilación cuyo objetivo es:
+- (a) Extraer la estructura de cada sentencia, reconociendo los componentes léxicos (tokens) del lenguaje.
+- (b) Descomponer el programa fuente en sus componentes léxicos (tokens).
+- (c) Extraer el significado de las distintas construcciones sintácticas y elementos terminales.
+- (d) Sintetizar el programa objeto.
+```
+
+### 🔖 Ejercicio 6
+
+```markdown
+- 6. Para el siguiente código que aparece a la izquierda en lenguaje C++ (fichero test.cpp ), indique el nombre de  la  fase  en  la  que  el  compilador  produce  el  mensaje  de  error  que  aparece  a  la  derecha  y  explique  la naturaleza del mismo:
+- a) test.cpp:9: error: expected primary-expression before ';' token
+- b) test.cpp:6: error: invalid conversion from 'int' to 'char*'
+- c) test.cpp:11: error: stray '\302' in program
+```
+
+### 🔖 Ejercicio 7
+
+```markdown
+- 7. Muestre un ejemplo a partir de una sentencia en lenguaje C++ en la que un error léxico origine un error sintáctico derivado y otro error léxico que no derive en error sintáctico.
+```
+
+### 🔖 Ejercicio 8
+
+```markdown
+- 8. Muestre un ejemplo a partir una sentencia de en lenguaje C++ en la que un error léxico origine un error sintáctico y semántico derivados y otro error léxico que no los derive.
+```
+
+### 🔖 Ejercicio 9
+
+```markdown
+- 9. ¿Sería siempre posible realizar la depuración de un archivo objeto? Razone la respuesta.
+```
+
+### 🔖 Ejercicio 10
+
+```markdown
+- 10. Dado  un  programa  escrito  en  lenguaje  ensamblador  de  una  arquitectura  concreta,  ¿sería  directamente interpretable ese código por esa computadora? En caso contrario ¿qué habría que hacer?
+```
+
+### 🔖 Ejercicio 11
+
+```markdown
+- 11. ¿Sería necesario usar siempre el enlazador para obtener un programa ejecutable?
+```
+
+### 🔖 Ejercicio 12
+
+```markdown
+- 12. Dado un único archivo objeto, ¿podría ser siempre un programa ejecutable y correcto simplemente añadiendo la información de cabecera necesaria?
+
+```
+01 int main ( void ) 02 { 03 int i; 04 char * j; 05 06     j = i; 07 08 if (i == 0) 09         i += ; 10 11     ‹; 12 13 return 0; 14 }
+```
+```
+
+### 🔖 Ejercicio 13
+
+```markdown
+- 13. Dado un programa ejecutable que requiere de una biblioteca dinámica, ¿por qué no es necesario recompilar el código fuente de dicho programa si se modifica la biblioteca?
+```
+
+### 🔖 Ejercicio 14
+
+```markdown
+- 14. Indique  en  qué  fase  del  proceso  de  traducción  y  ejecución  de  un  programa  se  realizará  cada  una  de  las siguientes tareas:
+- (a) Enlazar una biblioteca estática.
+- (b) Eliminar los comentarios del código fuente.
+- (c) Mensaje de error de que una variable no ha sido declarada.
+- (d) Enlazar una biblioteca dinámica.
+```
+
+### 🔖 Ejercicio 15
+
+```markdown
+- 15. Indique en qué fase o fases del proceso de compilación de un lenguaje de programación de alto nivel se detectarían los siguientes errores:
+- (a) Una variable no está definida.
+- (b) Aparece un carácter o símbolo no esperado.
+- (c) Aparecen dos identificadores consecutivos.
+- (d) Aparecen dos funciones denominadas bajo el mismo nombre.
+- (e) Aparece el final de un bloque de sentencias pero no el inicio del mismo.
+- (f) Aparece  un  paréntesis  cerrado  y  no  se  ha  podido  emparejar  con  su  correspondiente  paréntesis abierto.
+- (g) Una llamada a una función que no ha sido definida.
+- (h) En la palabra reservada main aparece un carácter extraño no esperado, por ejemplo mai¿n .
+```
+
+### 🔖 Ejercicio 16
+
+```markdown
+- 16. ¿Todo error sintáctico origina un error semántico? En caso contrario, demuéstrelo usando algún contraejemplo.
+```
+
+
+
+## 📄 Archivo: [Ejercicios] ProblemasTema4-1.pdf
+
+**Método de extracción usado:** Docling
+
+**Ejercicios Detectados:** 4
+
+### 🔖 Ejercicio 1
+
+```markdown
+- (1)   Se   desea   diseñar   un   esquema   relacional   de   una   base   de   datos   para   un   centro   de enseñanza que contenga información sobre los alumnos (dni, nombre, dirección...), las asignaturas (código de asignatura y nombre de esta se considera la información mínima) y las calificaciones que se obtienen en cada una de las mismas. Desarrollar un modelo ER del mismo y posteriormente reducirlo a tablas.
+```
+
+### 🔖 Ejercicio 2
+
+```markdown
+- (2) Se desea diseñar la base de datos de una biblioteca particular, de modo que para cada libro se deberá almacenar: su título, número de páginas, ISBN, materia, año de edición, editorial y autor o autores del mismo, para los que, además de su nombre, se recogerán los siguientes datos: dirección de correo electrónico, nacionalidad y fecha de nacimiento.
+
+Además, para cada editorial se deberá guardar su dirección, localidad y país. Teniendo en cuenta que se pueden añadir los campos que se consideren oportunos para poder relacionar convenientemente las distintas entidades del problema, realizar lo que se pide en cada uno de los siguientes apartados:
+
+- • Dibujar el esquema conceptual, utilizando el modelo entidad-relación.
+- · Obtener, a partir de lo realizado en el apartado anterior, las tablas que se tendrían que crear en un SGBD relacional, indicando qué campos compondrían cada tabla y cuál sería la clave primaria de cada una de ellas.
+```
+
+### 🔖 Ejercicio 3
+
+```markdown
+- (3) Suponga que la base de datos para una Universidad del ejercicio (1) considera además de la información sobre los alumnos y las asignaturas, las carreras que se pueden estudiar.
+
+Construir un modelo ER y pasarlo posteriormente a un esquema relacional teniendo en cuenta las siguientes restricciones:
+
+- • Un alumno puede estar matriculado en muchas asignaturas.
+- • Una asignatura sólo puede pertenecer a una carrera.
+- • Una carrera puede tener muchas asignaturas.
+```
+
+### 🔖 Ejercicio 4
+
+```markdown
+- (4) Se desea diseñar una base de datos para un centro comercial organizado por secciones que contenga información sobre los clientes que han comprado algo, los trabajadores, el género   que   se   oferta   y   las   ventas   realizadas.   Construir   un   modelo   ER   y   pasarlo posteriormente a un esquema relacional teniendo en cuenta las siguientes restricciones:
+- • Existen tres tipos de trabajadores: gerentes, jefes y vendedores.
+- • Cada sección está gestionado por un gerente.
+- • Un determinado producto sólo se encuentra en una sección.
+- • Los jefes y vendedores sólo pueden pertenecer a una única sección.
+- · Un gerente tiene a su cargo a un cierto número de jefes y éstos a su vez a un cierto número de vendedores.
+- · Una venta la realiza un vendedor a un cliente y debe quedar constancia del artículo vendido. Sólo un artículo por apunte de venta.
+```
+
+
+
+## 📄 Archivo: [Prácticas] Módulo.I.Órdenes.Unix.y.Shell.Bash-1.pdf
+
+_(Procesamiento saltado: Enfoque actual en 'Ejercicios')_
+
+
+
+## 📄 Archivo: [Prácticas] Módulo.II.Compilación.y.depuración.de.programas.v1.pdf
+
+_(Procesamiento saltado: Enfoque actual en 'Ejercicios')_
+

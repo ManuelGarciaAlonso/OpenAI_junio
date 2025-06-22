@@ -1,0 +1,91 @@
+### 🔖 Ejercicio 1
+
+```markdown
+- 1. El método de comunicación de E/S en el que la CPU está esperando hasta que la operación de E/S ha finalizado se conoce como:
+- (a) E/S Programada.
+- (b) E/S Dirigida por Interrupciones.
+- (c) DMA.
+- (d) E/S a Distancia.
+```
+
+### 🔖 Ejercicio 2
+
+```markdown
+- 2. El método de comunicación de E/S en el que el dispositivo de E/S informa a la CPU en qué momento está preparado el dispositivo para la transferencia de datos se conoce como:
+- (a) E/S Programada.
+- (b) E/S Dirigida por Interrupciones.
+- (c) DMA.
+- (d) E/S a Distancia.
+```
+
+### 🔖 Ejercicio 3
+
+```markdown
+- 3. Cuál de las siguientes afirmaciones es correcta:
+- (a) En algunas computadoras un programa puede ejecutarse sin necesidad de cargarlo en la memoria principal.
+- (b) Un programa, para que se ejecute, debe estar cargado en la memoria principal.
+- (c) Un programa, para que se ejecute, basta con que esté en el disco duro.
+- (d) Un programa, para que se ejecute, si está en lenguaje máquina, puede estar en cualquier unidad.
+```
+
+### 🔖 Ejercicio 4
+
+```markdown
+- 4. Dado el esquema de un computador elemental según se ha descrito en el tema, el puntero de pila (SP) indica:
+- (a) La dirección de memoria donde debe saltar el programa después de ejecutarse la instrucción de retorno correspondiente.
+- (b) La dirección de memoria donde se encuentra la dirección donde debe saltar el programa después de ejecutarse la instrucción de retorno correspondiente.
+- (c) La dirección de memoria a donde se ha producido el último salto.
+- (d) La dirección de memoria donde se encuentra la dirección a donde se ha producido la última llamada a una subrutina.
+```
+
+### 🔖 Ejercicio 5
+
+```markdown
+- 5. Sea un ordenador elemental con una arquitectura tal y como se muestra en la figura, es decir, tres registros de propósito general, registro contador de programa (PC) y registro de instrucción (IR). El registro SP (Puntero de pila)  contiene  la  dirección  35  y  la  pila  crece  hacia  posiciones  menores  de  memoria.  La  memoria  principal dispone de 256 palabras donde cada palabra tiene la longitud necesaria para albergar la instrucción de mayor tamaño. Describa el estado final de ejecución del procesador a partir del estado actual de la CPU mostrado en la figura. Ponga todos los valores de los registros de cada ciclo de instrucción realizado por el procesador hasta llegar a dicho estado final.
+```
+
+### 🔖 Ejercicio 6
+
+```markdown
+- 6. Suponiendo que el lenguaje máquina de la arquitectura anterior dispone de 14 instrucciones distintas, muestre cuántos bits serían necesarios para codificar las instrucciones SUMAR R0,R1,R2 y MOVER 20,R0 respectivamente.
+
+
+
+| Instrucción     | Descripción                                                 |
+|-----------------|-------------------------------------------------------------|
+| MOVER Orig,Dest | Copia el valor del origen  (Orig) al destino (Dest).        |
+| SUMAR Ri,Rj,Rk  | Suma el valor de Ri y Rj,  depositando el resultado en  Rk. |
+| IN Pi, Dest     | Lee del Puerto (Pi) y lo  deposita en el destino (Dest).    |
+| OUT Pi, Orig    | Escribe el contenido del  origen (Orig) en el puerto Pi.    |
+| HALT            | Detiene al procesador.                                      |
+```
+
+### 🔖 Ejercicio 7
+
+```markdown
+- 7. Imagina  que  el  procesador  está  ejecutando  el  programa  de  usuario  del  ejercicio  5  y  en  este  momento  al terminar de ejecutar la instrucción actual, el procesador se da cuenta de que hay una interrupción pendiente. Escribe  los  pasos  que  se  dan  en  el  sistema  y  por  quién  (software  o  hardware)  hasta  que  se  resuelve  el tratamiento de la interrupción y el programa finaliza, sabiendo que la rutina de tratamiento de la interrupción comienza en la dirección de memoria principal 56 y termina en la dirección de memoria principal 70.
+```
+
+### 🔖 Ejercicio 8
+
+```markdown
+- 8. Basándonos en el ejercicio 7, ¿hay diferencias si en vez de producirse una interrupción se ha producido una excepción? Indique cuales.
+```
+
+### 🔖 Ejercicio 9
+
+```markdown
+- 9. Sea un ordenador elemental con una arquitectura tal y como se muestra en la figura, es decir, tres registros de propósito general, registro contador de programa (PC), registro de instrucción (IR) y registro de pila (SP). La memoria principal dispone de 512 palabras donde cada palabra tiene la longitud necesaria para albergar la instrucción de mayor  tamaño. Describa el estado final de ejecución del procesador a partir del estado actual de la CPU mostrado en la figura y tras la ejecución del programa (nótese que la instrucción de la dirección 10 ya se ha ejecutado).
+
+| Instrucción   |                                                                     |
+|---------------|---------------------------------------------------------------------|
+| COMP Ri Rj    | estado. En otro caso, lo desactiva                                  |
+| IN Pi M[N]    | Lee del Puerto (Pi) y lo deposita en dirección de memoria N.        |
+| JNE N         | Si el bit de estado no está activo, salta la dirección de memoria N |
+| OUI Ri Pi     | Escribe el contenido del                                            |
+| HALI          | Detiene al procesador                                               |
+| CALL N        | Guarda el PC en la pila Y salta a la dirección de memoria N.        |
+| REI           | Saca un elementode la pila y lo almacena en PC.                     |
+| ADD Ri Rj Rk  | Rk= Ri+Rj                                                           |
+```
+

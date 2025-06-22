@@ -1,0 +1,91 @@
+# Resultados del Preprocesamiento de PDFs (2025-04-09 23:55:29)
+Directorios escaneados: ['/mnt/c/Users/34644/Desktop/TFM/FS/Teoria', '/mnt/c/Users/34644/Desktop/TFM/FS/BoletinesEjercicios', '/mnt/c/Users/34644/Desktop/TFM/FS/Prácticas']
+
+
+
+## 📄 Archivo: [Teoría] Tema1.pdf
+
+_(Procesamiento saltado: Enfoque actual en 'Ejercicios')_
+
+
+
+## 📄 Archivo: [Teoría] Tema4-BD-EntidadRelacion.pdf
+
+_(Procesamiento saltado: Enfoque actual en 'Ejercicios')_
+
+
+
+## 📄 Archivo: [Teoría] Transp.Tema2.Introd.Sistemas.Operativos-PEv2.pdf
+
+_(Procesamiento saltado: Enfoque actual en 'Ejercicios')_
+
+
+
+## 📄 Archivo: [Teoría] Transp.Tema3.Compilacion.y.Enlazado.pdf
+
+_(Procesamiento saltado: Enfoque actual en 'Ejercicios')_
+
+
+
+## 📄 Archivo: [Teoría] Transp.Tema4.SistemasDeArchivos.Intr.BasesDatos-2020.pdf
+
+_(Procesamiento saltado: Enfoque actual en 'Ejercicios')_
+
+
+
+## 📄 Archivo: [Teoría] Transp.Tema5.GeneracionDepuracionAplicaciones_2000.pdf
+
+_(Procesamiento saltado: Enfoque actual en 'Ejercicios')_
+
+
+
+## 📄 Archivo: [Ejercicios] ProblemasTema1.pdf
+
+**Método usado:** Análisis de Layout (PyMuPDF/fitz)
+
+**Ejercicios Detectados:** 0
+
+*No se detectaron ejercicios estructurados.*
+
+
+
+## 📄 Archivo: [Ejercicios] ProblemasTema2-2.pdf
+
+**Método usado:** Análisis de Layout (PyMuPDF/fitz)
+
+**Ejercicios Detectados:** 0
+
+*No se detectaron ejercicios estructurados.*
+
+
+
+## 📄 Archivo: [Ejercicios] ProblemasTema3-2.pdf
+
+**Método usado:** Análisis de Layout (PyMuPDF/fitz)
+
+**Ejercicios Detectados:** 0
+
+*No se detectaron ejercicios estructurados.*
+
+
+
+## 📄 Archivo: [Ejercicios] ProblemasTema4-1.pdf
+
+**Método usado:** Análisis de Layout (PyMuPDF/fitz)
+
+**Ejercicios Detectados:** 0
+
+*No se detectaron ejercicios estructurados.*
+
+
+
+## 📄 Archivo: [Prácticas] Módulo.I.Órdenes.Unix.y.Shell.Bash-1.pdf
+
+_(Procesamiento saltado: Enfoque actual en 'Ejercicios')_
+
+
+
+## 📄 Archivo: [Prácticas] Módulo.II.Compilación.y.depuración.de.programas.v1.pdf
+
+_(Procesamiento saltado: Enfoque actual en 'Ejercicios')_
+

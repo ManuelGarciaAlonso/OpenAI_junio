@@ -1,0 +1,41 @@
+### 🔖 Ejercicio 1
+
+```markdown
+- (1)   Se   desea   diseñar   un   esquema   relacional   de   una   base   de   datos   para   un   centro   de enseñanza que contenga información sobre los alumnos (dni, nombre, dirección...), las asignaturas (código de asignatura y nombre de esta se considera la información mínima) y las calificaciones que se obtienen en cada una de las mismas. Desarrollar un modelo ER del mismo y posteriormente reducirlo a tablas.
+```
+
+### 🔖 Ejercicio 2
+
+```markdown
+- (2) Se desea diseñar la base de datos de una biblioteca particular, de modo que para cada libro se deberá almacenar: su título, número de páginas, ISBN, materia, año de edición, editorial y autor o autores del mismo, para los que, además de su nombre, se recogerán los siguientes datos: dirección de correo electrónico, nacionalidad y fecha de nacimiento.
+
+Además, para cada editorial se deberá guardar su dirección, localidad y país. Teniendo en cuenta que se pueden añadir los campos que se consideren oportunos para poder relacionar convenientemente las distintas entidades del problema, realizar lo que se pide en cada uno de los siguientes apartados:
+
+- • Dibujar el esquema conceptual, utilizando el modelo entidad-relación.
+- · Obtener, a partir de lo realizado en el apartado anterior, las tablas que se tendrían que crear en un SGBD relacional, indicando qué campos compondrían cada tabla y cuál sería la clave primaria de cada una de ellas.
+```
+
+### 🔖 Ejercicio 3
+
+```markdown
+- (3) Suponga que la base de datos para una Universidad del ejercicio (1) considera además de la información sobre los alumnos y las asignaturas, las carreras que se pueden estudiar.
+
+Construir un modelo ER y pasarlo posteriormente a un esquema relacional teniendo en cuenta las siguientes restricciones:
+
+- • Un alumno puede estar matriculado en muchas asignaturas.
+- • Una asignatura sólo puede pertenecer a una carrera.
+- • Una carrera puede tener muchas asignaturas.
+```
+
+### 🔖 Ejercicio 4
+
+```markdown
+- (4) Se desea diseñar una base de datos para un centro comercial organizado por secciones que contenga información sobre los clientes que han comprado algo, los trabajadores, el género   que   se   oferta   y   las   ventas   realizadas.   Construir   un   modelo   ER   y   pasarlo posteriormente a un esquema relacional teniendo en cuenta las siguientes restricciones:
+- • Existen tres tipos de trabajadores: gerentes, jefes y vendedores.
+- • Cada sección está gestionado por un gerente.
+- • Un determinado producto sólo se encuentra en una sección.
+- • Los jefes y vendedores sólo pueden pertenecer a una única sección.
+- · Un gerente tiene a su cargo a un cierto número de jefes y éstos a su vez a un cierto número de vendedores.
+- · Una venta la realiza un vendedor a un cliente y debe quedar constancia del artículo vendido. Sólo un artículo por apunte de venta.
+```
+
