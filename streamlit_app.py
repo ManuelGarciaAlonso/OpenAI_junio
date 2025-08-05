@@ -1,5 +1,3 @@
-# streamlit_app.py (Versión Final, Completa y Corregida)
-
 import os
 import streamlit as st
 from rag import PDFChatbot
@@ -13,7 +11,8 @@ load_dotenv()
 # --- Constantes ---
 APP_DIR = os.path.dirname(os.path.abspath(__file__))
 PREPROCESSED_DATA_DIR = os.path.join(APP_DIR, "Processed_Texts", "preprocessed_markdown")
-AVAILABLE_MODELS = ["o1-preview", "o1-mini", "gpt-4o", "gpt-4-turbo"]
+# Modelos disponibles en la suscripción Tier 1 de OpenAI
+AVAILABLE_MODELS = ["gpt-4o", "gpt-4-turbo", "gpt-3.5-turbo", "gpt-4"]
 DEFAULT_EMBEDDING_MODEL = "text-embedding-3-small"
 
 st.set_page_config(page_title="ChatBot FS (OpenAI)", layout="wide")
@@ -43,6 +42,16 @@ with st.sidebar:
     )
     st.session_state.selected_model = selected_model
     
+    # Selector de temperatura
+    temperature = st.slider(
+        "Temperatura (creatividad):",
+        min_value=0.0,
+        max_value=1.0,
+        value=0.1,
+        step=0.1,
+        help="Valores más bajos = respuestas más precisas. Valores más altos = respuestas más creativas."
+    )
+    
     # Botón para inicializar/reiniciar chatbot
     if st.button("🔄 Inicializar/Reiniciar Chatbot"):
         with st.spinner("Inicializando sistema..."):
@@ -51,7 +60,8 @@ with st.sidebar:
                 st.session_state.pdf_chatbot = PDFChatbot(
                     api_key=api_key,
                     chat_models=AVAILABLE_MODELS,
-                    embedding_model=DEFAULT_EMBEDDING_MODEL
+                    embedding_model=DEFAULT_EMBEDDING_MODEL,
+                    temperature=temperature  # Pasar la temperatura seleccionada
                 )
                 
                 # Cargar datos si existen
@@ -61,6 +71,11 @@ with st.sidebar:
                 st.success("¡Chatbot inicializado correctamente!")
             except Exception as e:
                 st.error(f"Error al inicializar: {e}")
+    
+    # Botón para limpiar conversación
+    if st.button("🧹 Limpiar conversación"):
+        st.session_state.messages = []
+        st.rerun()
     
     # Ver temas disponibles
     if st.button("📚 Ver temas disponibles"):
@@ -97,25 +112,43 @@ if user_input:
         # Procesar la consulta
         with st.spinner("Procesando tu consulta..."):
             try:
-                # La función devuelve (response, retrieved_docs)
+                # Pasar mensajes previos para contexto
+                previous_messages = st.session_state.messages[:-1] if len(st.session_state.messages) > 1 else []
+                
                 response_data = st.session_state.pdf_chatbot.answer_question(
                     user_input, 
-                    model_name=st.session_state.selected_model
+                    model_name=st.session_state.selected_model,
+                    previous_messages=previous_messages
                 )
                 
-                # Extraer respuesta y documentos de manera más robusta
+                # Extraer respuesta y documentos recuperados
                 if isinstance(response_data, tuple) and len(response_data) >= 1:
                     response_text = response_data[0]
                     retrieved_docs = response_data[1] if len(response_data) > 1 else []
                 else:
-                    response_text = response_data  # En caso de que solo devuelva texto
+                    response_text = response_data
                     retrieved_docs = []
                 
-                # Guardar documentos recuperados para posible uso futuro
+                # Guardar documentos recuperados para referencia
                 st.session_state.last_retrieved_docs = retrieved_docs
                 
                 # Añadir respuesta al historial
                 st.session_state.messages.append({"role": "assistant", "content": response_text})
+                
+                # Mostrar las fuentes consultadas
+                if retrieved_docs:
+                    with st.expander("🔍 Ver fuentes consultadas"):
+                        for i, doc in enumerate(retrieved_docs):
+                            tema = doc.metadata.get('tema', 'No especificado')
+                            ejercicio = doc.metadata.get('exercise_number', 'No especificado')
+                            source = doc.metadata.get('source', 'Desconocido')
+                            
+                            st.markdown(f"**Fuente {i+1}:** Tema {tema}, Ejercicio {ejercicio}, Archivo: {source}")
+                            
+                            # Mostrar fragmento del contenido para verificación
+                            with st.expander(f"Ver fragmento del contenido"):
+                                st.text(doc.page_content[:200] + "..." if len(doc.page_content) > 200 else doc.page_content)
+                
             except Exception as e:
                 error_msg = f"Error al procesar tu consulta: {str(e)}"
                 st.error(error_msg)
@@ -123,3 +156,11 @@ if user_input:
     
     # Recargar para mostrar la nueva respuesta
     st.rerun()
+
+# Después de mostrar los mensajes existentes
+if "last_retrieved_docs" in st.session_state and st.session_state.last_retrieved_docs:
+    with st.expander("🔍 Ver fuentes de la última consulta"):
+        for i, doc in enumerate(st.session_state.last_retrieved_docs):
+            tema = doc.metadata.get('tema', 'No especificado')
+            ejercicio = doc.metadata.get('exercise_number', 'No especificado')
+            st.markdown(f"**Fuente {i+1}:** Tema {tema}, Ejercicio {ejercicio}")
