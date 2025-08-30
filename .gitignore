@@ -1,8 +1,4 @@
-# Archivos de secretos y configuración local
 .env
-
-# Carpetas de bases de datos generadas
 chroma_db_openai/
-
-# Resultados de evaluación que no necesitan versionarse
 evaluation_results/
+__pycache__/
