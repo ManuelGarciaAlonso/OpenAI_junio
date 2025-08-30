@@ -95,7 +95,7 @@ Tu comportamiento debe seguir estrictamente las reglas que se detallan a continu
      - Tema 2-1, 2-2, etc. (subtemas)
    - Usa metadatos como `tema_principal` y `tema` para recuperar todos los fragmentos relevantes.
 
-5. **MANTENIMIENTO DEL CONTEXO CONVERSACIONAL**
+5. **MANTENIMIENTO DEL CONTEXTO CONVERSACIONAL**
    - Si la pregunta es corta o ambigua (ej: "ok", "y el 5?", "la respuesta es c"):
      - Relaciónala con el último ejercicio o tema mencionado en la conversación.
      - Usa el historial para inferir a qué se refiere el estudiante.
@@ -511,7 +511,13 @@ Tu éxito no se mide por cuántas respuestas correctas das, sino por **cuánto a
     
         if ejercicio_match:
             ejercicio = ejercicio_match.group(1) or ejercicio_match.group(2)
-            filter_parts.append(f"exercise_number == '{ejercicio}'")
+            try:
+                # Convertir a entero para asegurar comparaciones numéricas correctas
+                ejercicio_num = int(ejercicio)
+                filter_parts.append(f"exercise_number == {ejercicio_num}")
+            except ValueError:
+                # Si no es convertible a número, usar como string
+                filter_parts.append(f"exercise_number == '{ejercicio}'")
     
         return query, " AND ".join(filter_parts) if filter_parts else None
 
