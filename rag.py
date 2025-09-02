@@ -20,10 +20,10 @@ from langchain.retrievers.self_query.base import SelfQueryRetriever
 class PDFChatbot:
     def __init__(self,
                  api_key: str,
-                 chat_models=["gpt-4o", "gpt-4-turbo", "gpt-3.5-turbo", "gpt-4"],
+                 chat_models=["gpt-4o", "gpt-4-turbo", "gpt-3.5-turbo", "gpt-4", "o4-mini", "gpt-5-mini", "gpt-5-nano", "gpt-5"],
                  embedding_model="text-embedding-3-small",
                  collection_name="langchain_fs_collection_openai",
-                 temperature=0.1):  # Añadir parámetro de temperatura
+                 temperature=1): 
         
         print(f"🚀 Inicializando PDFChatbot con OpenAI...")
         if not api_key:
@@ -31,7 +31,7 @@ class PDFChatbot:
 
         self.api_key = api_key
         self.embedding_model_name = embedding_model
-        self.temperature = temperature  # Guardar la temperatura
+        self.temperature = temperature  
         self.collection_name = collection_name
         
         self.embedding_service = OpenAIEmbeddings(model=self.embedding_model_name, openai_api_key=self.api_key)
@@ -177,7 +177,6 @@ Tu éxito no se mide por cuántas respuestas correctas das, sino por **cuánto a
 
             print(f"📄 {len(initial_docs)} archivos cargados.")
 
-            # --- LA CORRECCIÓN CLAVE ESTÁ AQUÍ ---
             # Normalizamos los metadatos ANTES de procesar los documentos
             # Cuando procesas los documentos, añade tanto el tema completo como el tema principal
             for doc in initial_docs:

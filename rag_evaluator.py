@@ -12,6 +12,7 @@ from sentence_transformers import SentenceTransformer, util
 import matplotlib.pyplot as plt
 import seaborn as sns
 from tabulate import tabulate
+import random
 
 class RAGEvaluator:
     def __init__(self, rag_chatbot, corpus_path, models_to_test=None):
@@ -42,6 +43,10 @@ class RAGEvaluator:
         # Crear identificador único para la sesión de evaluación
         self.eval_id = f"eval_{time.strftime('%Y%m%d_%H%M%S')}"
         
+        # Configuración de rate limiting
+        self.min_delay_between_requests = 2.0  # segundos mínimos entre requests
+        self.rate_limit_backoff = 30.0  # segundos de espera tras rate limit
+        
         # Extraer categorías y dificultades disponibles
         categories = set()
         difficulties = set()
@@ -56,9 +61,59 @@ class RAGEvaluator:
         print(f"📊 Dificultades: {difficulties}")
         print(f"🔍 Modelos a evaluar: {self.models_to_test}")
     
+    def _handle_api_request_with_retry(self, question, model_name, max_retries=3):
+        """
+        Maneja las requests a la API con retry automático para rate limits.
+        
+        Args:
+            question: La pregunta a enviar
+            model_name: Nombre del modelo
+            max_retries: Número máximo de reintentos
+            
+        Returns:
+            tuple: (response, docs, response_time) o (None, None, 0) si falla
+        """
+        for attempt in range(max_retries + 1):
+            try:
+                start_time = time.time()
+                response, docs = self.chatbot.answer_question(question, model_name=model_name)
+                response_time = time.time() - start_time
+                return response, docs, response_time
+                
+            except Exception as e:
+                error_str = str(e)
+                
+                # Rate limit error (429)
+                if "rate_limit_exceeded" in error_str or "429" in error_str:
+                    if attempt < max_retries:
+                        wait_time = self.rate_limit_backoff * (2 ** attempt)  # Exponential backoff
+                        print(f"⏳ Rate limit alcanzado. Esperando {wait_time:.1f}s antes del reintento {attempt + 1}/{max_retries}")
+                        time.sleep(wait_time)
+                        continue
+                    else:
+                        print(f"❌ Rate limit persistente después de {max_retries} intentos")
+                        raise e
+                
+                # Error de parámetros no soportados
+                elif "unsupported_value" in error_str or "temperature" in error_str:
+                    print(f"⚠️ Parámetro no soportado para modelo {model_name}: {error_str}")
+                    raise e
+                
+                # Otros errores
+                else:
+                    if attempt < max_retries:
+                        wait_time = 5 * (attempt + 1)
+                        print(f"⚠️ Error en intento {attempt + 1}: {error_str}. Reintentando en {wait_time}s...")
+                        time.sleep(wait_time)
+                        continue
+                    else:
+                        raise e
+        
+        return None, None, 0
+    
     def run_evaluation(self, n_samples=None, categories=None, difficulties=None, random_seed=42):
         """
-        Ejecuta la evaluación en el corpus.
+        Ejecuta la evaluación en el corpus con manejo robusto de errores.
         
         Args:
             n_samples: Número de preguntas a evaluar (si es None, se evaluarán todas)
@@ -76,8 +131,8 @@ class RAGEvaluator:
         
         # Seleccionar muestras
         if n_samples and n_samples < len(filtered_corpus):
-            np.random.seed(random_seed)
-            filtered_corpus = np.random.choice(filtered_corpus, n_samples, replace=False).tolist()
+            random.seed(random_seed)
+            filtered_corpus = random.sample(filtered_corpus, n_samples)
         
         print(f"🚀 Iniciando evaluación con {len(filtered_corpus)} preguntas...")
         
@@ -85,6 +140,11 @@ class RAGEvaluator:
         for model_name in self.models_to_test:
             print(f"\n📝 Evaluando modelo: {model_name}")
             model_results = []
+            
+            # Verificar si el modelo existe en el chatbot
+            if model_name not in self.chatbot.llm_instances:
+                print(f"⚠️ Modelo {model_name} no disponible en el chatbot. Saltando...")
+                continue
             
             # Evaluar cada pregunta
             for idx, question_obj in enumerate(tqdm(filtered_corpus, desc=f"Evaluando con {model_name}")):
@@ -95,10 +155,14 @@ class RAGEvaluator:
                 metadata = question_obj.get('metadata', {})
                 
                 try:
-                    # Obtener respuesta del chatbot
-                    start_time = time.time()
-                    response, docs = self.chatbot.answer_question(question, model_name=model_name)
-                    response_time = time.time() - start_time
+                    # Obtener respuesta del chatbot con manejo de errores
+                    response, docs, response_time = self._handle_api_request_with_retry(
+                        question, model_name
+                    )
+                    
+                    if response is None:
+                        # Si falló después de todos los reintentos
+                        raise Exception("Failed after all retries")
                     
                     # Evaluar la respuesta
                     eval_scores = self._evaluate_response(response, ground_truth)
@@ -118,8 +182,8 @@ class RAGEvaluator:
                     }
                     model_results.append(result)
                     
-                    # Dar tiempo para no saturar la API
-                    time.sleep(0.5)
+                    # Delay entre requests para evitar rate limits
+                    time.sleep(self.min_delay_between_requests)
                     
                 except Exception as e:
                     print(f"\n❌ Error evaluando pregunta #{idx}: {e}")
@@ -141,6 +205,9 @@ class RAGEvaluator:
                         'semantic_similarity': 0,
                     }
                     model_results.append(result)
+                    
+                    # Delay más largo después de un error
+                    time.sleep(5)
             
             # Guardar resultados del modelo
             self.results[model_name] = model_results
@@ -152,59 +219,79 @@ class RAGEvaluator:
     
     def _evaluate_response(self, response, ground_truth):
         """Evalúa la respuesta comparándola con el ground truth usando varias métricas."""
-        # ROUGE scores
-        rouge_scores = self.rouge_scorer.score(ground_truth, response)
-        
-        # Semantic similarity
-        ground_truth_emb = self.semantic_model.encode(ground_truth)
-        response_emb = self.semantic_model.encode(response)
-        semantic_similarity = util.pytorch_cos_sim(ground_truth_emb, response_emb).item()
-        
-        return {
-            'rouge1_f': rouge_scores['rouge1'].fmeasure,
-            'rouge2_f': rouge_scores['rouge2'].fmeasure,
-            'rougeL_f': rouge_scores['rougeL'].fmeasure,
-            'semantic_similarity': semantic_similarity
-        }
+        try:
+            # ROUGE scores
+            rouge_scores = self.rouge_scorer.score(ground_truth, response)
+            
+            # Semantic similarity
+            ground_truth_emb = self.semantic_model.encode(ground_truth)
+            response_emb = self.semantic_model.encode(response)
+            semantic_similarity = util.pytorch_cos_sim(ground_truth_emb, response_emb).item()
+            
+            return {
+                'rouge1_f': rouge_scores['rouge1'].fmeasure,
+                'rouge2_f': rouge_scores['rouge2'].fmeasure,
+                'rougeL_f': rouge_scores['rougeL'].fmeasure,
+                'semantic_similarity': semantic_similarity
+            }
+        except Exception as e:
+            print(f"⚠️ Error evaluando métricas: {e}")
+            return {
+                'rouge1_f': 0,
+                'rouge2_f': 0,
+                'rougeL_f': 0,
+                'semantic_similarity': 0
+            }
     
     def _calculate_aggregated_metrics(self, model_name):
         """Calcula métricas agregadas por categoría, dificultad, etc."""
         results = pd.DataFrame(self.results[model_name])
         
+        # Filtrar errores para cálculo de métricas
+        valid_results = results[results['rouge1_f'] > 0]
+        
+        if len(valid_results) == 0:
+            print(f"⚠️ No hay resultados válidos para el modelo {model_name}")
+            return
+        
         # Métricas globales
         self.metrics[model_name]['global'] = {
-            'rouge1_f': results['rouge1_f'].mean(),
-            'rouge2_f': results['rouge2_f'].mean(),
-            'rougeL_f': results['rougeL_f'].mean(),
-            'semantic_similarity': results['semantic_similarity'].mean(),
-            'avg_response_time': results['response_time'].mean(),
-            'total_questions': len(results)
+            'rouge1_f': valid_results['rouge1_f'].mean(),
+            'rouge2_f': valid_results['rouge2_f'].mean(),
+            'rougeL_f': valid_results['rougeL_f'].mean(),
+            'semantic_similarity': valid_results['semantic_similarity'].mean(),
+            'avg_response_time': valid_results['response_time'].mean(),
+            'total_questions': len(results),
+            'successful_questions': len(valid_results),
+            'error_rate': (len(results) - len(valid_results)) / len(results)
         }
         
         # Métricas por categoría
         self.metrics[model_name]['by_category'] = {}
-        for category in results['category'].unique():
-            cat_data = results[results['category'] == category]
-            self.metrics[model_name]['by_category'][category] = {
-                'rouge1_f': cat_data['rouge1_f'].mean(),
-                'rouge2_f': cat_data['rouge2_f'].mean(),
-                'rougeL_f': cat_data['rougeL_f'].mean(),
-                'semantic_similarity': cat_data['semantic_similarity'].mean(),
-                'count': len(cat_data)
-            }
+        for category in valid_results['category'].unique():
+            cat_data = valid_results[valid_results['category'] == category]
+            if len(cat_data) > 0:
+                self.metrics[model_name]['by_category'][category] = {
+                    'rouge1_f': cat_data['rouge1_f'].mean(),
+                    'rouge2_f': cat_data['rouge2_f'].mean(),
+                    'rougeL_f': cat_data['rougeL_f'].mean(),
+                    'semantic_similarity': cat_data['semantic_similarity'].mean(),
+                    'count': len(cat_data)
+                }
         
         # Métricas por dificultad
         self.metrics[model_name]['by_difficulty'] = {}
-        for difficulty in results['difficulty'].unique():
-            diff_data = results[results['difficulty'] == difficulty]
-            self.metrics[model_name]['by_difficulty'][difficulty] = {
-                'rouge1_f': diff_data['rouge1_f'].mean(),
-                'rouge2_f': diff_data['rouge2_f'].mean(),
-                'rougeL_f': diff_data['rougeL_f'].mean(),
-                'semantic_similarity': diff_data['semantic_similarity'].mean(),
-                'count': len(diff_data)
-            }
-    
+        for difficulty in valid_results['difficulty'].unique():
+            diff_data = valid_results[valid_results['difficulty'] == difficulty]
+            if len(diff_data) > 0:
+                self.metrics[model_name]['by_difficulty'][difficulty] = {
+                    'rouge1_f': diff_data['rouge1_f'].mean(),
+                    'rouge2_f': diff_data['rouge2_f'].mean(),
+                    'rougeL_f': diff_data['rougeL_f'].mean(),
+                    'semantic_similarity': diff_data['semantic_similarity'].mean(),
+                    'count': len(diff_data)
+                }
+
     def save_results(self, output_dir="evaluation_results"):
         """
         Guarda los resultados de la evaluación en una estructura de directorios organizada.
@@ -622,9 +709,9 @@ if __name__ == "__main__":
     
     # Inicializar chatbot
     api_key = os.getenv("OPENAI_API_KEY")
-    corpus_path = "preguntas_fs.json"
-    models_to_test = ["gpt-4o"]  # Puedes agregar más modelos
-    
+    corpus_path = "preguntas_fs.json"  
+    models_to_test = ["o4-mini", "gpt-4o", "gpt-5-mini", "gpt-5-nano", "gpt-5"]  # Modelos a evaluar
+
     try:
         # Verificar que el corpus existe
         if not os.path.exists(corpus_path):
@@ -654,8 +741,8 @@ if __name__ == "__main__":
         print("🔍 Inicializando evaluador...")
         evaluator = RAGEvaluator(chatbot, corpus_path, models_to_test)
         
-        # Ejecutar evaluación completa
-        evaluator.run_full_evaluation()  # Cambiar a None para evaluar todo el corpus
+        print("🧪 Ejecutando evaluación...")
+        evaluator.run_full_evaluation() 
         
     except Exception as e:
         print(f"❌ Error durante la evaluación: {e}")
