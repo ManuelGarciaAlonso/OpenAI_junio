@@ -6,6 +6,7 @@ chroma_db_openai/
 
 # Evaluation results directory
 evaluation_results/
+unified_results/
 
 # Python cache files
 __pycache__/
